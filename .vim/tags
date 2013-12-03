@@ -1,0 +1,845 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+"	plugin/xptemplate.conf.vim	/^    inoremap <silent> " <C-v><C-v><BS><C-r>=XPTtgr('"',{'noliteral':1,'k':'"'})<cr>$/;"	m
+'	plugin/xptemplate.conf.vim	/^    inoremap <silent> ' <C-v><C-v><BS><C-r>=XPTtgr('''',{'noliteral':1,'k':''''})<cr>$/;"	m
+(	plugin/xptemplate.conf.vim	/^    inoremap <silent> ( <C-v><C-v><BS><C-r>=XPTtgr('(',{'noliteral':1,'k':'('})<cr>$/;"	m
+(`elem~	ftplugin/haskell/haskell.xpt.vim	/^map (`elem~ -> `expr~) `list~$/;"	m
+<Plug>XPTdoBreakUndo	plugin/xptemplate.vim	/^inoremap <silent> <Plug>XPTdoBreakUndo <C-r>=<SID>DoBreakUndo()<CR>$/;"	m
+Abbr	plugin/xptemplate.vim	/^fun! s:Abbr( name ) "{{{$/;"	f
+ActionFinish	plugin/xptemplate.vim	/^fun! s:ActionFinish( renderContext, filter ) "{{{$/;"	f
+Add	plugin/classes/MapSaver.vim	/^fun! s:Add( mode, key ) dict "{{{$/;"	f
+Add	plugin/classes/SettingSwitch.vim	/^fun! s:Add( key, value ) dict "{{{$/;"	f
+AddCursorToComeLast	plugin/xptemplate.vim	/^fun! s:AddCursorToComeLast(setting) "{{{$/;"	f
+AddIndent	plugin/xptemplate.vim	/^fun! s:AddIndent( text, nIndent ) "{{{$/;"	f
+AddItemToRenderContext	plugin/xptemplate.vim	/^fun! s:AddItemToRenderContext( ctx, item ) "{{{$/;"	f
+AddList	plugin/classes/MapSaver.vim	/^fun! s:AddList( ... ) dict "{{{$/;"	f
+AddList	plugin/classes/SettingSwitch.vim	/^fun! s:AddList( ... ) dict "{{{$/;"	f
+AddToOrderList	plugin/xptemplate.vim	/^fun! s:AddToOrderList( list, item ) "{{{$/;"	f
+AdjustIndent	plugin/classes/FilterValue.vim	/^fun! s:AdjustIndent( startPos ) dict "{{{$/;"	f
+AdjustIndentAt	plugin/xptemplate.vim	/^fun! s:AdjustIndentAt( text, startPos ) "{{{$/;"	f
+AdjustTextAction	plugin/classes/FilterValue.vim	/^fun! s:AdjustTextAction( context ) dict "{{{$/;"	f
+ApplyBuildTimeInclusion	plugin/xptemplate.vim	/^fun! s:ApplyBuildTimeInclusion( placeHolder, nameInfo, valueInfo ) "{{{$/;"	f
+ApplyDefaultValue	plugin/xptemplate.vim	/^fun! s:ApplyDefaultValue() "{{{$/;"	f
+ApplyDefaultValueToPH	plugin/xptemplate.vim	/^fun! s:ApplyDefaultValueToPH( renderContext, filter ) "{{{$/;"	f
+ApplyInstantValue	plugin/xptemplate.vim	/^fun! s:ApplyInstantValue( placeHolder, nameInfo, valueInfo ) "{{{$/;"	f
+ApplyMap	plugin/xptemplate.vim	/^fun! s:ApplyMap() " {{{$/;"	f
+ApplyMapAndSetting	plugin/xpopup.vim	/^fun! s:ApplyMapAndSetting() "{{{$/;"	f
+ApplyPostFilter	plugin/xptemplate.vim	/^fun! s:ApplyPostFilter() "{{{$/;"	f
+ApplyPreValues	plugin/xptemplate.vim	/^fun! s:ApplyPreValues( placeHolder ) "{{{$/;"	f
+Assert	plugin/debug.vim	/^com! -nargs=+ Assert call Assert( <args>, <q-args> )$/;"	c
+Assert	plugin/debug.vim	/^fun! Assert( shouldBeTrue, msg ) "{{{$/;"	f
+AssignSnipFT	plugin/xptemplate.parser.vim	/^fun! s:AssignSnipFT( filename ) "{{{$/;"	f
+BreakUndo	plugin/xptemplate.vim	/^fun! s:BreakUndo() "{{{$/;"	f
+BufData	plugin/xpmark.vim	/^fun! s:BufData() "{{{$/;"	f
+BuildItemForPlaceHolder	plugin/xptemplate.vim	/^fun! s:BuildItemForPlaceHolder( placeHolder ) "{{{$/;"	f
+BuildMarksOfPlaceHolder	plugin/xptemplate.vim	/^fun! s:BuildMarksOfPlaceHolder( item, placeHolder, nameInfo, valueInfo ) "{{{$/;"	f
+BuildPlaceHolders	plugin/xptemplate.vim	/^fun! s:BuildPlaceHolders( markRange ) "{{{$/;"	f
+BuildSnippet	plugin/xptemplate.vim	/^fun! s:BuildSnippet(nameStartPosition, nameEndPosition) " {{{$/;"	f
+CachedCompileExpr	plugin/xptemplate.vim	/^fun! s:CachedCompileExpr( s, xfunc ) "{{{$/;"	f
+CalculateIndentation	ftplugin/cpp/autoimplem.xpt.vim	/^fun! s:CalculateIndentation( ln ) "{{{$/;"	f
+CallPlugin	plugin/xptemplate.vim	/^fun! s:CallPlugin(ev, when) "{{{$/;"	f
+CheckAndFinish	plugin/xpopup.vim	/^fun! s:CheckAndFinish() "{{{$/;"	f
+CheckAndSetSnippetLoaded	plugin/classes/FiletypeScope.vim	/^fun! s:CheckAndSetSnippetLoaded( filename ) dict "{{{$/;"	f
+ClassPrototype	plugin/xpmark.vim	/^fun! s:ClassPrototype(...) "{{{$/;"	f
+ClassPrototype	plugin/xpopup.vim	/^fun! s:ClassPrototype(...) "{{{$/;"	f
+CleanupCurrentItem	plugin/xptemplate.vim	/^fun! s:CleanupCurrentItem() "{{{$/;"	f
+ClearHL	plugin/xpt.plugin.highlight.vim	/^    fun! s:ClearHL(x, ctx) "{{{$/;"	f
+ClearItemMapping	plugin/xptemplate.vim	/^fun! s:ClearItemMapping( rctx ) "{{{$/;"	f
+ClearMap	plugin/xptemplate.vim	/^fun! s:ClearMap() " {{{$/;"	f
+ClearMapAndSetting	plugin/xpopup.vim	/^fun! s:ClearMapAndSetting() "{{{$/;"	f
+CompileExpr	plugin/xptemplate.vim	/^fun! s:CompileExpr(s, xfunc) "{{{$/;"	f
+ConcreteSpace	plugin/xptemplate.vim	/^fun! s:ConcreteSpace() "{{{$/;"	f
+ConvertIndent	plugin/xptemplate.parser.vim	/^fun! s:ConvertIndent( snipLines ) "{{{$/;"	f
+ConvertSpaceToTab	plugin/xpreplace.vim	/^fun! s:ConvertSpaceToTab( text ) "{{{$/;"	f
+Crash	plugin/xptemplate.vim	/^fun! s:Crash(...) "{{{$/;"	f
+CreateLogger	plugin/debug.vim	/^fun! CreateLogger( level ) "{{{$/;"	f
+CreatePlaceHolder	plugin/xptemplate.vim	/^fun! s:CreatePlaceHolder( ctx, nameInfo, valueInfo ) "{{{$/;"	f
+CreatePluginContainer	plugin/xptemplate.vim	/^fun! s:CreatePluginContainer( ... ) "{{{$/;"	f
+CreateSession	plugin/xpopup.vim	/^fun! s:CreateSession( sess ) "{{{$/;"	f
+CreateStringMask	plugin/xptemplate.vim	/^fun! s:CreateStringMask( str ) "{{{$/;"	f
+Debug	plugin/debug.vim	/^fun! s:Debug(...) dict "{{{$/;"	f
+DebugGetSID	plugin/debug.vim	/^com! DebugGetSID let s:sid =  matchstr("<SID>", '\\zs\\d\\+_\\ze')$/;"	c
+DeepExtend	plugin/xptemplate.util.vim	/^fun! s:DeepExtend( to, from ) "{{{$/;"	f
+DefaultValuePumHandler	plugin/xptemplate.vim	/^fun! s:DefaultValuePumHandler( renderContext, filter ) "{{{$/;"	f
+DefaultValueShowPum	plugin/xptemplate.vim	/^fun! s:DefaultValueShowPum( renderContext, filter ) "{{{$/;"	f
+DoBreakUndo	plugin/xptemplate.vim	/^fun! s:DoBreakUndo() "{{{$/;"	f
+DoGotoNextItem	plugin/xptemplate.vim	/^fun! s:DoGotoNextItem() "{{{$/;"	f
+DoInclude	plugin/xptemplate.vim	/^fun! s:DoInclude( tmplDict, tmplObject, pattern, keepCursor ) "{{{$/;"	f
+DoParseSnippet	plugin/xptemplate.parser.vim	/^fun! DoParseSnippet( p ) "{{{$/;"	f
+DoStart	plugin/xptemplate.vim	/^fun! s:DoStart( sess ) " {{{$/;"	f
+DoUpdate	plugin/xptemplate.vim	/^fun! s:DoUpdate( renderContext, changeType ) "{{{$/;"	f
+EmbedSnippetInLeadingPlaceHolder	plugin/xptemplate.vim	/^fun! s:EmbedSnippetInLeadingPlaceHolder( ctx, snippet ) "{{{$/;"	f
+End	plugin/xpopup.vim	/^fun! s:End() "{{{$/;"	f
+Error	plugin/debug.vim	/^fun! s:Error(...) dict "{{{$/;"	f
+EscapeMap	plugin/xptemplate.conf.vim	/^fun! s:EscapeMap( s ) "{{{$/;"	f
+Eval	plugin/xptemplate.vim	/^fun! s:Eval(str, container, ...) "{{{$/;"	f
+EvalFilter	plugin/xptemplate.vim	/^fun! s:EvalFilter( filter, container, context ) "{{{$/;"	f
+EvalPostFilter	plugin/xptemplate.vim	/^fun! s:EvalPostFilter( filter, typed, leader ) "{{{$/;"	f
+EvaluateEdge	plugin/xptemplate.vim	/^fun! s:EvaluateEdge( xp, item, ph ) "{{{$/;"	f
+ExtractOneItem	plugin/xptemplate.vim	/^fun! s:ExtractOneItem() "{{{$/;"	f
+FallbackKey	plugin/xptemplate.vim	/^fun! s:FallbackKey() "{{{$/;"	f
+Fatal	plugin/debug.vim	/^fun! s:Fatal(...) dict "{{{$/;"	f
+Feedkeys	plugin/xptemplateTest.vim	/^fun! s:Feedkeys( text, mode )$/;"	f
+FillinLeadingPlaceHolderAndSelect	plugin/xptemplate.vim	/^fun! s:FillinLeadingPlaceHolderAndSelect( ctx, str ) "{{{$/;"	f
+FillinTemplate	plugin/xptemplateTest.vim	/^fun! s:FillinTemplate() "{{{$/;"	f
+FindShorter	plugin/xpopup.vim	/^fun! s:FindShorter(map, key) "{{{$/;"	f
+FinishCurrent	plugin/xptemplate.vim	/^fun! s:FinishCurrent( action ) "{{{$/;"	f
+FinishRendering	plugin/xptemplate.vim	/^fun! s:FinishRendering(...) "{{{$/;"	f
+GetContextFT	plugin/xptemplate.vim	/^fun! s:GetContextFT() "{{{$/;"	f
+GetContextFTObj	plugin/xptemplate.vim	/^fun! s:GetContextFTObj() "{{{$/;"	f
+GetIndentBeforeEdge	plugin/xptemplate.vim	/^fun! s:GetIndentBeforeEdge( tmplObj, textBeforeLeftMark ) "{{{$/;"	f
+GetKeyType	plugin/xptemplate.parser.vim	/^fun! s:GetKeyType(rawKey) "{{{$/;"	f
+GetMark	syntax/xpt.vim	/^fun! s:GetMark()$/;"	f
+GetNameInfo	plugin/xptemplate.vim	/^fun! s:GetNameInfo(end) "{{{$/;"	f
+GetSnipCommentHint	plugin/xptemplate.parser.vim	/^fun! s:GetSnipCommentHint(str) "{{{$/;"	f
+GetSnipFileFT	plugin/xptemplate.vim	/^fun! g:GetSnipFileFT() "{{{$/;"	f
+GetSnipFileFtScope	plugin/xptemplate.vim	/^fun! g:GetSnipFileFtScope() "{{{$/;"	f
+GetStack	plugin/classes/MapSaver.vim	/^fun! s:GetStack() dict "{{{$/;"	f
+GetTempSnipScope	plugin/xptemplate.vim	/^fun! s:GetTempSnipScope( x, ft ) "{{{$/;"	f
+GetTextBeforeCursor	plugin/xpopup.vim	/^fun! s:GetTextBeforeCursor( sess ) "{{{$/;"	f
+GetValueInfo	plugin/xptemplate.vim	/^fun! s:GetValueInfo( end ) "{{{$/;"	f
+Goback	plugin/xptemplate.vim	/^fun! s:Goback() "{{{$/;"	f
+GotoNextItem	plugin/xptemplate.vim	/^fun! s:GotoNextItem() "{{{$/;"	f
+GotoRelativePosToMark	plugin/xptemplate.vim	/^fun! s:GotoRelativePosToMark( rPos, mark ) "{{{$/;"	f
+HL	plugin/xpt.plugin.highlight.vim	/^    fun! s:HL(grp, ptn) "{{{$/;"	f
+HLinit	plugin/xpt.plugin.highlight.vim	/^    fun! s:HLinit() "{{{$/;"	f
+HandleAction	plugin/xptemplate.vim	/^fun! s:HandleAction( renderContext, filter ) "{{{$/;"	f
+HandleDefaultValueAction	plugin/xptemplate.vim	/^fun! s:HandleDefaultValueAction( ctx, filter ) "{{{$/;"	f
+HandleOntypeAction	plugin/xptemplate.vim	/^fun! s:HandleOntypeAction( renderContext, filter ) "{{{$/;"	f
+HandleOntypeFilter	plugin/xptemplate.vim	/^fun! s:HandleOntypeFilter( filter ) "{{{$/;"	f
+HandleXSETcommand	plugin/xptemplate.parser.vim	/^fun! s:HandleXSETcommand(setting, command, keyname, keytype, value) "{{{$/;"	f
+IfSnippetShow	plugin/xptemplate.vim	/^fun! s:IfSnippetShow( snipObj, synNames ) "{{{$/;"	f
+Info	plugin/debug.vim	/^fun! s:Info(...) dict "{{{$/;"	f
+Init	ftplugin/_common/inlineComplete.xpt.vim	/^fun! s:Init()$/;"	f
+InitBuf	plugin/xpmark.vim	/^fun! s:InitBuf() "{{{$/;"	f
+InitBuffer	plugin/xpreplace.vim	/^fun! s:InitBuffer() "{{{$/;"	f
+InitItem	plugin/xptemplate.vim	/^fun! s:InitItem() " {{{$/;"	f
+InitItemMapping	plugin/xptemplate.vim	/^fun! s:InitItemMapping() "{{{$/;"	f
+InitItemOrderList	plugin/xptemplate.vim	/^fun! s:InitItemOrderList( setting ) "{{{$/;"	f
+InitItemTempMapping	plugin/xptemplate.vim	/^fun! s:InitItemTempMapping() "{{{$/;"	f
+InitTemplateObject	plugin/xptemplate.vim	/^fun! s:InitTemplateObject( xptObj, tmplObj ) "{{{$/;"	f
+IsSnippetLoaded	plugin/classes/FiletypeScope.vim	/^fun! s:IsSnippetLoaded( filename ) dict "{{{$/;"	f
+IsUpdateCondition	plugin/xptemplate.vim	/^fun! s:IsUpdateCondition( renderContext ) "{{{$/;"	f
+ItemPumCB.onOneMatch	plugin/xptemplate.vim	/^fun! s:ItemPumCB.onOneMatch( sess ) "{{{$/;"	f
+KeyPopup	plugin/xpopup.vim	/^fun! s:KeyPopup( doCallback, ifEnlarge ) dict "{{{$/;"	f
+LastLine	plugin/xptemplateTest.vim	/^fun! s:LastLine() "{{{$/;"	f
+ListPopup	plugin/xpopup.vim	/^fun! s:ListPopup( doCallback, ifEnlarge ) dict "{{{$/;"	f
+Literalize	plugin/classes/MapSaver.vim	/^fun! s:Literalize( ... ) dict "{{{$/;"	f
+LoadOtherFTPlugins	plugin/xptemplate.parser.vim	/^fun! s:LoadOtherFTPlugins( ft ) "{{{$/;"	f
+LoadSnippetFile	plugin/xptemplate.vim	/^fun! s:LoadSnippetFile(snip) "{{{$/;"	f
+Log	plugin/debug.vim	/^fun! s:Log(...) dict "{{{$/;"	f
+LogNothing	plugin/debug.vim	/^fun! s:LogNothing(...) "{{{$/;"	f
+Log_core	plugin/debug.vim	/^fun! Log_core(level, ...) "{{{$/;"	f
+LongestPrefix	plugin/xpopup.vim	/^fun! s:LongestPrefix(sess) "{{{$/;"	f
+MapSaverGetMapCommand	plugin/classes/MapSaver.vim	/^fun! MapSaverGetMapCommand( info ) "{{{$/;"	f
+MapSaver_GetMapInfo	plugin/classes/MapSaver.vim	/^fun! MapSaver_GetMapInfo( key, mode, isbuffer ) "{{{$/;"	f
+MarkRange	plugin/xpt.plugin.highlight.vim	/^fun! s:MarkRange( marks ) "{{{$/;"	f
+MergeSetting	plugin/xptemplate.vim	/^fun! s:MergeSetting( toSettings, fromSettings ) "{{{$/;"	f
+MistakeTypeEnd	plugin/xpopup.vim	/^fun! s:MistakeTypeEnd() "{{{$/;"	f
+New	plugin/classes/FiletypeScope.vim	/^fun! s:New() dict "{{{$/;"	f
+New	plugin/classes/FilterValue.vim	/^fun! s:New( nIndent, text, ... ) dict "{{{$/;"	f
+New	plugin/classes/MapSaver.vim	/^fun! s:New( isLocal ) dict "{{{$/;"	f
+New	plugin/classes/RenderContext.vim	/^fun! s:New( x ) dict "{{{$/;"	f
+New	plugin/classes/SettingSwitch.vim	/^fun! s:New() dict "{{{$/;"	f
+NewRenderContext	plugin/xptemplate.vim	/^fun! s:NewRenderContext( ftScope, tmplName ) "{{{$/;"	f
+NewTestFile	plugin/xptemplateTest.vim	/^fun! s:NewTestFile(ft) "{{{$/;"	f
+NextLeftMark	plugin/xptemplate.vim	/^fun! s:NextLeftMark( markRange ) "{{{$/;"	f
+PUMclear	plugin/xpopup.vim	/^fun PUMclear() "{{{$/;"	f
+ParseInclusion	plugin/xptemplate.vim	/^fun! s:ParseInclusion( tmplDict, tmplObject ) "{{{$/;"	f
+ParseInclusionStatement	plugin/xptemplate.vim	/^fun! s:ParseInclusionStatement( snipObject, st ) "{{{$/;"	f
+ParseMultiLineValues	plugin/xptemplate.parser.vim	/^fun! s:ParseMultiLineValues(lines, start) "{{{$/;"	f
+ParsePostQuoter	plugin/xptemplate.vim	/^fun! s:ParsePostQuoter( setting ) "{{{$/;"	f
+ParsePriority	plugin/xptemplate.vim	/^fun! s:ParsePriority( pstr ) "{{{$/;"	f
+ParsePriorityString	plugin/xptemplate.vim	/^fun! s:ParsePriorityString(s) "{{{$/;"	f
+ParseQuotedPostFilter	plugin/xptemplate.vim	/^fun! s:ParseQuotedPostFilter( tmplObj ) "{{{$/;"	f
+ParseRepetition	plugin/xptemplate.vim	/^fun! s:ParseRepetition( snipObject ) "{{{$/;"	f
+ParseSpaces	plugin/xptemplate.vim	/^fun! s:ParseSpaces( snipObject ) "{{{$/;"	f
+ParseTemplateSetting	plugin/xptemplate.vim	/^fun! s:ParseTemplateSetting( tmpl ) "{{{$/;"	f
+PatternOfNext	plugin/xpt.plugin.highlight.vim	/^fun! s:PatternOfNext( ctx ) "{{{$/;"	f
+PopRenderContext	plugin/xptemplate.vim	/^fun! s:PopRenderContext() "{{{$/;"	f
+Popup	plugin/xptemplate.vim	/^fun! s:Popup(pref, coln, opt) "{{{$/;"	f
+PopupCheck	plugin/xpopup.vim	/^fun! s:PopupCheck(...) "{{{$/;"	f
+PrintDebug	plugin/xpmark.vim	/^fun! PrintDebug()$/;"	f
+PushBackItem	plugin/xptemplate.vim	/^fun! s:PushBackItem() "{{{$/;"	f
+PushRenderContext	plugin/xptemplate.vim	/^fun! s:PushRenderContext() "{{{$/;"	f
+RecordRelativePosToMark	plugin/xptemplate.vim	/^fun! s:RecordRelativePosToMark( pos, mark ) "{{{$/;"	f
+RedefinePattern	plugin/xptemplate.vim	/^fun! s:RedefinePattern() "{{{$/;"	f
+RemoveCurrentMarks	plugin/xptemplate.vim	/^fun! s:RemoveCurrentMarks() "{{{$/;"	f
+RemoveDuplicate	plugin/xptemplate.util.vim	/^fun! s:RemoveDuplicate( list ) "{{{$/;"	f
+RemoveEditMark	plugin/xptemplate.vim	/^fun! s:RemoveEditMark( ph ) "{{{$/;"	f
+RenderSnippet	plugin/xptemplate.vim	/^fun! s:RenderSnippet() "{{{$/;"	f
+ReplacePHInSubSnip	plugin/xptemplate.vim	/^fun! s:ReplacePHInSubSnip( snipObject, subSnipObject, params ) "{{{$/;"	f
+Replace_gp	plugin/xpreplace.vim	/^fun! s:Replace_gp( start, end, replacement ) "{{{$/;"	f
+Replace_standard	plugin/xpreplace.vim	/^fun! s:Replace_standard( start, end, replacement ) "{{{$/;"	f
+Restore	plugin/classes/MapSaver.vim	/^fun! s:Restore() dict "{{{$/;"	f
+Restore	plugin/classes/SettingSwitch.vim	/^fun! s:Restore() dict "{{{$/;"	f
+RestoreCommpletefunc	autoload/XPpum.vim	/^fun! s:RestoreCommpletefunc() "{{{$/;"	f
+RubyAssertPopupSort	ftplugin/ruby/ruby.xpt.vim	/^fun! s:RubyAssertPopupSort(a, b) "{{{$/;"	f
+Save	plugin/classes/MapSaver.vim	/^fun! s:Save() dict "{{{$/;"	f
+SaveNavKey	plugin/xptemplate.vim	/^fun! s:SaveNavKey() "{{{$/;"	f
+SelectCurrent	plugin/xptemplate.vim	/^fun! s:SelectCurrent() "{{{$/;"	f
+SetAcceptEmpty	plugin/xpopup.vim	/^fun! s:SetAcceptEmpty( acc ) dict "{{{$/;"	f
+SetDefaultFilters	plugin/xptemplate.vim	/^fun! s:SetDefaultFilters( ph ) "{{{$/;"	f
+SetIfNotExist	plugin/xpopup.vim	/^fun! s:SetIfNotExist(k, v) "{{{$/;"	f
+SetMatchWholeName	plugin/xpopup.vim	/^fun! s:SetMatchWholeName( mwn ) dict "{{{$/;"	f
+SetOption	plugin/xpopup.vim	/^fun! s:SetOption( opt ) dict "{{{$/;"	f
+SetPreValue	plugin/xptemplate.vim	/^fun! s:SetPreValue( placeHolder, filter ) "{{{$/;"	f
+SetSnippetLoaded	plugin/classes/FiletypeScope.vim	/^fun! s:SetSnippetLoaded( filename ) dict "{{{$/;"	f
+SetTriggerKey	plugin/xpopup.vim	/^fun! s:SetTriggerKey( key ) dict "{{{$/;"	f
+SetupStatusline	plugin/xpmark.vim	/^fun! s:SetupStatusline() "{{{$/;"	f
+ShiftBackward	plugin/xptemplate.vim	/^fun! s:ShiftBackward() "{{{$/;"	f
+ShiftForward	plugin/xptemplate.vim	/^fun! s:ShiftForward( action ) " {{{$/;"	f
+SplitWith	plugin/xptemplate.parser.vim	/^fun! s:SplitWith( str, char ) "{{{$/;"	f
+StartNewTemplate	plugin/xptemplateTest.vim	/^fun! s:StartNewTemplate() "{{{$/;"	f
+String	plugin/classes/MapSaver.vim	/^fun! s:String( stack ) "{{{$/;"	f
+Switch	plugin/classes/SettingSwitch.vim	/^fun! s:Switch() dict "{{{$/;"	f
+SwitchPhase	plugin/classes/RenderContext.vim	/^fun! s:SwitchPhase( nextPhase ) dict "{{{$/;"	f
+SynNameStack	plugin/xptemplate.vim	/^fun! s:SynNameStack(l, c) "{{{$/;"	f
+Test	plugin/xptTestKey.vim	/^fun! s:Test( inputs, expect, hasPum, msg ) "{{{$/;"	f
+TestFinish	plugin/xptemplateTest.vim	/^fun! s:TestFinish() "{{{$/;"	f
+TestProcess	plugin/xptemplateTest.vim	/^fun! TestProcess(...) "{{{$/;"	f
+TextBetween	plugin/xptemplate.vim	/^fun! s:TextBetween( posList ) "{{{$/;"	f
+TextBetween	plugin/xptemplateTest.vim	/^fun! s:TextBetween( posList ) "{{{$/;"	f
+ToChangeNr	plugin/xpmark.vim	/^fun! s:ToChangeNr( nr ) dict "{{{$/;"	f
+UnescapeChar	plugin/xptemplate.util.vim	/^fun! s:UnescapeChar( str, chars ) "{{{$/;"	f
+UnmapAll	plugin/classes/MapSaver.vim	/^fun! s:UnmapAll() dict "{{{$/;"	f
+UpdateFollowingPlaceHoldersWith	plugin/xptemplate.vim	/^fun! s:UpdateFollowingPlaceHoldersWith( contentTyped, option ) "{{{$/;"	f
+UpdateHL	plugin/xpt.plugin.highlight.vim	/^fun! s:UpdateHL(x, ctx) "{{{$/;"	f
+UpdateIndex	plugin/xpopup.vim	/^fun! s:UpdateIndex(map, key) "{{{$/;"	f
+UpdateMarksAccordingToLeaderChanges	plugin/xptemplate.vim	/^fun! s:UpdateMarksAccordingToLeaderChanges( renderContext ) "{{{$/;"	f
+UpdateNamePrefixDict	plugin/xptemplate.vim	/^fun! s:UpdateNamePrefixDict( ftScope, name ) "{{{$/;"	f
+Warn	plugin/debug.vim	/^fun! s:Warn(...) dict "{{{$/;"	f
+XPM	plugin/xpmark.vim	/^augroup XPM$/;"	a
+XPMadd	plugin/xpmark.vim	/^fun! XPMadd( name, pos, prefer, ... ) "{{{$/;"	f
+XPMallMark	plugin/xpmark.vim	/^fun! XPMallMark() "{{{$/;"	f
+XPMautoUpdate	plugin/xpmark.vim	/^fun! XPMautoUpdate(msg) "{{{$/;"	f
+XPMcheckStatusline	plugin/xpmark.vim	/^fun! XPMcheckStatusline() "{{{$/;"	f
+XPMflush	plugin/xpmark.vim	/^fun! XPMflush() "{{{$/;"	f
+XPMflushWithHistory	plugin/xpmark.vim	/^fun! XPMflushWithHistory() "{{{$/;"	f
+XPMgetSID	plugin/xpmark.vim	/^com! XPMgetSID let s:sid =  matchstr("<SID>", '\\zs\\d\\+_\\ze')$/;"	c
+XPMgoto	plugin/xpmark.vim	/^fun! XPMgoto( name ) "{{{$/;"	f
+XPMhas	plugin/xpmark.vim	/^fun! XPMhas( ... ) "{{{$/;"	f
+XPMhere	plugin/xpmark.vim	/^fun! XPMhere( name, prefer ) "{{{$/;"	f
+XPMmarkAfter	plugin/xpmark.vim	/^fun! XPMmarkAfter( pos ) "{{{$/;"	f
+XPMpos	plugin/xpmark.vim	/^fun! XPMpos( name ) "{{{$/;"	f
+XPMposList	plugin/xpmark.vim	/^fun! XPMposList( ... ) "{{{$/;"	f
+XPMposStartEnd	plugin/xpmark.vim	/^fun! XPMposStartEnd( dict ) "{{{$/;"	f
+XPMremove	plugin/xpmark.vim	/^fun! XPMremove( name ) "{{{$/;"	f
+XPMremoveMarkStartWith	plugin/xpmark.vim	/^fun! XPMremoveMarkStartWith(prefix) "{{{$/;"	f
+XPMremoveStartEnd	plugin/xpmark.vim	/^fun! XPMremoveStartEnd( dict ) "{{{$/;"	f
+XPMsetBufSortFunction	plugin/xpmark.vim	/^fun! XPMsetBufSortFunction( funcRef ) "{{{$/;"	f
+XPMsetLikelyBetween	plugin/xpmark.vim	/^fun! XPMsetLikelyBetween( start, end ) "{{{$/;"	f
+XPMsetUpdateStrategy	plugin/xpmark.vim	/^fun! XPMsetUpdateStrategy( mode ) "{{{$/;"	f
+XPMupdate	plugin/xpmark.vim	/^fun! XPMupdate(...) " {{{$/;"	f
+XPMupdateCursorStat	plugin/xpmark.vim	/^fun! XPMupdateCursorStat(...) "{{{$/;"	f
+XPMupdateSpecificChangedRange	plugin/xpmark.vim	/^fun! XPMupdateSpecificChangedRange(start, end) " {{{$/;"	f
+XPMupdateStat	plugin/xpmark.vim	/^fun! XPMupdateStat() "{{{$/;"	f
+XPMupdateWithMarkRangeChanging	plugin/xpmark.vim	/^fun! XPMupdateWithMarkRangeChanging( startMark, endMark, changeStart, changeEnd ) "{{{$/;"	f
+XPPaccept	plugin/xpopup.vim	/^fun! XPPaccept() "{{{$/;"	f
+XPPcallback	plugin/xpopup.vim	/^fun! XPPcallback() "{{{$/;"	f
+XPPcancel	plugin/xpopup.vim	/^fun! XPPcancel( key ) "{{{$/;"	f
+XPPcomplete	plugin/xpopup.vim	/^fun! XPPcomplete(col, list) "{{{$/;"	f
+XPPcorrectPos	plugin/xpopup.vim	/^fun! XPPcorrectPos() "{{{$/;"	f
+XPPcr	plugin/xpopup.vim	/^fun! XPPcr() "{{{$/;"	f
+XPPdown	plugin/xpopup.vim	/^fun! XPPdown( key ) "{{{$/;"	f
+XPPend	plugin/xpopup.vim	/^fun! XPPend() "{{{$/;"	f
+XPPenlarge	plugin/xpopup.vim	/^fun! XPPenlarge( key ) "{{{$/;"	f
+XPPhasSession	plugin/xpopup.vim	/^fun! XPPhasSession() "{{{$/;"	f
+XPPopupNew	plugin/xpopup.vim	/^fun! XPPopupNew( callback, data, ... ) "{{{$/;"	f
+XPPprocess	plugin/xpopup.vim	/^fun! XPPprocess( list ) "{{{$/;"	f
+XPPrepopup	plugin/xpopup.vim	/^fun! XPPrepopup( doCallback, ifEnlarge ) "{{{$/;"	f
+XPPshorten	plugin/xpopup.vim	/^fun! XPPshorten() "{{{$/;"	f
+XPPup	plugin/xpopup.vim	/^fun! XPPup( key ) "{{{$/;"	f
+XPRaddPostJob	plugin/xpreplace.vim	/^fun! XPRaddPostJob( functionName ) "{{{$/;"	f
+XPRaddPreJob	plugin/xpreplace.vim	/^fun! XPRaddPreJob( functionName ) "{{{$/;"	f
+XPRendSession	plugin/xpreplace.vim	/^fun! XPRendSession() "{{{$/;"	f
+XPRremovePostJob	plugin/xpreplace.vim	/^fun! XPRremovePostJob( functionName ) "{{{$/;"	f
+XPRremovePreJob	plugin/xpreplace.vim	/^fun! XPRremovePreJob( functionName ) "{{{$/;"	f
+XPRstartSession	plugin/xpreplace.vim	/^fun! XPRstartSession() "{{{$/;"	f
+XPT	plugin/xptemplate.parser.vim	/^com! -nargs=* XPT           call s:XPTstartSnippetPart(expand("<sfile>")) | finish$/;"	c
+XPT	plugin/xptemplate.vim	/^augroup XPT "{{{$/;"	a
+XPT#LeadingTabToSpace	autoload/XPT.vim	/^fun! XPT#LeadingTabToSpace( str ) "{{{$/;"	f
+XPT#LinesBetween	autoload/XPT.vim	/^fun! XPT#LinesBetween( posList ) "{{{$/;"	f
+XPT#SpaceToTab	autoload/XPT.vim	/^fun! XPT#SpaceToTab( lines ) "{{{$/;"	f
+XPT#SpaceToTabExceptFirstLine	autoload/XPT.vim	/^fun! XPT#SpaceToTabExceptFirstLine( lines ) "{{{$/;"	f
+XPT#TextBetween	autoload/XPT.vim	/^fun! XPT#TextBetween( posList ) "{{{$/;"	f
+XPT#TextInLine	autoload/XPT.vim	/^fun! XPT#TextInLine( ln, s, e ) "{{{$/;"	f
+XPT#class	autoload/XPT.vim	/^fun! XPT#class( sid, proto ) "{{{$/;"	f
+XPT#classNew	autoload/XPT.vim	/^fun! XPT#classNew( ... ) dict "{{{$/;"	f
+XPT#classVoidInit	autoload/XPT.vim	/^fun! XPT#classVoidInit( ... ) dict "{{{$/;"	f
+XPT#convertSpaceToTab	autoload/XPT.vim	/^fun! XPT#convertSpaceToTab( text ) "{{{$/;"	f
+XPT#error	autoload/XPT.vim	/^fun! XPT#error( msg ) "{{{$/;"	f
+XPT#fallback	autoload/XPT.vim	/^fun! XPT#fallback( fbs ) "{{{$/;"	f
+XPT#getCmdOutput	autoload/XPT.vim	/^fun! XPT#getCmdOutput( cmd ) "{{{$/;"	f
+XPT#getIndentNr	autoload/XPT.vim	/^fun! XPT#getIndentNr( ln, col ) "{{{$/;"	f
+XPT#getPreferedIndentNr	autoload/XPT.vim	/^fun! XPT#getPreferedIndentNr( ln ) "{{{$/;"	f
+XPT#info	autoload/XPT.vim	/^fun! XPT#info( msg ) "{{{$/;"	f
+XPT#let_sid	autoload/XPT.vim	/^let XPT#let_sid = 'map <Plug>xsid <SID>|let s:sid=matchstr(maparg("<Plug>xsid"), "\\\\d\\\\+_")|unmap <Plug>xsid'$/;"	v
+XPT#nonEscaped	autoload/XPT.vim	/^let XPT#nonEscaped =$/;"	v
+XPT#nullDict	autoload/XPT.vim	/^let XPT#nullDict = {}$/;"	v
+XPT#nullList	autoload/XPT.vim	/^let XPT#nullList = []$/;"	v
+XPT#setIfNotExist	autoload/XPT.vim	/^fun! XPT#setIfNotExist(k, v) "{{{$/;"	f
+XPT#softTabStop	autoload/XPT.vim	/^fun! XPT#softTabStop() "{{{$/;"	f
+XPT#ver	autoload/XPT.vim	/^let XPT#ver = 2$/;"	v
+XPT#warn	autoload/XPT.vim	/^fun! XPT#warn( msg ) "{{{$/;"	f
+XPTCR	plugin/xptemplate.vim	/^fun! s:XPTCR() "{{{$/;"	f
+XPTSlow	plugin/xptemplateTest.vim	/^com! XPTSlow echo$/;"	c
+XPT_erubyFiletypeDetect	ftplugin/eruby/eruby.ftdetect.vim	/^fun! XPT_erubyFiletypeDetect() "{{{$/;"	f
+XPT_htmlFiletypeDetect	ftplugin/html/html.ftdetect.vim	/^fun! XPT_htmlFiletypeDetect() "{{{$/;"	f
+XPT_htmldjangoFiletypeDetect	ftplugin/htmldjango/htmldjango.ftdetect.vim	/^fun! XPT_htmldjangoFiletypeDetect() "{{{$/;"	f
+XPT_phpFiletypeDetect	ftplugin/php/php.ftdetect.vim	/^fun! XPT_phpFiletypeDetect() "{{{$/;"	f
+XPTabbr	plugin/xptemplate.vim	/^fun! XPTabbr( name ) "{{{$/;"	f
+XPTaddBundle	plugin/xptemplate.conf.vim	/^fun! g:XPTaddBundle(ft, bundle) "{{{$/;"	f
+XPTaddPlugin	plugin/xptemplate.vim	/^fun! g:XPTaddPlugin(event, when, func) "{{{$/;"	f
+XPTapplyTemplateSettingDefaultValue	plugin/xptemplate.vim	/^fun! g:XPTapplyTemplateSettingDefaultValue( setting ) "{{{$/;"	f
+XPTassertLine	plugin/xptTestKey.vim	/^fun! XPTassertLine( l, msg ) "{{{$/;"	f
+XPTassertPum	plugin/xptTestKey.vim	/^fun! XPTassertPum( hasPum, msg ) "{{{$/;"	f
+XPTbufData	plugin/xptemplate.vim	/^fun! XPTbufData() "{{{$/;"	f
+XPTbufferInit	plugin/xptemplate.vim	/^fun! s:XPTbufferInit() "{{{$/;"	f
+XPTcancel	plugin/xptemplateTest.vim	/^fun! s:XPTcancel(...) "{{{$/;"	f
+XPTcheck	plugin/xptemplate.vim	/^fun! s:XPTcheck() "{{{$/;"	f
+XPTchoosePum	plugin/xptemplateTest.vim	/^fun! s:XPTchoosePum( ... ) "{{{$/;"	f
+XPTcrash	plugin/xptemplate.vim	/^com! XPTcrash call <SID>Crash()$/;"	c
+XPTdefineSnippet	plugin/xptemplate.vim	/^fun! XPTdefineSnippet( name, setting, snip ) "{{{$/;"	f
+XPTembed	plugin/xptemplate.parser.vim	/^com! -nargs=+ XPTembed      call XPTembed(<f-args>)$/;"	c
+XPTembed	plugin/xptemplate.parser.vim	/^fun! XPTembed(...) "{{{$/;"	f
+XPTemplate	plugin/xptemplate.parser.vim	/^com! -nargs=* XPTemplate$/;"	c
+XPTemplate	plugin/xptemplate.vim	/^fun! XPTemplate(name, str_or_ctx, ...) " {{{$/;"	f
+XPTemplateAlias	plugin/xptemplate.vim	/^fun! XPTemplateAlias( name, toWhich, setting ) "{{{$/;"	f
+XPTemplateDef	plugin/xptemplate.parser.vim	/^com! -nargs=* XPTemplateDef call s:XPTstartSnippetPart(expand("<sfile>")) | finish$/;"	c
+XPTemplateDoWrap	plugin/xptemplate.vim	/^fun! XPTemplateDoWrap() "{{{$/;"	f
+XPTemplateInit	plugin/xptemplate.vim	/^fun! XPTemplateInit() "{{{$/;"	f
+XPTemplateKeyword	plugin/xptemplate.vim	/^fun! XPTemplateKeyword(val) "{{{$/;"	f
+XPTemplateMark	plugin/xptemplate.vim	/^fun! XPTemplateMark(sl, sr) "{{{$/;"	f
+XPTemplateParseSnippet	plugin/xptemplate.parser.vim	/^fun! s:XPTemplateParseSnippet(lines) "{{{$/;"	f
+XPTemplatePreWrap	plugin/xptemplate.vim	/^fun! XPTemplatePreWrap( wrap ) "{{{$/;"	f
+XPTemplatePriority	plugin/xptemplate.vim	/^fun! XPTemplatePriority(...) "{{{$/;"	f
+XPTemplateStart	plugin/xptemplate.vim	/^fun! XPTemplateStart(pos_unused_any_more, ...) " {{{$/;"	f
+XPTemplateTrigger	plugin/xptemplate.vim	/^fun! XPTemplateTrigger( snippetName, ... ) "{{{$/;"	f
+XPTfiletypeInit	plugin/xptemplate.conf.vim	/^fun! XPTfiletypeInit() "{{{$/;"	f
+XPTforceForward	plugin/xptemplate.vim	/^fun! XPTforceForward( action ) "{{{$/;"	f
+XPTftInit	plugin/xptemplate.conf.vim	/^augroup XPTftInit$/;"	a
+XPTfuncs	plugin/xptemplate.vim	/^fun! g:XPTfuncs() "{{{$/;"	f
+XPTgetAllTemplates	plugin/xptemplate.vim	/^fun! XPTgetAllTemplates() "{{{$/;"	f
+XPTgetCurrentOrPreviousSynName	plugin/xptemplate.util.vim	/^fun! s:XPTgetCurrentOrPreviousSynName() "{{{$/;"	f
+XPTgetStaticRange	plugin/xpt.plugin.highlight.vim	/^fun! XPTgetStaticRange(p, q) "{{{$/;"	f
+XPTinclude	plugin/xptemplate.parser.vim	/^com! -nargs=+ XPTinclude    call XPTinclude(<f-args>)$/;"	c
+XPTinclude	plugin/xptemplate.parser.vim	/^fun! XPTinclude(...) "{{{$/;"	f
+XPTinfo	plugin/xptemplate.conf.vim	/^fun! XPTinfo() "{{{$/;"	f
+XPTinfoStr	plugin/xptemplate.conf.vim	/^fun! XPTinfoStr( ... ) "{{{$/;"	f
+XPTinitMapping	plugin/xptemplate.vim	/^fun! s:XPTinitMapping() "{{{$/;"	f
+XPTloadBundle	plugin/xptemplate.conf.vim	/^fun! g:XPTloadBundle(ft, bundle) "{{{$/;"	f
+XPTmapKey	plugin/xptemplate.vim	/^fun! XPTmapKey( left, right ) "{{{$/;"	f
+XPTmappingEval	plugin/xptemplate.vim	/^fun! XPTmappingEval( str ) "{{{$/;"	f
+XPTmark	plugin/xptemplate.vim	/^fun! XPTmark() "{{{$/;"	f
+XPTmarkCompare	plugin/xptemplate.vim	/^fun! XPTmarkCompare( o, markToAdd, existedMark ) "{{{$/;"	f
+XPTnew	plugin/xptemplateTest.vim	/^fun! s:XPTnew(name, preinput) "{{{$/;"	f
+XPTnewSnipScope	plugin/xptemplate.vim	/^fun! XPTnewSnipScope( filename )$/;"	f
+XPTparseSnippets	plugin/xptemplate.vim	/^fun! XPTparseSnippets() "{{{$/;"	f
+XPTreload	plugin/xptemplate.vim	/^com! XPTreload call XPTreload()$/;"	c
+XPTreload	plugin/xptemplate.vim	/^fun! XPTreload() "{{{$/;"	f
+XPTsetVar	plugin/xptemplate.parser.vim	/^fun! XPTsetVar( nameSpaceValue ) "{{{$/;"	f
+XPTsnipScope	plugin/xptemplate.vim	/^fun! XPTsnipScope()$/;"	f
+XPTsnipScopePop	plugin/xptemplate.vim	/^fun! XPTsnipScopePop()$/;"	f
+XPTsnipScopePush	plugin/xptemplate.vim	/^fun! XPTsnipScopePush()$/;"	f
+XPTsnipSet	plugin/xptemplate.parser.vim	/^com! -nargs=* XPTsnipSet    call XPTsnipSet( <q-args> )$/;"	c
+XPTsnipSet	plugin/xptemplate.parser.vim	/^fun! XPTsnipSet( dictNameValue ) "{{{$/;"	f
+XPTsnippetFileInit	plugin/xptemplate.parser.vim	/^fun! XPTsnippetFileInit( filename, ... ) "{{{$/;"	f
+XPTstartSnippetPart	plugin/xptemplate.parser.vim	/^fun! s:XPTstartSnippetPart(fn) "{{{$/;"	f
+XPTtest	plugin/xptemplateTest.vim	/^com -nargs=1 XPTtest call <SID>XPTtest(<f-args>)$/;"	c
+XPTtest	plugin/xptemplateTest.vim	/^fun! s:XPTtest( ftype ) "{{{$/;"	f
+XPTtestAll	plugin/xptemplateTest.vim	/^com -nargs=+ XPTtestAll call <SID>XPTtestAll(<q-args>)$/;"	c
+XPTtestAll	plugin/xptemplateTest.vim	/^fun! s:XPTtestAll( fts ) "{{{$/;"	f
+XPTtestEnd	plugin/xptemplateTest.vim	/^com XPTtestEnd call <SID>TestFinish()$/;"	c
+XPTtestKey	plugin/xptTestKey.vim	/^fun! XPTtestKey() "{{{$/;"	f
+XPTtestKeyEnd	plugin/xptTestKey.vim	/^fun! s:XPTtestKeyEnd() "{{{$/;"	f
+XPTtestKeyGo	plugin/xptTestKey.vim	/^fun! XPTtestKeyGo() "{{{$/;"	f
+XPTtestPseudoDate	plugin/xptemplateTest.vim	/^fun! XPTtestPseudoDate(...) "{{{$/;"	f
+XPTtestSort	plugin/xptemplateTest.vim	/^fun! XPTtestSort(a, b) "{{{$/;"	f
+XPTtgr	plugin/xptemplate.vim	/^fun! XPTtgr( snippetName, ... ) "{{{$/;"	f
+XPTtrigger	plugin/xptemplateTest.vim	/^fun! s:XPTtrigger(name) "{{{$/;"	f
+XPTtype	plugin/xptemplateTest.vim	/^fun! s:XPTtype(...) "{{{$/;"	f
+XPTupdate	plugin/xptemplate.vim	/^fun! s:XPTupdate() "{{{$/;"	f
+XPTupdateTyping	plugin/xptemplate.vim	/^fun! s:XPTupdateTyping() "{{{$/;"	f
+XPTvar	plugin/xptemplate.parser.vim	/^com! -nargs=* XPTvar        call XPTsetVar( <q-args> )$/;"	c
+XPTvisual	plugin/xptemplate.vim	/^fun! s:XPTvisual() "{{{$/;"	f
+XPTwrapNew	plugin/xptemplateTest.vim	/^fun! s:XPTwrapNew(name, preinput) "{{{$/;"	f
+XPclassPrototype	plugin/xptemplate.util.vim	/^fun! g:XPclassPrototype( sid, ...) "{{{$/;"	f
+XPpum#complete	autoload/XPpum.vim	/^fun! XPpum#complete( col, list, onShow ) "{{{$/;"	f
+XPpum#completeFunc	autoload/XPpum.vim	/^fun! XPpum#completeFunc( first, base )$/;"	f
+XPreplace	plugin/xpreplace.vim	/^fun! XPreplace(start, end, replacement, ...) "{{{$/;"	f
+XPreplaceByMarkInternal	plugin/xpreplace.vim	/^fun! XPreplaceByMarkInternal( startMark, endMark, replacement ) "{{{$/;"	f
+XPreplaceInternal	plugin/xpreplace.vim	/^fun! XPreplaceInternal(start, end, replacement, ...) "{{{$/;"	f
+[	plugin/xptemplate.conf.vim	/^    inoremap <silent> [ <C-v><C-v><BS><C-r>=XPTtgr('[',{'noliteral':1,'k':'['})<cr>$/;"	m
+_GetAlighWidth	plugin/classes/MapSaver.vim	/^fun! s:_GetAlighWidth() "{{{$/;"	f
+_GetMapLine	plugin/classes/MapSaver.vim	/^fun! s:_GetMapLine(key, mode, isbuffer) "{{{$/;"	f
+_InitBuffer	plugin/xpopup.vim	/^fun! s:_InitBuffer() "{{{$/;"	f
+_MapPop	plugin/classes/MapSaver.vim	/^fun! s:_MapPop( info ) "{{{$/;"	f
+`:expr:^	ftplugin/javascript/jquery.xpt.vim	/^not`:expr:^$/;"	m
+`:maybeFunction:^	ftplugin/javascript/jquery.xpt.vim	/^map`:maybeFunction:^$/;"	m
+`mod^`	ftplugin/python/python.xpt.vim	/^import `mod^` as `name?^$/;"	m
+addMarkOrder	plugin/xpmark.vim	/^fun! s:addMarkOrder( name, beforeWhich ) dict "{{{$/;"	f
+b:XPTfiletypeDetect	ftplugin/eruby/eruby.ftdetect.vim	/^let b:XPTfiletypeDetect = function( 'XPT_erubyFiletypeDetect' )$/;"	v
+b:XPTfiletypeDetect	ftplugin/html/html.ftdetect.vim	/^let b:XPTfiletypeDetect = function( 'XPT_htmlFiletypeDetect' )$/;"	v
+b:XPTfiletypeDetect	ftplugin/htmldjango/htmldjango.ftdetect.vim	/^let b:XPTfiletypeDetect = function( 'XPT_htmldjangoFiletypeDetect' )$/;"	v
+b:XPTfiletypeDetect	ftplugin/php/php.ftdetect.vim	/^let b:XPTfiletypeDetect = function( 'XPT_phpFiletypeDetect' )$/;"	v
+b:__ERUBY_FTDETECT_VIM__	ftplugin/eruby/eruby.ftdetect.vim	/^let b:__ERUBY_FTDETECT_VIM__ = 1$/;"	v
+b:__HTML_FTDETECT_VIM__	ftplugin/html/html.ftdetect.vim	/^let b:__HTML_FTDETECT_VIM__ = 1$/;"	v
+b:__PHP_FTDETECT_VIM__	ftplugin/php/php.ftdetect.vim	/^let b:__PHP_FTDETECT_VIM__ = 1$/;"	v
+bs	plugin/xptemplate.conf.vim	/^let bs=&bs$/;"	v
+compact	xpt.ex	/^compact() {$/;"	f
+compare	plugin/xpmark.vim	/^fun! s:compare( a, b ) dict "{{{$/;"	f
+create_tgz	xpt.ex	/^create_tgz() {$/;"	f
+defaultCompare	plugin/xpmark.vim	/^fun! s:defaultCompare(d, markA, markB) "{{{$/;"	f
+doPostJob	plugin/xpreplace.vim	/^fun! s:doPostJob( start, end, replacement ) "{{{$/;"	f
+doPreJob	plugin/xpreplace.vim	/^fun! s:doPreJob( start, end, replacement ) "{{{$/;"	f
+dodist	xpt.ex	/^dodist () {$/;"	f
+f.AutoCmpl	ftplugin/_common/common.xpt.vim	/^fun! s:f.AutoCmpl( keepInPost, list, ... )$/;"	f
+f.BracketRightPart	ftplugin/_common/common.bracketcmpl.xpt.vim	/^fun! s:f.BracketRightPart( leftReg )$/;"	f
+f.Build	ftplugin/_common/common.xpt.vim	/^fun! s:f.Build( ... )$/;"	f
+f.BuildIfChanged	ftplugin/_common/common.xpt.vim	/^fun! s:f.BuildIfChanged( ... )$/;"	f
+f.BuildIfNoChange	ftplugin/_common/common.xpt.vim	/^fun! s:f.BuildIfNoChange( ... )$/;"	f
+f.BuildRef	ftplugin/markdown/markdown.xpt.vim	/^fun! s:f.BuildRef()$/;"	f
+f.Choose	ftplugin/_common/common.xpt.vim	/^fun! s:f.Choose( lst, ... ) "{{{$/;"	f
+f.ChooseStr	ftplugin/_common/common.xpt.vim	/^fun! s:f.ChooseStr(...) "{{{$/;"	f
+f.CmplQuoter_pre	ftplugin/_common/common.xpt.vim	/^fun! s:f.CmplQuoter_pre() dict$/;"	f
+f.Cnt	ftplugin/_common/cmn.counter.xpt.vim	/^fun! s:f.Cnt(name) "{{{$/;"	f
+f.CntD	ftplugin/_common/cmn.counter.xpt.vim	/^fun! s:f.CntD() "{{{$/;"	f
+f.CntIncr	ftplugin/_common/cmn.counter.xpt.vim	/^fun! s:f.CntIncr(name, ...)"{{{$/;"	f
+f.CntStart	ftplugin/_common/cmn.counter.xpt.vim	/^fun! s:f.CntStart(name, ...) "{{{$/;"	f
+f.Commentize	ftplugin/_common/common.xpt.vim	/^fun! s:f.Commentize( text )$/;"	f
+f.Complete	ftplugin/_common/common.xpt.vim	/^fun! s:f.Complete( key, ... )$/;"	f
+f.CompleteRightPart	ftplugin/_common/inlineComplete.xpt.vim	/^fun! s:f.CompleteRightPart( leftReg ) dict$/;"	f
+f.Context	ftplugin/_common/common.xpt.vim	/^fun! s:f.Context() "{{{$/;"	f
+f.E	ftplugin/_common/common.xpt.vim	/^fun! s:f.E(s) "{{{$/;"	f
+f.Echo	ftplugin/_common/common.xpt.vim	/^fun! s:f.Echo( ... )$/;"	f
+f.EchoIf	ftplugin/_common/common.xpt.vim	/^fun! s:f.EchoIf( isTrue, ... )$/;"	f
+f.EchoIfEq	ftplugin/_common/common.xpt.vim	/^fun! s:f.EchoIfEq( expected, ... )$/;"	f
+f.EchoIfNoChange	ftplugin/_common/common.xpt.vim	/^fun! s:f.EchoIfNoChange( ... )$/;"	f
+f.Embed	ftplugin/_common/common.xpt.vim	/^fun! s:f.Embed( snippet )$/;"	f
+f.ExpPathPumFrom	ftplugin/_common/common.path.xpt.vim	/^fun! s:f.ExpPathPumFrom( base )$/;"	f
+f.ExpandIfNotEmpty	ftplugin/_common/common.xpt.vim	/^fun! s:f.ExpandIfNotEmpty( sep, item, ... ) "{{{$/;"	f
+f.ExpandInsideEdge	ftplugin/_common/common.xpt.vim	/^fun! s:f.ExpandInsideEdge( newLeftEdge, newRightEdge )$/;"	f
+f.ExpandMarkdownSubSection	ftplugin/markdown/markdown.xpt.vim	/^fun! s:f.ExpandMarkdownSubSection()$/;"	f
+f.ExpandMarkdownTitle	ftplugin/markdown/markdown.xpt.vim	/^fun! s:f.ExpandMarkdownTitle( char )$/;"	f
+f.ExpandRstSection	ftplugin/rst/rst.xpt.vim	/^fun! s:f.ExpandRstSection( char )$/;"	f
+f.ExpandRstTitle	ftplugin/rst/rst.xpt.vim	/^fun! s:f.ExpandRstTitle()$/;"	f
+f.Finish	ftplugin/_common/common.xpt.vim	/^fun! s:f.Finish(...)$/;"	f
+f.FinishOuter	ftplugin/_common/common.xpt.vim	/^fun! s:f.FinishOuter( ... )$/;"	f
+f.GetDefaultImplementation	ftplugin/c/autoimplem.xpt.vim	/^fun! s:f.GetDefaultImplementation( type )$/;"	f
+f.GetDict	ftplugin/_common/common.xpt.vim	/^fun! s:f.GetDict( ... )$/;"	f
+f.GetImplementationFile	ftplugin/c/autoimplem.xpt.vim	/^fun! s:f.GetImplementationFile() "{{{$/;"	f
+f.GetLastStructClassDeclaration	ftplugin/cpp/autoimplem.xpt.vim	/^fun! s:f.GetLastStructClassDeclaration() "{{{$/;"	f
+f.GetVar	ftplugin/_common/common.xpt.vim	/^fun! s:f.GetVar( name )$/;"	f
+f.GetWrappedText	ftplugin/_common/common.xpt.vim	/^fun! s:f.GetWrappedText()$/;"	f
+f.HasStep	ftplugin/_common/common.xpt.vim	/^fun! s:f.HasStep( name )$/;"	f
+f.Item	ftplugin/_common/common.xpt.vim	/^fun! s:f.Item()$/;"	f
+f.ItemCreate	ftplugin/_common/common.xpt.vim	/^fun! s:f.ItemCreate( name, edges, filters )$/;"	f
+f.ItemEdges	ftplugin/_common/common.xpt.vim	/^fun! s:f.ItemEdges() "{{{$/;"	f
+f.ItemFullname	ftplugin/_common/common.xpt.vim	/^fun! s:f.ItemFullname() "{{{$/;"	f
+f.ItemInitValue	ftplugin/_common/common.xpt.vim	/^fun! s:f.ItemInitValue()$/;"	f
+f.ItemInitValueWithEdge	ftplugin/_common/common.xpt.vim	/^fun! s:f.ItemInitValueWithEdge()$/;"	f
+f.ItemName	ftplugin/_common/common.xpt.vim	/^fun! s:f.ItemName() "{{{$/;"	f
+f.ItemPos	ftplugin/_common/common.xpt.vim	/^fun! s:f.ItemPos()$/;"	f
+f.ItemStrippedValue	ftplugin/_common/common.xpt.vim	/^fun! s:f.ItemStrippedValue()$/;"	f
+f.ItemValue	ftplugin/_common/common.xpt.vim	/^fun! s:f.ItemValue() dict "{{{$/;"	f
+f.ItemValueStripped	ftplugin/_common/common.xpt.vim	/^fun! s:f.ItemValueStripped( ... )$/;"	f
+f.LowerCase	ftplugin/_common/common.xpt.vim	/^fun! s:f.LowerCase( v )$/;"	f
+f.ModuleName	ftplugin/factor/factor.xpt.vim	/^fun! s:f.ModuleName()$/;"	f
+f.NIndent	ftplugin/_common/common.xpt.vim	/^fun! s:f.NIndent()$/;"	f
+f.Next	ftplugin/_common/common.xpt.vim	/^fun! s:f.Next( ... )$/;"	f
+f.PathPumFrom	ftplugin/_common/common.path.xpt.vim	/^fun! s:f.PathPumFrom( where )$/;"	f
+f.Phase	ftplugin/_common/common.xpt.vim	/^fun! s:f.Phase() dict$/;"	f
+f.PrevItem	ftplugin/_common/common.xpt.vim	/^fun! s:f.PrevItem( n )$/;"	f
+f.Reference	ftplugin/_common/common.xpt.vim	/^fun! s:f.Reference(name) "{{{$/;"	f
+f.Reminder	ftplugin/markdown/markdown.xpt.vim	/^fun! s:f.Reminder( field )$/;"	f
+f.Remove	ftplugin/_common/common.xpt.vim	/^fun! s:f.Remove()$/;"	f
+f.RemoveIfUnchanged	ftplugin/lua/lua.xpt.vim	/^fun! s:f.RemoveIfUnchanged() "{{{$/;"	f
+f.RemoveIfUnchanged	ftplugin/ruby/ruby.xpt.vim	/^fun! s:f.RemoveIfUnchanged() "{{{$/;"	f
+f.RepeatInsideEdges	ftplugin/ruby/ruby.xpt.vim	/^fun! s:f.RepeatInsideEdges(sep) "{{{$/;"	f
+f.ResetIndent	ftplugin/_common/common.xpt.vim	/^fun! s:f.ResetIndent( nIndent, text )$/;"	f
+f.RubyAssertMethod	ftplugin/ruby/ruby.xpt.vim	/^fun! s:f.RubyAssertMethod() "{{{$/;"	f
+f.RubyAssertPopup	ftplugin/ruby/ruby.xpt.vim	/^fun! s:f.RubyAssertPopup() "{{{$/;"	f
+f.RubyCamelCase	ftplugin/ruby/ruby.xpt.vim	/^fun! s:f.RubyCamelCase(...) "{{{$/;"	f
+f.RubyEachBrace	ftplugin/ruby/ruby.xpt.vim	/^fun! s:f.RubyEachBrace() "{{{$/;"	f
+f.RubyEachPair	ftplugin/ruby/ruby.xpt.vim	/^fun! s:f.RubyEachPair() "{{{$/;"	f
+f.RubyEachPopup	ftplugin/ruby/ruby.xpt.vim	/^fun! s:f.RubyEachPopup() "{{{$/;"	f
+f.RubySnakeCase	ftplugin/ruby/ruby.xpt.vim	/^fun! s:f.RubySnakeCase(...) "{{{$/;"	f
+f.S	ftplugin/_common/common.xpt.vim	/^fun! s:f.S(str, ptn, rep, ...) "{{{$/;"	f
+f.Snippet	ftplugin/_common/common.xpt.vim	/^fun! s:f.Snippet( name )$/;"	f
+f.SubstituteWithValue	ftplugin/_common/common.xpt.vim	/^fun! s:f.SubstituteWithValue(ptn, rep, ...) "{{{$/;"	f
+f.Trigger	ftplugin/_common/common.xpt.vim	/^fun! s:f.Trigger( name ) "{{{$/;"	f
+f.UnescapeMarks	ftplugin/_common/common.xpt.vim	/^fun! s:f.UnescapeMarks(string) dict$/;"	f
+f.UpperCase	ftplugin/_common/common.xpt.vim	/^fun! s:f.UpperCase( v )$/;"	f
+f.VMS	ftplugin/_common/common.xpt.vim	/^fun! s:f.VMS( reg )$/;"	f
+f.Vmatch	ftplugin/_common/common.xpt.vim	/^fun! s:f.Vmatch( ... )$/;"	f
+f.Void	ftplugin/_common/common.xpt.vim	/^fun! s:f.Void(...) "{{{$/;"	f
+f.VoidLine	ftplugin/_common/common.xpt.vim	/^fun! s:f.VoidLine()$/;"	f
+f.WrapAlignAfter	ftplugin/_common/common.xpt.vim	/^fun! s:f.WrapAlignAfter( min )$/;"	f
+f.WrapAlignBefore	ftplugin/_common/common.xpt.vim	/^fun! s:f.WrapAlignBefore( min )$/;"	f
+f.WriteCopyCtorToCpp	ftplugin/cpp/autoimplem.xpt.vim	/^fun! s:f.WriteCopyCtorToCpp() " {{{$/;"	f
+f.WriteCtorToCpp	ftplugin/cpp/autoimplem.xpt.vim	/^fun! s:f.WriteCtorToCpp() " {{{$/;"	f
+f.WriteDtorToCpp	ftplugin/cpp/autoimplem.xpt.vim	/^fun! s:f.WriteDtorToCpp() " {{{$/;"	f
+f.WriteFunToCpp	ftplugin/c/autoimplem.xpt.vim	/^fun! s:f.WriteFunToCpp() " {{{$/;"	f
+f.WriteMethodToCpp	ftplugin/cpp/autoimplem.xpt.vim	/^fun! s:f.WriteMethodToCpp() "{{{$/;"	f
+f.WriteOpOverloadToCpp	ftplugin/cpp/autoimplem.xpt.vim	/^fun! s:f.WriteOpOverloadToCpp()$/;"	f
+f.WriteStaticToCpp	ftplugin/cpp/autoimplem.xpt.vim	/^fun! s:f.WriteStaticToCpp()$/;"	f
+f._xCommentLeftWithoutMid	ftplugin/_comment/doubleSign.xpt.vim	/^fun! s:f._xCommentLeftWithoutMid()$/;"	f
+f._xCommentMidIndent	ftplugin/_comment/doubleSign.xpt.vim	/^fun! s:f._xCommentMidIndent()$/;"	f
+f._xSnipName	ftplugin/_common/common.xpt.vim	/^fun! s:f._xSnipName()$/;"	f
+f.bkt_cmpl	ftplugin/_common/common.bracketcmpl.xpt.vim	/^fun! s:f.bkt_cmpl()$/;"	f
+f.bkt_finish	ftplugin/_common/common.bracketcmpl.xpt.vim	/^fun! s:f.bkt_finish( keyPressed )$/;"	f
+f.bkt_init	ftplugin/_common/common.bracketcmpl.xpt.vim	/^fun! s:f.bkt_init( followingChar )$/;"	f
+f.bkt_ontype	ftplugin/_common/common.bracketcmpl.xpt.vim	/^fun! s:f.bkt_ontype()$/;"	f
+f.build_choice	experiment/ftplugin/xx/xx.xpt.vim	/^fun! s:f.build_choice( choices )$/;"	f
+f.c_fun_body_indent	ftplugin/_func/c.like.xpt.vim	/^fun! s:f.c_fun_body_indent()$/;"	f
+f.c_fun_type_indent	ftplugin/_func/c.like.xpt.vim	/^fun! s:f.c_fun_type_indent()$/;"	f
+f.c_printf_elts	ftplugin/_printf/c.like.xpt.vim	/^fun! s:f.c_printf_elts( v, sep )$/;"	f
+f.cleanTempl	ftplugin/cpp/cpp.xpt.vim	/^function! s:f.cleanTempl( ctx, ... )$/;"	f
+f.createTable	ftplugin/html/html.xpt.vim	/^fun! s:f.createTable(...) "{{{$/;"	f
+f.css_braced_post	ftplugin/css/css.xpt.vim	/^fun! s:f.css_braced_post()$/;"	f
+f.date	ftplugin/_common/common.xpt.vim	/^fun! s:f.date(...) "{{{$/;"	f
+f.datetime	ftplugin/_common/common.xpt.vim	/^fun! s:f.datetime(...) "{{{$/;"	f
+f.fff	ftplugin/xptest/xptest.xpt.vim	/^fun! s:f.fff()$/;"	f
+f.file	ftplugin/_common/common.xpt.vim	/^fun! s:f.file(...) "{{{$/;"	f
+f.fileExt	ftplugin/_common/common.xpt.vim	/^fun! s:f.fileExt(...) "{{{$/;"	f
+f.fileRoot	ftplugin/_common/common.xpt.vim	/^fun! s:f.fileRoot(...) "{{{$/;"	f
+f.headerSymbol	ftplugin/_common/common.xpt.vim	/^fun! s:f.headerSymbol(...) "{{{$/;"	f
+f.html_close_tag	ftplugin/html/html.xpt.vim	/^fun! s:f.html_close_tag()$/;"	f
+f.html_cont_helper	ftplugin/html/html.xpt.vim	/^fun! s:f.html_cont_helper()$/;"	f
+f.html_cont_ontype	ftplugin/html/html.xpt.vim	/^fun! s:f.html_cont_ontype()$/;"	f
+f.html_doctype_list	ftplugin/html/html.xpt.vim	/^fun! s:f.html_doctype_list()$/;"	f
+f.html_doctype_post	ftplugin/html/html.xpt.vim	/^fun! s:f.html_doctype_post(v)$/;"	f
+f.html_enc	ftplugin/html/html.xpt.vim	/^fun! s:f.html_enc()$/;"	f
+f.html_tag_cmpl	ftplugin/html/html.xpt.vim	/^fun! s:f.html_tag_cmpl()$/;"	f
+f.include_choice	experiment/ftplugin/xx/xx.xpt.vim	/^fun! s:f.include_choice( choices )$/;"	f
+f.jquery_ajaxOptions	ftplugin/javascript/jquery.xpt.vim	/^fun! s:f.jquery_ajaxOptions()$/;"	f
+f.path	ftplugin/_common/common.xpt.vim	/^fun! s:f.path(...) "{{{$/;"	f
+f.python_find_class	ftplugin/python/python.xpt.vim	/^fun! s:f.python_find_class( default )$/;"	f
+f.python_find_func	ftplugin/python/python.xpt.vim	/^fun! s:f.python_find_func( default )$/;"	f
+f.python_genexpr_cmpl	ftplugin/python/python.xpt.vim	/^fun! s:f.python_genexpr_cmpl( itemName )$/;"	f
+f.python_seq_cmpl	ftplugin/python/python.xpt.vim	/^fun! s:f.python_seq_cmpl()$/;"	f
+f.python_sp_arg	ftplugin/python/python.xpt.vim	/^fun! s:f.python_sp_arg()$/;"	f
+f.python_wrap_args_if_func	ftplugin/python/python.xpt.vim	/^fun! s:f.python_wrap_args_if_func( args )$/;"	f
+f.quote_cmpl	ftplugin/_common/common.bracketcmpl.xpt.vim	/^fun! s:f.quote_cmpl()$/;"	f
+f.quote_ontype	ftplugin/_common/common.bracketcmpl.xpt.vim	/^fun! s:f.quote_ontype()$/;"	f
+f.sh_complete_brace	ftplugin/sh/sh.xpt.vim	/^fun! s:f.sh_complete_brace()$/;"	f
+f.time	ftplugin/_common/common.xpt.vim	/^fun! s:f.time(...) "{{{$/;"	f
+f.vim_call	ftplugin/vim/vim.xpt.vim	/^fun! s:f.vim_call()$/;"	f
+f.xml_att_val	ftplugin/xml/xml.xpt.vim	/^fun! s:f.xml_att_val()$/;"	f
+f.xml_attr_ontype	ftplugin/xml/xml.xpt.vim	/^fun! s:f.xml_attr_ontype()$/;"	f
+f.xml_close_tag	ftplugin/xml/xml.xpt.vim	/^fun! s:f.xml_close_tag()$/;"	f
+f.xml_cont_helper	ftplugin/xml/xml.xpt.vim	/^fun! s:f.xml_cont_helper()$/;"	f
+f.xml_cont_ontype	ftplugin/xml/xml.xpt.vim	/^fun! s:f.xml_cont_ontype()$/;"	f
+f.xml_create_attr_ph	ftplugin/xml/xml.xpt.vim	/^fun! s:f.xml_create_attr_ph()$/;"	f
+f.xml_tag_ontype	ftplugin/xml/xml.xpt.vim	/^fun! s:f.xml_tag_ontype()$/;"	f
+f.xptFinishItemWith	ftplugin/_common/common.xpt.vim	/^fun! s:f.xptFinishItemWith(postType) dict$/;"	f
+f.xptFinishTemplateWith	ftplugin/_common/common.xpt.vim	/^fun! s:f.xptFinishTemplateWith(postType) dict$/;"	f
+f.xpt_ftp_pum	ftplugin/xpt/xpt.xpt.vim	/^fun! s:f.xpt_ftp_pum()$/;"	f
+f.xpt_vim_hint_escape	ftplugin/xpt/xpt.xpt.vim	/^fun! s:f.xpt_vim_hint_escape()$/;"	f
+f.xpt_vim_name	ftplugin/xpt/xpt.xpt.vim	/^fun! s:f.xpt_vim_name(path)$/;"	f
+f.xpt_vim_path	ftplugin/xpt/xpt.xpt.vim	/^fun! s:f.xpt_vim_path()$/;"	f
+filterCompleteList	plugin/xpopup.vim	/^fun! s:filterCompleteList( sess ) "{{{$/;"	f
+findLikelyRange	plugin/xpmark.vim	/^fun! s:findLikelyRange(changeStart, bChangeEnd) dict "{{{$/;"	f
+findLikelyRange2	plugin/xpmark.vim	/^fun! s:findLikelyRange2(changeStart, bChangeEnd) dict "{{{$/;"	f
+fn	plugin/xptemplate.importer.vim	/^let fn = argv(0)$/;"	v
+funName	ftplugin/ocaml/ocaml.xpt.vim	/^let `funName^ : `ty^ =$/;"	v
+g	ftplugin/vim/vim.xpt.vim	/^    let `g^:`varname^`$SPop^=`$SPop^`val^$/;"	v
+g	ftplugin/vim/vim.xpt.vim	/^let ``g^:``i^`$SPop^=`$SPop^``ver^$/;"	v
+g	ftplugin/vim/vim.xpt.vim	/^let `g^:`i^`$SPop^=`$SPop^1$/;"	v
+g:EmptyFilter	plugin/classes/FilterValue.vim	/^let g:EmptyFilter = {}$/;"	v
+g:FiletypeScope	plugin/classes/FiletypeScope.vim	/^let g:FiletypeScope = XPT#class( s:sid, s:proto )$/;"	v
+g:FilterValue	plugin/classes/FilterValue.vim	/^let g:FilterValue = XPT#class( s:sid, s:proto )$/;"	v
+g:MapSaver	plugin/classes/MapSaver.vim	/^let g:MapSaver = XPT#class( s:sid, {} )$/;"	v
+g:RenderContext	plugin/classes/RenderContext.vim	/^let g:RenderContext = XPT#class( s:sid, s:proto )$/;"	v
+g:SettingSwitch	plugin/classes/SettingSwitch.vim	/^let g:SettingSwitch = XPT#class( s:sid, {} )$/;"	v
+g:XPM_RET	plugin/xpmark.vim	/^let g:XPM_RET = {$/;"	v
+g:XPMpreferLeft	plugin/xpmark.vim	/^let g:XPMpreferLeft = 'l'$/;"	v
+g:XPMpreferRight	plugin/xpmark.vim	/^let g:XPMpreferRight = 'r'$/;"	v
+g:XPT_RC	plugin/xptemplate.vim	/^let g:XPT_RC = {$/;"	v
+g:XPTemplateSettingPrototype	plugin/xptemplate.vim	/^let g:XPTemplateSettingPrototype  = {$/;"	v
+g:XPTmappings	plugin/xptemplate.conf.vim	/^    let g:XPTmappings.trigger = "<C-g>u" . g:XPTmappings.trigger$/;"	v
+g:XPTmappings	plugin/xptemplate.conf.vim	/^let g:XPTmappings = {$/;"	v
+g:XPTpvs	plugin/xptemplate.conf.vim	/^  let g:XPTpvs[s:key] = substitute(s:val, s:unescapeHead.'&', '\\1\\&', 'g')$/;"	v
+g:XPTpvs	plugin/xptemplate.conf.vim	/^let g:XPTpvs = {}$/;"	v
+g:__DEBUG_VIM__	plugin/debug.vim	/^let g:__DEBUG_VIM__ = XPT#ver$/;"	v
+g:__FILETYPESCOPE_VIM__	plugin/classes/FiletypeScope.vim	/^let g:__FILETYPESCOPE_VIM__ = XPT#ver$/;"	v
+g:__FILTERVALUE_VIM__	plugin/classes/FilterValue.vim	/^let g:__FILTERVALUE_VIM__ = XPT#ver$/;"	v
+g:__HTMLDJANGO_FTDETECT_VIM__	ftplugin/htmldjango/htmldjango.ftdetect.vim	/^let g:__HTMLDJANGO_FTDETECT_VIM__ = 1$/;"	v
+g:__MAPSAVER_VIM__	plugin/classes/MapSaver.vim	/^let g:__MAPSAVER_VIM__ = XPT#ver$/;"	v
+g:__RENDERCONTEXT_VIM__	plugin/classes/RenderContext.vim	/^let g:__RENDERCONTEXT_VIM__ = XPT#ver$/;"	v
+g:__SETTINGSWITCH_VIM__	plugin/classes/SettingSwitch.vim	/^let g:__SETTINGSWITCH_VIM__ = XPT#ver$/;"	v
+g:__XPMARK_VIM__	plugin/xpmark.vim	/^let g:__XPMARK_VIM__ = XPT#ver$/;"	v
+g:__XPOPUP_VIM__	plugin/xpopup.vim	/^let g:__XPOPUP_VIM__ = XPT#ver$/;"	v
+g:__XPPUM_VIM__	autoload/XPpum.vim	/^let g:__XPPUM_VIM__ = 1$/;"	v
+g:__XPREPLACE_VIM__	plugin/xpreplace.vim	/^let g:__XPREPLACE_VIM__ = XPT#ver$/;"	v
+g:__XPTEMPLATETEST_VIM__	plugin/xptemplateTest.vim	/^let g:__XPTEMPLATETEST_VIM__ = XPT#ver$/;"	v
+g:__XPTEMPLATE_CONF_VIM__	plugin/xptemplate.conf.vim	/^let g:__XPTEMPLATE_CONF_VIM__ = XPT#ver$/;"	v
+g:__XPTEMPLATE_IMPORTER_VIM__	plugin/xptemplate.importer.vim	/^let g:__XPTEMPLATE_IMPORTER_VIM__ = XPT#ver$/;"	v
+g:__XPTEMPLATE_PARSER_VIM__	plugin/xptemplate.parser.vim	/^let g:__XPTEMPLATE_PARSER_VIM__ = XPT#ver$/;"	v
+g:__XPTEMPLATE_UTIL_VIM__	plugin/xptemplate.util.vim	/^let g:__XPTEMPLATE_UTIL_VIM__ = XPT#ver$/;"	v
+g:__XPTEMPLATE_VIM__	plugin/xptemplate.vim	/^let g:__XPTEMPLATE_VIM__ = XPT#ver$/;"	v
+g:__XPTTESTKEY_VIM__	plugin/xptTestKey.vim	/^let g:__XPTTESTKEY_VIM__ = 2$/;"	v
+g:__XPT_PLUGIN_HIGHLIGHT_VIM__	plugin/xpt.plugin.highlight.vim	/^let g:__XPT_PLUGIN_HIGHLIGHT_VIM__ = XPT#ver$/;"	v
+g:__XPT_VIM__	autoload/XPT.vim	/^let g:__XPT_VIM__ = 1$/;"	v
+g:cppautoimplemneedc	ftplugin/cpp/autoimplem.xpt.vim	/^let g:cppautoimplemneedc = 1$/;"	v
+g:objcautoimlemneedc	ftplugin/objc/autoimplem.xpt.vim	/^let g:objcautoimlemneedc = 1$/;"	v
+g:xpm_changenr_level	plugin/xpmark.vim	/^let g:xpm_changenr_level = 1000$/;"	v
+g:xpm_mark	plugin/xpmark.vim	/^let g:xpm_mark = 'p'$/;"	v
+g:xpm_mark_nextline	plugin/xpmark.vim	/^let g:xpm_mark_nextline = 'l'$/;"	v
+g:xptBundle	plugin/xptemplate.conf.vim	/^        let g:xptBundle[ ft ] = {}$/;"	v
+g:xptBundle	plugin/xptemplate.conf.vim	/^    let g:xptBundle[ ft ][ bundle ] = 1$/;"	v
+g:xptBundle	plugin/xptemplate.conf.vim	/^let g:xptBundle = {}$/;"	v
+g:xptRenderPhase	plugin/classes/RenderContext.vim	/^let g:xptRenderPhase = {$/;"	v
+g:xptemplate_brace_complete	plugin/xptemplate.conf.vim	/^    let g:xptemplate_brace_complete = '([{"'''$/;"	v
+g:xptemplate_fallback	plugin/xptemplate.conf.vim	/^    let g:xptemplate_fallback = '<NOP>'$/;"	v
+g:xptemplate_fallback	plugin/xptemplate.conf.vim	/^    let g:xptemplate_fallback = 'nore:' . g:xptemplate_fallback$/;"	v
+g:xptemplate_fallback	plugin/xptemplate.conf.vim	/^    let g:xptemplate_fallback = g:xptemplate_fallback[ 5: ]$/;"	v
+g:xptemplate_minimal_prefix	plugin/xptemplate.conf.vim	/^            let g:xptemplate_minimal_prefix = outer + 0$/;"	v
+g:xptemplate_minimal_prefix	plugin/xptemplate.conf.vim	/^            let g:xptemplate_minimal_prefix = outer$/;"	v
+g:xptemplate_minimal_prefix_nested	plugin/xptemplate.conf.vim	/^            let g:xptemplate_minimal_prefix_nested = inner + 0$/;"	v
+g:xptemplate_minimal_prefix_nested	plugin/xptemplate.conf.vim	/^            let g:xptemplate_minimal_prefix_nested = inner$/;"	v
+g:xptmode	plugin/xptemplateTest.vim	/^    let g:xptmode = ''$/;"	v
+g:xptutil	plugin/xptemplate.util.vim	/^let g:xptutil = XPT#class( s:sid, {} )$/;"	v
+getXSETkeyAndValue	plugin/xptemplate.parser.vim	/^fun! s:getXSETkeyAndValue(lines, start) "{{{$/;"	f
+handleUndoRedo	plugin/xpmark.vim	/^fun! s:handleUndoRedo() dict "{{{$/;"	f
+initBufData	plugin/xpmark.vim	/^fun! s:initBufData() "{{{$/;"	f
+initCurrentStat	plugin/xpmark.vim	/^fun! s:initCurrentStat() dict "{{{$/;"	f
+insertModeUpdate	plugin/xpmark.vim	/^fun! s:insertModeUpdate() dict "{{{$/;"	f
+isUpdateNeeded	plugin/xpmark.vim	/^fun! s:isUpdateNeeded() dict "{{{$/;"	f
+lines	plugin/xptemplate.importer.vim	/^let lines = readfile( fn )$/;"	v
+normalModeUpdate	plugin/xpmark.vim	/^fun! s:normalModeUpdate() dict "{{{$/;"	f
+p	plugin/classes/RenderContext.vim	/^let p = g:xptRenderPhase$/;"	v
+popup	plugin/xpopup.vim	/^fun! s:popup( start_col, opt ) dict "{{{$/;"	f
+pumCB.onEmpty	plugin/xptemplate.vim	/^fun! s:pumCB.onEmpty(sess) "{{{$/;"	f
+pumCB.onOneMatch	plugin/xptemplate.vim	/^fun! s:pumCB.onOneMatch(sess) "{{{$/;"	f
+removeMark	plugin/xpmark.vim	/^fun! s:removeMark(name) dict "{{{$/;"	f
+s:CHECK_PUM	plugin/xpopup.vim	/^let s:CHECK_PUM = 1$/;"	v
+s:FIRST_PHASE	plugin/xptemplateTest.vim	/^let s:FIRST_PHASE = s:phases[ 0 ]$/;"	v
+s:FuncClear	plugin/xpt.plugin.highlight.vim	/^let s:FuncClear  = function( '<SNR>' . s:sid . "ClearHL" )$/;"	v
+s:FuncUpdate	plugin/xpt.plugin.highlight.vim	/^let s:FuncUpdate = function( '<SNR>' . s:sid . "UpdateHL" )$/;"	v
+s:ItemPumCB	plugin/xptemplate.vim	/^let s:ItemPumCB = {}$/;"	v
+s:LAST_PHASE	plugin/xptemplateTest.vim	/^let s:LAST_PHASE = s:phases[ -1 ]$/;"	v
+s:_xpreplace	plugin/xpreplace.vim	/^let s:_xpreplace = { 'post' : {}, 'pre' : {} }$/;"	v
+s:actions	plugin/xptTestKey.vim	/^let s:actions = []$/;"	v
+s:alignWidth	plugin/classes/MapSaver.vim	/^let s:alignWidth = s:_GetAlighWidth()$/;"	v
+s:anonymouseIndex	plugin/xptemplate.vim	/^let s:anonymouseIndex = 0$/;"	v
+s:assert_map	ftplugin/ruby/ruby.xpt.vim	/^let s:assert_map = {$/;"	v
+s:braceMap	ftplugin/sh/sh.xpt.vim	/^let s:braceMap = {$/;"	v
+s:buildingSeqNr	plugin/xptemplate.vim	/^let s:buildingSeqNr = 0$/;"	v
+s:bundle	plugin/xptemplate.conf.vim	/^    let s:bundle = g:xptemplate_bundle$/;"	v
+s:bundle	plugin/xptemplate.conf.vim	/^    let s:bundle = split( g:xptemplate_bundle, ',' )$/;"	v
+s:conf	plugin/xptTestKey.vim	/^let s:conf =      g:xptemplate_key$/;"	v
+s:conf	plugin/xptTestKey.vim	/^let s:conf = tolower( s:conf )$/;"	v
+s:crIndent	ftplugin/_common/common.bracketcmpl.xpt.vim	/^let s:crIndent = 0$/;"	v
+s:defaultImpl	ftplugin/c/autoimplem.xpt.vim	/^let s:defaultImpl = { 'void'  : ''$/;"	v
+s:doctypes	ftplugin/html/html.xpt.vim	/^let s:doctypes = {$/;"	v
+s:each_list	ftplugin/ruby/ruby.xpt.vim	/^let s:each_list = [ 'byte', 'char', 'cons', 'index', 'key',$/;"	v
+s:emptyHistoryElt	plugin/xpmark.vim	/^let s:emptyHistoryElt = {'list':[], 'dict' :{}, 'likely' : { 'start' : '', 'end' : '' }}$/;"	v
+s:ep	plugin/xptemplate.conf.vim	/^let s:ep           = '\\%(' . '\\%(\\[^\\\\]\\|\\^\\)' . '\\%(\\\\\\\\\\)\\*' . '\\)' . '\\@<='$/;"	v
+s:errorTolerance	plugin/xpopup.vim	/^let s:errorTolerance = 3$/;"	v
+s:escapeHead	plugin/xptemplate.conf.vim	/^let s:escapeHead   = '\\v(\\\\*)\\V'$/;"	v
+s:expandablePattern	plugin/xptemplate.vim	/^let s:expandablePattern     = '\\V\\S\\+...\\$'$/;"	v
+s:f	experiment/ftplugin/xx/xx.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_comment/doubleSign.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_common/cmn.counter.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_common/common.bracketcmpl.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_common/common.path.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f.C = s:f.Context$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f.Edges = s:f.ItemEdges$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f.IV = s:f.ItemInitValue$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f.IVE = s:f.ItemInitValueWithEdge$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f.N = s:f.ItemName$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f.NN = s:f.ItemFullname$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f.R = s:f.Reference$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f.SV = s:f.SubstituteWithValue$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f.UE = s:f.UnescapeMarks$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f.V = s:f.ItemValue$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f.V0 = s:f.ItemStrippedValue$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f.VOID = s:f.Void$/;"	v
+s:f	ftplugin/_common/common.xpt.vim	/^let s:f.VS = s:f.ItemValueStripped$/;"	v
+s:f	ftplugin/_common/inlineComplete.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_condition/ecma.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_condition/lisp.like.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_func/c.like.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_loops/for.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_loops/java.for.like.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_preprocessor/c.like.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_printf/c.like.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/_structures/c.like.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/ada/ada.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/c/autoimplem.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/c/autoimplem.xpt.vim	/^let s:f.todoText = "\\t\/* TODO : implement here *\/"$/;"	v
+s:f	ftplugin/c/c.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/cabal/cabal.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/cg/cg.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/cpp/autoimplem.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/cpp/cpp.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/cs/cs.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/css/css.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/dot/dot.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/erlang/erlang.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/factor/factor.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/gitconfig/gitconfig.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/gnuplot/gnuplot.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/haskell/haskell.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/help/help.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/html/html.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/java/java.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/javascript/javascript.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/javascript/jquery.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/json/json.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/lex/lex.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/lua/lua.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/make/make.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/markdown/markdown.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/objc/objc.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/ocaml.revised/ocaml.revised.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/ocaml/ocaml.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/perl/perl.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/php/php.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/python/python.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/r/r.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/rst/rst.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/ruby/ruby.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/scheme/scheme.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/sh/sh.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/sql/sql.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/svg/svg.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/tcl/tcl.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/tex/tex.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/unknown/unknown.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/vim/vim.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/xml/xml.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/xpt/xpt.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/xptest/xptest.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/xslt/xslt.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:f	ftplugin/yacc/yacc.xpt.vim	/^let s:f = g:XPTfuncs()$/;"	v
+s:filename	plugin/xptemplate.conf.vim	/^let s:filename = 'xptemplate.conf.vim'$/;"	v
+s:fn	plugin/xptemplateTest.vim	/^let s:fn = 'test.page' . g:xptmode$/;"	v
+s:globalLogLevel	plugin/debug.vim	/^let s:globalLogLevel = 'warn'$/;"	v
+s:go	plugin/xptTestKey.vim	/^let s:go = "\\<C-r>=XPTtestKeyGo()\\<cr>"$/;"	v
+s:insertPattern	plugin/xpmark.vim	/^let s:insertPattern = '[i]'$/;"	v
+s:key	plugin/xptemplate.conf.vim	/^    let s:key = '$'.s:key$/;"	v
+s:key	plugin/xptemplate.conf.vim	/^  let s:key = matchstr(s:v, '\\V\\^\\[^=]\\*\\ze=')$/;"	v
+s:lastSt	plugin/xptemplateTest.vim	/^let s:lastSt = ''$/;"	v
+s:log	plugin/classes/MapSaver.vim	/^let s:log = CreateLogger( 'debug' )$/;"	v
+s:log	plugin/classes/MapSaver.vim	/^let s:log = CreateLogger( 'warn' )$/;"	v
+s:log	plugin/classes/SettingSwitch.vim	/^let s:log = CreateLogger( 'debug' )$/;"	v
+s:log	plugin/classes/SettingSwitch.vim	/^let s:log = CreateLogger( 'warn' )$/;"	v
+s:log	plugin/xpmark.vim	/^let s:log = CreateLogger( 'warn' )$/;"	v
+s:log	plugin/xpopup.vim	/^let s:log = CreateLogger( 'debug' )$/;"	v
+s:log	plugin/xpopup.vim	/^let s:log = CreateLogger( 'warn' )$/;"	v
+s:log	plugin/xpreplace.vim	/^let s:log = CreateLogger( 'debug' )$/;"	v
+s:log	plugin/xpreplace.vim	/^let s:log = CreateLogger( 'warn' )$/;"	v
+s:log	plugin/xptemplate.parser.vim	/^let s:log = CreateLogger( 'warn' )$/;"	v
+s:log	plugin/xptemplate.util.vim	/^let s:log = CreateLogger( 'warn' )$/;"	v
+s:log	plugin/xptemplate.vim	/^let s:log = CreateLogger( 'debug' )$/;"	v
+s:log	plugin/xptemplate.vim	/^let s:log = CreateLogger( 'warn' )$/;"	v
+s:log	plugin/xptemplateTest.vim	/^let s:log = CreateLogger( 'debug' )$/;"	v
+s:log	plugin/xptemplateTest.vim	/^let s:log = CreateLogger( 'warn' )$/;"	v
+s:logLevels	plugin/debug.vim	/^let s:logLevels = {$/;"	v
+s:logLocation	plugin/debug.vim	/^    let s:logLocation = $HOME $/;"	v
+s:logLocation	plugin/debug.vim	/^    let s:logLocation = finddir( $HOME . '\/tmp' )$/;"	v
+s:logLocation	plugin/debug.vim	/^let s:logLocation .= '\/vim.log'$/;"	v
+s:loggerPrototype	plugin/debug.vim	/^let s:loggerPrototype = {}$/;"	v
+s:loggerPrototype	plugin/debug.vim	/^let s:loggerPrototype.Debug       = function( "<SNR>" . s:sid . "Debug"      )$/;"	v
+s:loggerPrototype	plugin/debug.vim	/^let s:loggerPrototype.Error       = function( "<SNR>" . s:sid . "Error"      )$/;"	v
+s:loggerPrototype	plugin/debug.vim	/^let s:loggerPrototype.Fatal       = function( "<SNR>" . s:sid . "Fatal"      )$/;"	v
+s:loggerPrototype	plugin/debug.vim	/^let s:loggerPrototype.Info        = function( "<SNR>" . s:sid . "Info"       )$/;"	v
+s:loggerPrototype	plugin/debug.vim	/^let s:loggerPrototype.Log         = function( "<SNR>" . s:sid . "Log"        )$/;"	v
+s:loggerPrototype	plugin/debug.vim	/^let s:loggerPrototype.LogNothing  = function( "<SNR>" . s:sid . "LogNothing" )$/;"	v
+s:loggerPrototype	plugin/debug.vim	/^let s:loggerPrototype.Warn        = function( "<SNR>" . s:sid . "Warn"       )$/;"	v
+s:m	syntax/xpt.vim	/^let s:m = s:GetMark()$/;"	v
+s:matchingCmd	plugin/xpt.plugin.highlight.vim	/^    let s:matchingCmd = {$/;"	v
+s:nIndent	ftplugin/html/html.xpt.vim	/^let s:nIndent = 0$/;"	v
+s:nIndent	ftplugin/xml/xml.xpt.vim	/^let s:nIndent = 0$/;"	v
+s:nonEscaped	plugin/xptemplate.parser.vim	/^let s:nonEscaped = '\\%(' . '\\%(\\[^\\\\]\\|\\^\\)' . '\\%(\\\\\\\\\\)\\*' . '\\)' . '\\@<='$/;"	v
+s:nonEscaped	plugin/xptemplate.vim	/^let s:nonEscaped =$/;"	v
+s:nullDict	plugin/xptemplate.vim	/^let s:nullDict = {}$/;"	v
+s:nullList	plugin/xptemplate.vim	/^let s:nullList = []$/;"	v
+s:oldcpo	autoload/XPT.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	autoload/XPpum.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/classes/FiletypeScope.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/classes/FilterValue.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/classes/MapSaver.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/classes/RenderContext.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/classes/SettingSwitch.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/debug.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/xpmark.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/xpopup.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/xpreplace.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/xptemplate.conf.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/xptemplate.parser.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/xptemplate.util.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/xptemplate.vim	/^let s:oldcpo = &cpo$/;"	v
+s:oldcpo	plugin/xptemplateTest.vim	/^let s:oldcpo = &cpo$/;"	v
+s:opt	plugin/xpopup.vim	/^let s:opt = {$/;"	v
+s:options	ftplugin/javascript/jquery.xpt.vim	/^let s:options = {$/;"	v
+s:pairs	ftplugin/_common/common.bracketcmpl.xpt.vim	/^let s:pairs = { 'left' : "'" . '"([{<|*`+ ',$/;"	v
+s:path	plugin/xptemplate.conf.vim	/^let s:path = expand( "<sfile>" )$/;"	v
+s:path	plugin/xptemplate.conf.vim	/^let s:path = matchstr( s:path, '\\V\\.\\*\\ze\/plugin\/' . s:filename )$/;"	v
+s:path	plugin/xptemplate.conf.vim	/^let s:path = substitute( s:path, '\\', '\/', 'g' )$/;"	v
+s:pattern	ftplugin/eruby/eruby.ftdetect.vim	/^let s:pattern = {$/;"	v
+s:pattern	ftplugin/html/html.ftdetect.vim	/^let s:pattern = {$/;"	v
+s:pattern	ftplugin/htmldjango/htmldjango.ftdetect.vim	/^let s:pattern = {$/;"	v
+s:pattern	ftplugin/php/php.ftdetect.vim	/^    let s:pattern.php.start = '\\V\\c<?php\\>'$/;"	v
+s:pattern	ftplugin/php/php.ftdetect.vim	/^let s:pattern = {$/;"	v
+s:phaseGraph	plugin/classes/RenderContext.vim	/^let s:phaseGraph = {$/;"	v
+s:phases	plugin/xptemplateTest.vim	/^let s:phases = [ 1, 2, 3, 4 ]$/;"	v
+s:plugins	plugin/xptemplate.vim	/^let s:plugins = {}$/;"	v
+s:preinputs	plugin/xptemplateTest.vim	/^let s:preinputs = {$/;"	v
+s:priPtn	plugin/xptemplate.vim	/^let s:priPtn = 'all\\|spec\\|like\\|lang\\|sub\\|personal\\|\\d\\+'$/;"	v
+s:printfElts	ftplugin/_printf/c.like.xpt.vim	/^let s:printfElts = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'$/;"	v
+s:printfItemPattern	ftplugin/_printf/c.like.xpt.vim	/^let s:printfItemPattern = '\\V\\C' . '%' . '\\[+\\- 0#]\\*' . '\\%(*\\|\\d\\+\\)\\?' . '\\(.*\\|.\\d\\+\\)\\?' . '\\[hlL]\\?' . '\\(\\[cdieEfgGosuxXpn]\\)'$/;"	v
+s:printfSpecifierMap	ftplugin/_printf/c.like.xpt.vim	/^let s:printfSpecifierMap = {$/;"	v
+s:priorities	plugin/xptemplate.vim	/^let s:priorities = {'all' : 64, 'spec' : 48, 'like' : 32, 'lang' : 16, 'sub' : 8, 'personal' : 0}$/;"	v
+s:proto	plugin/classes/FiletypeScope.vim	/^let s:proto = {$/;"	v
+s:proto	plugin/classes/FilterValue.vim	/^let s:proto = {}$/;"	v
+s:proto	plugin/classes/RenderContext.vim	/^let s:proto = {}$/;"	v
+s:prototype	plugin/xpmark.vim	/^let s:prototype =  s:ClassPrototype($/;"	v
+s:pumCB	plugin/xptemplate.vim	/^let s:pumCB = {}$/;"	v
+s:pvs	plugin/xptemplate.conf.vim	/^let s:pvs = split(g:xptemplate_vars, '\\V'.s:ep.'&')$/;"	v
+s:rangePattern	ftplugin/python/python.xpt.vim	/^let s:rangePattern = '\\V\\^r\\%[ange(]\\$'$/;"	v
+s:repetitionPattern	plugin/xptemplate.vim	/^let s:repetitionPattern     = '\\w\\*...\\w\\*'$/;"	v
+s:sessionPrototype	plugin/xpopup.vim	/^let s:sessionPrototype = {$/;"	v
+s:sessionPrototype2	plugin/xpopup.vim	/^let s:sessionPrototype2 =  s:ClassPrototype($/;"	v
+s:skipPattern	ftplugin/eruby/eruby.ftdetect.vim	/^let s:skipPattern = 'synIDattr(synID(line("."), col("."), 0), "name") =~? "\\\\vstring|comment"'$/;"	v
+s:skipPattern	ftplugin/html/html.ftdetect.vim	/^let s:skipPattern = 'synIDattr(synID(line("."), col("."), 0), "name") =~? "\\\\vstring|comment"'$/;"	v
+s:skipPattern	ftplugin/htmldjango/htmldjango.ftdetect.vim	/^let s:skipPattern = 'synIDattr(synID(line("."), col("."), 0), "name") =~? "\\\\vstring|comment"'$/;"	v
+s:skipPattern	ftplugin/php/php.ftdetect.vim	/^let s:skipPattern = 'synIDattr(synID(line("."), col("."), 0), "name") =~? "\\\\vstring|comment"'$/;"	v
+s:snipScopePrototype	plugin/xptemplate.vim	/^let s:snipScopePrototype = {$/;"	v
+s:stack	plugin/classes/MapSaver.vim	/^let s:stack = []$/;"	v
+s:suiteSet	plugin/xptTestKey.vim	/^let s:suiteSet = {$/;"	v
+s:suites	plugin/xptTestKey.vim	/^let s:suites = []$/;"	v
+s:toTest	plugin/xptemplateTest.vim	/^let s:toTest = []$/;"	v
+s:topFT	ftplugin/eruby/eruby.ftdetect.vim	/^let s:topFT = 'eruby'$/;"	v
+s:topFT	ftplugin/htmldjango/htmldjango.ftdetect.vim	/^let s:topFT = 'htmldjango'$/;"	v
+s:topFT	ftplugin/php/php.ftdetect.vim	/^let s:topFT = 'html'$/;"	v
+s:typeMap	plugin/xptemplateTest.vim	/^let s:typeMap = { '1' : 'statusline',$/;"	v
+s:unescapeHead	plugin/xptemplate.conf.vim	/^let s:unescapeHead = '\\v(\\\\*)\\1\\\\?\\V'$/;"	v
+s:unescapeHead	plugin/xptemplate.util.vim	/^let s:unescapeHead          = '\\v(\\\\*)\\1\\\\?\\V'$/;"	v
+s:val	plugin/xptemplate.conf.vim	/^  let s:val = matchstr(s:v, '\\V\\^\\[^=]\\*=\\zs\\.\\*')$/;"	v
+s:xpt_snip	ftplugin/xpt/xpt.xpt.vim	/^let s:xpt_snip = split( globpath( &rtp, "ftplugin\/**\/*.xpt.vim" ), "\\n" )$/;"	v
+s:xpts	ftplugin/xpt/xpt.xpt.vim	/^        let s:xpts[ ft ] = []$/;"	v
+s:xpts	ftplugin/xpt/xpt.xpt.vim	/^    let s:xpts[ ft ] += [ snip ]$/;"	v
+s:xpts	ftplugin/xpt/xpt.xpt.vim	/^let s:xpts = {}$/;"	v
+saveCurrentCursorStat	plugin/xpmark.vim	/^fun! s:saveCurrentCursorStat() dict "{{{$/;"	f
+saveCurrentStat	plugin/xpmark.vim	/^fun! s:saveCurrentStat() dict " {{{$/;"	f
+sessionPrototype.addList	plugin/xpopup.vim	/^fun! s:sessionPrototype.addList( list ) "{{{$/;"	f
+sessionPrototype.createPrefixIndex	plugin/xpopup.vim	/^fun! s:sessionPrototype.createPrefixIndex(list) "{{{$/;"	f
+sessionPrototype.updatePrefixIndex	plugin/xpopup.vim	/^fun! s:sessionPrototype.updatePrefixIndex(list) "{{{$/;"	f
+snapshot	plugin/xpmark.vim	/^fun! s:snapshot() dict "{{{$/;"	f
+updateForLinewiseDeletion	plugin/xpmark.vim	/^fun! s:updateForLinewiseDeletion( fromLine, toLine ) dict "{{{$/;"	f
+updateMarks	plugin/xpmark.vim	/^fun! s:updateMarks( indexRange, changeStart, changeEnd ) dict "{{{$/;"	f
+updateMarksAfter	plugin/xpmark.vim	/^fun! s:updateMarksAfter( indexRange, changeStart, changeEnd ) dict "{{{$/;"	f
+updateMarksAfterLine	plugin/xpmark.vim	/^fun! s:updateMarksAfterLine(line) dict "{{{$/;"	f
+updateMarksBefore	plugin/xpmark.vim	/^fun! s:updateMarksBefore( indexRange, changeStart, changeEnd ) dict "{{{$/;"	f
+updateWithNewChangeRange	plugin/xpmark.vim	/^fun! s:updateWithNewChangeRange( changeStart, changeEnd ) dict "{{{$/;"	f
+{	ftplugin/ruby/ruby.xpt.vim	/^map { |`arg^| `cursor^ }$/;"	m
+{	plugin/xptemplate.conf.vim	/^    inoremap <silent> { <C-v><C-v><BS><C-r>=XPTtgr('{',{'noliteral':1,'k':'{'})<cr>$/;"	m
