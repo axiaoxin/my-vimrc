@@ -76,7 +76,7 @@ autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,
 "保存文件时自动删除行尾空格或Tab
 autocmd BufWritePre * :%s/\s\+$//e
 "保存文件时自动删除末尾空行
-autocmd BufWritePre * %s/^$\n\+\%$//ge
+autocmd BufWritePre * :%s/^$\n\+\%$//ge
 
 
 "填充Tab
@@ -108,6 +108,12 @@ autocmd BufRead *.py nmap <F6> :make<CR>
 
 "拷贝粘贴代码不破坏缩进，拷贝前按F7，结束再按F7
 set pastetoggle=<F7>
+
+"<F8> auto all pep8
+nmap <F8> :!find . -type f -name "*.py" \| xargs autopep8 -i -a --ignore=W690<CR>
+
+"<F9> auto file pep8
+autocmd BufRead *.py nmap <F9> :!autopep8 -i -a --ignore=W690 %<CR>
 
 "左右分割窗口Ctrl+w  +v
 "上下分割窗口Ctrl+w
