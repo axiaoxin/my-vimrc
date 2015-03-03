@@ -39,7 +39,10 @@ set ignorecase
 "有一个或以上大写字母时仍大小写敏感
 set smartcase
 
-"colorscheme elflord  "设置配色
+set guifont=Menlo:h14
+set lines=24 columns=80
+
+colorscheme elflord  "设置配色
 set background=dark
 
 "在状态栏显示正在输入的命令
@@ -83,6 +86,7 @@ autocmd BufWritePre * :%s/^$\n\+\%$//ge
 set expandtab
 set tabstop=4
 set shiftwidth=4
+set shiftround
 
 "代码折叠 光标在缩进下方时用za命令折叠或展开
 set fdm=indent
@@ -114,6 +118,13 @@ autocmd BufRead *.py nmap <F8> :!autopep8 -i -a --ignore=W690,E501 %<CR>
 
 "<F9> auto all pep8
 nmap <F9> :!find . -type f -name "*.py" \| xargs autopep8 -i -a --ignore=W690,E501<CR>
+
+"给当前单词添加引号
+nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
+nnoremap w' viw<esc>a'<esc>hbi'<esc>lel
+
+"显示当前路径下的文件
+nnoremap gp :echo globpath('.', '*')<cr>
 
 "左右分割窗口Ctrl+w  +v
 "上下分割窗口Ctrl+w
@@ -171,3 +182,6 @@ set t_ti= t_te=
 "和https://github.com/kevinw/pyflakes-vim
 
 "所有复制完成后：:helptags ~/.vim/doc注册一下所有插件
+
+let g:startify_custom_header =
+      \ map(split(system('fortune | cowthink -f apt'), '\n'), '"   ". v:val') + ['','']
