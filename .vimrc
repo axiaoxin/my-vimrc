@@ -1,3 +1,5 @@
+set nocompatible
+
 "取消备份
 set nobackup
 set noswapfile
@@ -29,6 +31,9 @@ map <C-a> gg"+yG
 
 "Ctrl+c复制到剪贴板
 map <C-c> "+y
+
+"yy直接复制到系统剪切板（For macvim）
+"set clipboard=unnamed
 
 "高亮搜索命中的文本
 set hlsearch
@@ -119,12 +124,21 @@ autocmd BufRead *.py nmap <F8> :!autopep8 -i -a --ignore=W690,E501 %<CR>
 "<F9> auto all pep8
 nmap <F9> :!find . -type f -name "*.py" \| xargs autopep8 -i -a --ignore=W690,E501<CR>
 
+"<F10> 新建标签页
+map <F10> <Esc>:tabnew<CR>
+
 "给当前单词添加引号
 nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap w' viw<esc>a'<esc>hbi'<esc>lel
 
 "显示当前路径下的文件
 nnoremap gp :echo globpath('.', '*')<cr>
+
+"在Normal Mode和Visual/Select Mode下，利用Tab键和Shift-Tab键来缩进文本
+nmap <tab> V>
+nmap <s-tab> V<
+vmap <tab> >gv
+vmap <s-tab> <gv
 
 "左右分割窗口Ctrl+w  +v
 "上下分割窗口Ctrl+w
@@ -169,7 +183,7 @@ set t_ti= t_te=
 
 "自动补齐代码：
 "下载xptemplate：http://www.vim.org/scripts/script.php?script_id=2611，解压、复制到~/.vim, C+\补齐代码结构
-"下载jedi-vim:https://github.com/davidhalter/jedi-vim，pip安装jedi，解压、复制到~/.vim，点号补全
+"下载jedi-vim:https://github.com/davidhalter/jedi-vim，pip安装jedi，解压、复制到~/.vim，点号弹出补全，Ctrl+n补全
 
 "多行编辑
 "下载https://github.com/terryma/vim-multiple-cursors，解压复制到~/.vim C+n多选
