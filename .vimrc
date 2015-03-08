@@ -199,3 +199,12 @@ set t_ti= t_te=
 
 let g:startify_custom_header =
       \ map(split(system('fortune | cowthink -f apt'), '\n'), '"   ". v:val') + ['','']
+
+"Ctrl-X Ctrl-U emoji补全
+silent! if emoji#available()
+  let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
+  let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
+  let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
+  let g:gitgutter_sign_modified_removed = emoji#for('collision')
+endif
+set completefunc=emoji#complete
