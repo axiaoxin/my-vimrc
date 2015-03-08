@@ -1,5 +1,3 @@
-set nocompatible
-
 "取消备份
 set nobackup
 set noswapfile
@@ -147,11 +145,11 @@ vmap <s-tab> <gv
 "打开语法高亮
 syntax enable
 
-"开启文件类型侦测
+"开启语法检测
 syntax on
 
-"不检测文件类型
-filetype off
+"检测文件类型
+filetype on
 
 "不兼容vi
 set nocompatible
