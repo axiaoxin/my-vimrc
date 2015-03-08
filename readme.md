@@ -40,3 +40,4 @@ Features
 - 选中文字后CTRL-n多选后可多行同时编辑
 - CTRL-x CTRL-u可进行emoji的补全
 - 支持markdown
+- jp格式化打印当前行json，jw格式化当前行json
