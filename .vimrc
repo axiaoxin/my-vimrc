@@ -101,13 +101,13 @@ set foldlevel=99
 "F2切换行号显示
 nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
 
-"F3显示TagList
-nmap <silent> <F3> :TlistToggle<CR>
-
-"F4打开目录树
+"F3打开目录树
 "下载NERDTree: http://www.vim.org/scripts/script.php?script_id=1658
 "解压缩之后，把 plugin/NERD_tree.vim和doc/NERD_tree.txt分别拷贝到~/.vim/plugin 和 ~/.vim/doc 目录。
-nmap <silent> <F4> :NERDTreeToggle<CR>
+nmap <silent> <F3> :NERDTreeToggle<CR>
+
+"F4显示TagList
+nmap <silent> <F4> :TlistToggle<CR>
 
 "F5运行脚本，F6编译脚本
 autocmd BufRead *.py set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_compile.compile(r'%')\"
