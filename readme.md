@@ -41,3 +41,4 @@ Features
 - CTRL-x CTRL-u可进行emoji的补全
 - 支持markdown
 - jp格式化打印当前行json，jw格式化当前行json
+- 支持airline状态栏
