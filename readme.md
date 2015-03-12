@@ -53,3 +53,4 @@ Features
 - 支持markdown
 - jp格式化打印当前行json，jw格式化当前行json
 - 支持airline状态栏
+- [b ]b切换buffer
