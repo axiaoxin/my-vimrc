@@ -6,6 +6,17 @@ It's powerful for me~ :100:
 
 just put the `.vim` directory and `.vimrc` into the home path
 
+ScreenShots
+===========
+
+startup:
+
+![](https://raw.githubusercontent.com/axiaoxin/vim-settings/master/screenshot/startup.png)
+
+working:
+
+![](https://raw.githubusercontent.com/axiaoxin/vim-settings/master/screenshot/working.png)
+
 Features
 ========
 
