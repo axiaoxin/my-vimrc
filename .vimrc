@@ -20,6 +20,12 @@ language messages zh_CN.utf-8
 
 " 状态栏配置
 set laststatus=2
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_auto_loc_list=1
+let g:syntastic_loc_list_height=5
+
 " 开启tabline
 let g:airline#extensions#tabline#enabled = 1
 " tabline中当前buffer两端的分隔字符
@@ -39,11 +45,11 @@ autocmd! bufwritepost .vimrc source %
 "文件修改之后自动载入
 set autoread
 
-"Ctrl+a全选并复杂到系统剪贴板，必须装有vim-gnome
-map <C-a> gg"+yG
+"normal模式下Ctrl+c全选并复杂到系统剪贴板，必须装有vim-gnome
+nmap <C-c> gg"+yG
 
-"Ctrl+c复制到剪贴板
-map <C-c> "+y
+"visual模式下Ctrl+c复制选中内容到剪贴板
+vmap <C-c> "+y
 
 "yy直接复制到系统剪切板（For macvim）
 "set clipboard=unnamed
@@ -111,6 +117,9 @@ set fdm=indent
 "默认展开
 set foldlevel=99
 
+"W写入只读文件
+cmap W w !sudo tee >/dev/null %
+
 "F2切换行号显示
 nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
 
@@ -118,6 +127,7 @@ nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
 "下载NERDTree: http://www.vim.org/scripts/script.php?script_id=1658
 "解压缩之后，把 plugin/NERD_tree.vim和doc/NERD_tree.txt分别拷贝到~/.vim/plugin 和 ~/.vim/doc 目录。
 nmap <silent> <F3> :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\.pyc$']  "不显示pyc文件
 
 "F4显示TagList
 nmap <silent> <F4> :TlistToggle<CR>
@@ -125,11 +135,15 @@ let Tlist_Show_One_File = 1            "不同时显示多个文件的tag，只�
 let Tlist_Exit_OnlyWindow = 1          "如果taglist窗口是最后一个窗口，则退出vim
 let Tlist_Use_Right_Window = 1         "在右侧窗口中显示taglist窗口
 
-"F5运行脚本，F6编译脚本
+"F5运行脚本
+autocmd BufRead *.py nmap <F5> :!python %<CR>
+autocmd BufNewFile *.py nmap <F5> :!python %<CR>
+
+"F6编译脚本
 autocmd BufRead *.py set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_compile.compile(r'%')\"
 autocmd BufRead *.py set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
-autocmd BufRead *.py nmap <F5> :!python %<CR>
 autocmd BufRead *.py nmap <F6> :make<CR>
+autocmd BufNewFile *.py nmap <F6> :make<CR>
 
 "拷贝粘贴代码不破坏缩进，拷贝前按F7，结束再按F7
 set pastetoggle=<F7>
@@ -224,3 +238,4 @@ silent! if emoji#available()
   let g:gitgutter_sign_modified_removed = emoji#for('collision')
 endif
 set completefunc=emoji#complete
+

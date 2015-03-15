@@ -4,6 +4,8 @@ This project extract from [my dot files](https://github.com/axiaoxin/mac-dotfile
 
 It's powerful for me~ :100:
 
+There is no plugins manager. So, you need copy the plugin's files to `.vim` when you want to add some plugins.
+
 just put the `.vim` directory and `.vimrc` into the home path
 
 ScreenShots
@@ -28,8 +30,8 @@ Features
 - 菜单、命令行中文无乱码
 - 编辑.vimrc文件后立即生效
 - 文件修改后自动载入更新
-- CTRL-a全选内容复制到系统剪切板
-- CTRL-c复制选中内容到系统剪切板
+- normal下CTRL-c全选内容复制到系统剪切板
+- visual下CTRL-c复制选中内容到系统剪切板
 - 支持鼠标操作
 - 保存文件时自动删除行尾空格或Tab和空行
 - tab键使用4个空格填充，支持直接在normal模式下使用tab、shift-tab
