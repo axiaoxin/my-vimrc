@@ -114,7 +114,7 @@ set fdm=indent
 set foldlevel=99
 
 "W写入只读文件
-cmap W w !sudo tee >/dev/null %
+cmap w!! w !sudo tee >/dev/null %
 
 "F2切换行号显示
 nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
