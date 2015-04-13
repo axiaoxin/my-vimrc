@@ -36,7 +36,6 @@ Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
-Plugin 'fisadev/vim-isort'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 
@@ -209,7 +208,11 @@ nmap <silent> <F3> :NERDTreeToggle<CR>
 nmap <silent> <F4> :TagbarToggle<CR>
 
 " F5运行脚本
-"autocmd BufRead,BufNewFile *.py noremap <F5> <leader>r<CR>
+if exists("$VIRTUAL_ENV")
+    autocmd BufRead,BufNewFile *.py noremap <F5> :!$VIRTUAL_ENV'/bin/python' %<CR>
+else
+    autocmd BufRead,BufNewFile *.py noremap <F5> :!python %<CR>
+endif
 
 " F6编译脚本
 autocmd BufRead,BufNewFile *.py set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_compile.compile(r'%')\"
@@ -220,7 +223,7 @@ autocmd BufRead,BufNewFile *.py nmap <F6> :make<CR>
 set pastetoggle=<F7>
 
 " <F8> sort import and auto pep8
-autocmd FileType python map <buffer> <F8> :Isort<CR>:!yapf -i %<CR><CR>
+autocmd FileType python map <buffer> <F8> :!isort %; yapf -i %<CR><CR>
 
 " <F9> indent guides toggle
 map <F9> <ESC><Leader>ig
