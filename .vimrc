@@ -223,7 +223,7 @@ autocmd BufRead,BufNewFile *.py nmap <F6> :make<CR>
 set pastetoggle=<F7>
 
 " <F8> sort import and auto pep8
-autocmd FileType python map <buffer> <F8> :!isort %; yapf -i %<CR><CR>
+autocmd FileType python map <buffer> <F8> :!yapf -i %;isort %;<CR><CR>
 
 " <F9> indent guides toggle
 map <F9> <ESC><Leader>ig
@@ -285,6 +285,14 @@ let g:instant_markdown_slow = 1
 
 " airline
 let g:airline_section_y = '%{strftime("%H:%M")}'
+" 开启tabline
+let g:airline#extensions#tabline#enabled = 1
+" tabline中当前buffer两端的分隔字符
+let g:airline#extensions#tabline#left_sep = ' '
+" tabline中未激活buffer两端的分隔字符
+let g:airline#extensions#tabline#left_alt_sep = '|'
+" tabline中buffer显示编号
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
 " jedi
 autocmd FileType python setlocal completeopt-=preview
