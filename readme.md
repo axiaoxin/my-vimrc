@@ -118,7 +118,7 @@ open a file at the latest change position
 
 auto check PEP8 format when read or write a python script
 
-run python script with virtualenv if there is a $VIRTUAL_ENV
+run python script with virtualenv if there is a `$VIRTUAL_ENV`
 
 auto preview when you open a markdown file
 
@@ -130,4 +130,4 @@ show indent guides
 
 multiple cursors for editing
 
-auto compelte python sniptes by <tab> or <shift-tab>
+auto compelte python sniptes by `<tab>` or `<shift-tab>`
