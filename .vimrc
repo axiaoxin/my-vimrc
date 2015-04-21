@@ -19,6 +19,8 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
+Plugin 'airblade/vim-gitgutter'
+Plugin 'Yggdroot/indentLine'
 Plugin 'nvie/vim-flake8'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'axiaoxin/vim-json-line-format'
@@ -28,7 +30,6 @@ Plugin 'mhinz/vim-startify'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'tpope/vim-surround'
-Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
@@ -139,7 +140,6 @@ set smarttab
 " 缩进
 set autoindent
 set smartindent
-autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,cla
 
 " 保存文件时自动删除行尾空格或Tab
 autocmd BufWritePre * :%s/\s\+$//e
@@ -268,9 +268,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " CtrlP
 let g:ctrlp_show_hidden = 1
 
-" vim-indent-guides
-let g:indent_guides_guide_size = 1
-
 "Ctrl-X Ctrl-U emoji补全
 silent! if emoji#available()
   let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
@@ -301,3 +298,8 @@ let g:jedi#completions_command = "<C-n>"
 " flake8
 let g:flake8_show_in_file = 1
 let g:flake8_show_in_gutter = 1
+
+" gitgutter
+let g:gitgutter_sign_added = '+'
+let g:gitgutter_sign_modified = '*'
+let g:gitgutter_sign_removed = '-'
