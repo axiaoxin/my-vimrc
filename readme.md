@@ -12,7 +12,7 @@ MacOS X (unix) version
 
 ###Dependences
 
-    brew install git npm ctags
+    brew install vim git npm ctags
     sudo npm -g install instant-markdown-d
     sudo pip install isort jedi yapf flake8 virtualenvwrapper
 
