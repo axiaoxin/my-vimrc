@@ -11,7 +11,7 @@ This VIM settings is for Python programmers on Mac OSX. It use Vundle to manage 
     sudo npm -g install instant-markdown-d
     sudo pip install isort jedi yapf flake8 virtualenvwrapper
 
-(Maybe I have forgot some other dependences :( )
+[Maybe I have forgot some other dependences :( ]
 
 ###Plugins
 
@@ -61,7 +61,7 @@ write RO file: `w!!`
 
 line number toggle: `<F2>`
 
-nerdtree toggle: `<f3>`
+nerdtree toggle: `<F3>`
 
 tagbar toggle: `<F4>`
 
@@ -117,6 +117,8 @@ show content in terminal when exit the vim
 open a file at the latest change position
 
 auto check PEP8 format when read or write a python script
+
+one key to format python code with PEP8
 
 run python script with virtualenv if there is a `$VIRTUAL_ENV`
 
@@ -185,3 +187,7 @@ Copy the **.vim** and **.vimrc** to your home.
 
     cp -r .vim ~
     cp .vimrc ~
+
+or use vundle, in vim:
+
+    :PluginInstall
