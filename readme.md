@@ -89,10 +89,10 @@ MacOS X (unix) version
 ###Screenshots
 
 default open a python file
-![](https://raw.githubusercontent.com/axiaoxin/vim-settings/master/screenshots/1.png)
+![](http://ww1.sinaimg.cn/large/67ac78cfjw1erenwmdolwj21kw0zkdr3.jpg)
 
 working
-![](https://raw.githubusercontent.com/axiaoxin/vim-settings/master/screenshots/2.png)
+![](http://ww1.sinaimg.cn/large/67ac78cfjw1erenwlnhc7j21kw0zkwpe.jpg)
 
 --------------
 
