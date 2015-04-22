@@ -48,10 +48,9 @@ MacOS X (unix) version
 - nerdtree toggle: `<F3>`
 - tagbar toggle: `<F4>`
 - run python script: `<F5>`
-- compile python script: `<F6>`
+- open a new tab: `<F6>`
 - paste toggle: `<F7>`
 - PEP8 format: `<F8>`
-- open a new tab: `<F9>`
 - wrap `"`/`'` for a word: `w"`/`w'`
 - tab for mv text: `<tab>` `<shift-tab>`
 - change window: `<C-HJKL>`
@@ -77,13 +76,14 @@ MacOS X (unix) version
 - open a file at the latest change position
 - auto check PEP8 format when read or write a python script
 - one key to format python code with PEP8
-- run python script with virtualenv if there is a `$VIRTUAL_ENV`
-- auto preview when you open a markdown file
-- auto complete the python code
+- run python script with virtualenv if there is a `$VIRTUAL_ENV` (open script with virtualenv in terminal)
+- auto open browser to preview when you open a markdown file, auto close the browser when you close the markdown file.
+- auto complete the python code, use Ctrl+n
 - show git diff in vim
 - show indent guides
 - multiple cursors for editing
 - auto complete python sniptes by `<tab>` or `<shift-tab>`
+- use tomorrow-night-bright color scheme
 
 
 ###Screenshots
@@ -129,6 +129,6 @@ Copy the **.vim** and **.vimrc** to your home.
     cp -r .vim ~
     cp .vimrc ~
 
-or use vundle, in vim:
+or use vundle, just need `.vimrc` in vim:
 
     :PluginInstall
