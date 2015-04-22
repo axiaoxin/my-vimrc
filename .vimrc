@@ -110,7 +110,6 @@ set guifont=Menlo:h14
 set lines=24 columns=80
 
 " 设置配色
-" 跟谁终端配色，终端采用tomorrow-night-bright
 "colorscheme elflord
 "set background=dark
 
