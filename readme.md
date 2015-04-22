@@ -20,134 +20,78 @@ MacOS X (unix) version
 
 ###Plugins
 
-[nerdtree](https://github.com/scrooloose/nerdtree) A tree explorer plugin for vim.
-
-[nerdcommenter](https://github.com/scrooloose/nerdcommenter) Vim plugin for intensely orgasmic commenting
-
-[tagbar](https://github.com/majutsushi/tagbar) Vim plugin that displays tags in a window(ctags is needed)
-
-[ctrlp](https://github.com/kien/ctrlp.vim) Fuzzy file, buffer, mru, tag, etc finder.
-
-[vim-airline](https://github.com/bling/vim-airline) lean & mean status/tabline for vim that's light as air
-
-[vim-snippets](https://github.com/honza/vim-snippets) vim-snipmate default snippets
-
-[UltiSnips](https://github.com/SirVer/ultisnips) The ultimate snippet solution for Vim
-
-[vim-surround](https://github.com/tpope/vim-surround) quoting/parenthesizing made simple
-
-[vim-instant-markdown](https://github.com/suan/vim-instant-markdown) Instant Markdown previews from VIM!
-
-[vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) True Sublime Text style multiple selections for Vim
-
-[vim-startify](https://github.com/mhinz/vim-startify) A fancy start screen for Vim
-
-[vim-emoji](https://github.com/junegunn/vim-emoji) Named Emoji in Vim
-
-[vim-json-line-format](https://github.com/axiaoxin/vim-json-line-format) format json line
-
-[jedi-vim](https://github.com/davidhalter/jedi-vim) Using the jedi autocompletion library for VIM.
-
-[vim-flake8](https://github.com/nvie/vim-flake8) Flake8 plugin for Vim
-
-[indentLine](https://github.com/Yggdroot/indentLine) A vim plugin to display the indention levels with thin vertical lines
-
-[vim-gitgutter](https://github.com/airblade/vim-gitgutter) A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
+- [nerdtree](https://github.com/scrooloose/nerdtree) A tree explorer plugin for vim.
+- [nerdcommenter](https://github.com/scrooloose/nerdcommenter) Vim plugin for intensely orgasmic commenting
+- [tagbar](https://github.com/majutsushi/tagbar) Vim plugin that displays tags in a window(ctags is needed)
+- [ctrlp](https://github.com/kien/ctrlp.vim) Fuzzy file, buffer, mru, tag, etc finder.
+- [vim-airline](https://github.com/bling/vim-airline) lean & mean status/tabline for vim that's light as air
+- [vim-snippets](https://github.com/honza/vim-snippets) vim-snipmate default snippets
+- [UltiSnips](https://github.com/SirVer/ultisnips) The ultimate snippet solution for Vim
+- [vim-surround](https://github.com/tpope/vim-surround) quoting/parenthesizing made simple
+- [vim-instant-markdown](https://github.com/suan/vim-instant-markdown) Instant Markdown previews from VIM!
+- [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) True Sublime Text style multiple selections for Vim
+- [vim-startify](https://github.com/mhinz/vim-startify) A fancy start screen for Vim
+- [vim-emoji](https://github.com/junegunn/vim-emoji) Named Emoji in Vim
+- [vim-json-line-format](https://github.com/axiaoxin/vim-json-line-format) format json line
+- [jedi-vim](https://github.com/davidhalter/jedi-vim) Using the jedi autocompletion library for VIM.
+- [vim-flake8](https://github.com/nvie/vim-flake8) Flake8 plugin for Vim
+- [indentLine](https://github.com/Yggdroot/indentLine) A vim plugin to display the indention levels with thin vertical lines
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter) A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
 
 ###Short Keys
 
-change buf: `]b` `[b`
-
-change tab: `]t` `[t`
-
-copy (all/selected) content: `Ctrl+c`
-
-write RO file: `w!!`
-
-line number toggle: `<F2>`
-
-nerdtree toggle: `<F3>`
-
-tagbar toggle: `<F4>`
-
-run python script: `<F5>`
-
-compile python script: `<F6>`
-
-paste toggle: `<F7>`
-
-PEP8 format: `<F8>`
-
-open a new tab: `<F9>`
-
-wrap `"`/`'` for a word: `w"`/`w'`
-
-tab for mv text: `<tab>` `<shift-tab>`
-
-change window: `<C-HJKL>`
-
-preview to select emoji: :`<C-e>`
-
-find files: `<C-p>`
-
-complete python code: `<C-n>`
-
-format json line: `<leader>jw` `<leader>jp`
-
-change surround: `csXY`
-
-del surround: `dsX`
-
-comment/uncomment: `<leader>cc`/`<leader>cu`
+- change buf: `]b` `[b`
+- change tab: `]t` `[t`
+- copy (all/selected) content: `Ctrl+c`
+- write RO file: `w!!`
+- line number toggle: `<F2>`
+- nerdtree toggle: `<F3>`
+- tagbar toggle: `<F4>`
+- run python script: `<F5>`
+- compile python script: `<F6>`
+- paste toggle: `<F7>`
+- PEP8 format: `<F8>`
+- open a new tab: `<F9>`
+- wrap `"`/`'` for a word: `w"`/`w'`
+- tab for mv text: `<tab>` `<shift-tab>`
+- change window: `<C-HJKL>`
+- preview to select emoji: :`<C-e>`
+- find files: `<C-p>`
+- complete python code: `<C-n>`
+- format json line: `<leader>jw` `<leader>jp`
+- change surround: `csXY`
+- del surround: `dsX`
+- comment/uncomment: `<leader>cc`/`<leader>cu`
 
 
 ###Features
 
-no backup and swap file
-
-correct encoding for chinese
-
-beautiful statusline and startify
-
-auto reload vimrc when it is changed
-
-highlight and ignorecase for search text
-
-support using mouse
-
-auto remove whitespace which at the line tail and blank line at the latest
-
-show content in terminal when exit the vim
-
-open a file at the latest change position
-
-auto check PEP8 format when read or write a python script
-
-one key to format python code with PEP8
-
-run python script with virtualenv if there is a `$VIRTUAL_ENV`
-
-auto preview when you open a markdown file
-
-auto complete the python code
-
-show git diff in vim
-
-show indent guides
-
-multiple cursors for editing
-
-auto complete python sniptes by `<tab>` or `<shift-tab>`
+- no backup and swap file
+- correct encoding for chinese
+- beautiful statusline and startify
+- auto reload vimrc when it is changed
+- highlight and ignorecase for search text
+- support using mouse
+- auto remove whitespace which at the line tail and blank line at the latest
+- show content in terminal when exit the vim
+- open a file at the latest change position
+- auto check PEP8 format when read or write a python script
+- one key to format python code with PEP8
+- run python script with virtualenv if there is a `$VIRTUAL_ENV`
+- auto preview when you open a markdown file
+- auto complete the python code
+- show git diff in vim
+- show indent guides
+- multiple cursors for editing
+- auto complete python sniptes by `<tab>` or `<shift-tab>`
 
 
 ###Screenshots
 
 default open a python file
-
 ![](https://raw.githubusercontent.com/axiaoxin/vim-settings/master/screenshots/1.png)
 
 working
-
 ![](https://raw.githubusercontent.com/axiaoxin/vim-settings/master/screenshots/2.png)
 
 --------------
@@ -155,35 +99,27 @@ working
 next pics come from the plugin projects
 
 ctrlp find files:
-
 ![](https://camo.githubusercontent.com/0a0b4c0d24a44d381cbad420ecb285abc2aaa4cb/687474703a2f2f692e696d6775722e636f6d2f7949796e722e706e67)
 
 ultisnips (I am not using YouCompleteMe, using jedi-vim)
-
 ![](https://camo.githubusercontent.com/296aecf30e1607233814196db6bd3f5f47e70c73/68747470733a2f2f7261772e6769746875622e636f6d2f5369725665722f756c7469736e6970732f6d61737465722f646f632f64656d6f2e676966)
 
 jedi complete
-
 ![](https://github.com/davidhalter/jedi/raw/master/docs/_screenshots/screenshot_complete.png)
 
 preview markdown
-
 ![](https://camo.githubusercontent.com/6e7dc465d334c2f962ad8c8bfee654d0e8da24ff/687474703a2f2f646c2e64726f70626f782e636f6d2f752f32383935363236372f696e7374616e742d6d61726b646f776e2d64656d6f5f7468756d622e676966)
 
 json line format(I am the author :flushed:)
-
 ![](https://github.com/axiaoxin/vim-json-line-format/raw/master/pic.gif)
 
 emoji
-
 ![](https://camo.githubusercontent.com/c2c6add271b0719215f2cac78e6a777f83184bed/68747470733a2f2f7261772e6769746875622e636f6d2f6a756e6567756e6e2f692f6d61737465722f656d6f6a692d636f6d706c6574652e676966)
 
 startify
-
 ![](https://raw.githubusercontent.com/mhinz/vim-startify/102aa438b2d2a88e2b4e331d8ff5320eed52f0c4/startify.png)
 
 multiple cursors
-
 ![](https://github.com/terryma/vim-multiple-cursors/raw/master/assets/example1.gif?raw=true)
 
 ###Usage
