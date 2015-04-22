@@ -90,9 +90,11 @@ MacOS X (unix) version
 ###Screenshots
 
 default open a python file
+
 ![](http://ww1.sinaimg.cn/large/67ac78cfjw1erenwmdolwj21kw0zkdr3.jpg)
 
 working
+
 ![](http://ww1.sinaimg.cn/large/67ac78cfjw1erenwlnhc7j21kw0zkwpe.jpg)
 
 --------------
@@ -100,27 +102,35 @@ working
 next pics come from the plugin projects
 
 ctrlp find files:
+
 ![](https://camo.githubusercontent.com/0a0b4c0d24a44d381cbad420ecb285abc2aaa4cb/687474703a2f2f692e696d6775722e636f6d2f7949796e722e706e67)
 
 ultisnips (I am not using YouCompleteMe, using jedi-vim)
+
 ![](https://camo.githubusercontent.com/296aecf30e1607233814196db6bd3f5f47e70c73/68747470733a2f2f7261772e6769746875622e636f6d2f5369725665722f756c7469736e6970732f6d61737465722f646f632f64656d6f2e676966)
 
 jedi complete
+
 ![](https://github.com/davidhalter/jedi/raw/master/docs/_screenshots/screenshot_complete.png)
 
 preview markdown
+
 ![](https://camo.githubusercontent.com/6e7dc465d334c2f962ad8c8bfee654d0e8da24ff/687474703a2f2f646c2e64726f70626f782e636f6d2f752f32383935363236372f696e7374616e742d6d61726b646f776e2d64656d6f5f7468756d622e676966)
 
 json line format(I am the author :flushed:)
+
 ![](https://github.com/axiaoxin/vim-json-line-format/raw/master/pic.gif)
 
 emoji
+
 ![](https://camo.githubusercontent.com/c2c6add271b0719215f2cac78e6a777f83184bed/68747470733a2f2f7261772e6769746875622e636f6d2f6a756e6567756e6e2f692f6d61737465722f656d6f6a692d636f6d706c6574652e676966)
 
 startify
+
 ![](https://raw.githubusercontent.com/mhinz/vim-startify/102aa438b2d2a88e2b4e331d8ff5320eed52f0c4/startify.png)
 
 multiple cursors
+
 ![](https://github.com/terryma/vim-multiple-cursors/raw/master/assets/example1.gif?raw=true)
 
 ###Usage
@@ -130,6 +140,6 @@ Copy the **.vim** and **.vimrc** to your home.
     cp -r .vim ~
     cp .vimrc ~
 
-or use vundle, just need `.vimrc` in vim:
+or use vundle, just need copy `.vimrc` and:
 
     :PluginInstall
