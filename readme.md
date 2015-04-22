@@ -37,6 +37,7 @@ MacOS X (unix) version
 - [vim-flake8](https://github.com/nvie/vim-flake8) Flake8 plugin for Vim
 - [indentLine](https://github.com/Yggdroot/indentLine) A vim plugin to display the indention levels with thin vertical lines
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter) A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
+- [favorite-vim-colorscheme](https://github.com/axiaoxin/favorite-vim-colorscheme) Tomorrow night bright color scheme
 
 ###Short Keys
 
