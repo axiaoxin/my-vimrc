@@ -245,8 +245,6 @@ nnoremap <C-l> <C-w>l
 " emoji
 imap <C-e> <C-X><C-U>
 
-" ctrlp for ctrlpmixed
-noremap <C-p> :CtrlPMixed<cr>
 
 """"""""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""""""""
 

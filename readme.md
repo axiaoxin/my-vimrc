@@ -4,6 +4,11 @@ This project is extracted from [my dot files](https://github.com/axiaoxin/mac-do
 
 This VIM settings is for Python programmers on Mac OSX. It use Vundle to manage the plugins.
 
+###VIM Version
+
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Apr 13 2015 00:22:48)
+
+MacOS X (unix) version
 
 ###Dependences
 
