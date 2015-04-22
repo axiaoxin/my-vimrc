@@ -24,6 +24,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'nvie/vim-flake8'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'axiaoxin/vim-json-line-format'
+Plugin 'axiaoxin/favorite-vim-colorscheme'
 Plugin 'junegunn/vim-emoji'
 Plugin 'mhinz/vim-startify'
 Plugin 'terryma/vim-multiple-cursors'
@@ -107,9 +108,10 @@ set ignorecase
 set smartcase
 
 set guifont=Menlo:h14
-set lines=24 columns=80
+set lines=24 columns=90
 
-" 设置配色
+colorscheme Tomorrow-Night-Bright
+" 使用自带配色
 "colorscheme elflord
 "set background=dark
 
@@ -179,11 +181,11 @@ autocmd! BufRead,BufWritePost *.py call Flake8()
 nnoremap [b :bp<CR>
 nnoremap ]b :bn<CR>
 
-" 映射切换tabnew的键位
+" 映射切换tab的键位
 nnoremap [t :tabp<CR>
 nnoremap ]t :tabn<CR>
 
-" normal模式下Ctrl+c全选并复杂到系统剪贴板，必须装有vim-gnome
+" normal模式下Ctrl+c全选并复制到系统剪贴板(linux必须装有vim-gnome)
 nmap <C-c> gg"+yG
 
 " visual模式下Ctrl+c复制选中内容到剪贴板
@@ -208,19 +210,14 @@ else
     autocmd BufRead,BufNewFile *.py noremap <F5> :!python %<CR>
 endif
 
-" F6编译脚本
-autocmd BufRead,BufNewFile *.py set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_compile.compile(r'%')\"
-autocmd BufRead,BufNewFile *.py set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
-autocmd BufRead,BufNewFile *.py nmap <F6> :make<CR>
+" <F6> 新建标签页
+map <F6> <Esc>:tabnew<CR>
 
 " <F7> 拷贝粘贴代码不破坏缩进
 set pastetoggle=<F7>
 
 " <F8> sort import and auto pep8
 autocmd FileType python map <buffer> <F8> :!yapf -i %;isort %;<CR><CR>
-
-" <F9> 新建标签页
-map <F9> <Esc>:tabnew<CR>
 
 " 给当前单词添加引号
 nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
@@ -285,7 +282,6 @@ let g:flake8_show_in_file = 1
 let g:flake8_show_in_gutter = 1
 
 " gitgutter
-let g:gitgutter_sign_added = '+'
 let g:gitgutter_sign_modified = '*'
 let g:gitgutter_sign_removed = '-'
 
