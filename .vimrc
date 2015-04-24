@@ -191,6 +191,9 @@ nmap <C-c> gg"+yG
 " visual模式下Ctrl+c复制选中内容到剪贴板
 vmap <C-c> "+y
 
+" Ctrl+v原样粘贴剪切板内容
+inoremap <C-v> <ESC>"+pi
+
 " w!!写入只读文件
 cmap w!! w !sudo tee >/dev/null %
 
