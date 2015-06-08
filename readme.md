@@ -56,7 +56,7 @@ MacOS X (unix) version
 - paste toggle: `<F7>`
 - PEP8 format: `<F8>`
 - wrap `"`/`'` for a word: `w"`/`w'`
-- tab for mv text: `<tab>` `<shift-tab>`
+- indent text: `>` `<`
 - change window: `<C-HJKL>`
 - preview to select emoji: :`<C-e>`
 - find files: `<C-p>`

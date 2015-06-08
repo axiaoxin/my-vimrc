@@ -229,10 +229,10 @@ nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap w' viw<esc>a'<esc>hbi'<esc>lel
 
 " 在Normal Mode和Visual/Select Mode下，利用Tab键和Shift-Tab键来缩进文本
-nmap <tab> V>
-nmap <s-tab> V<
-vmap <tab> >gv
-vmap <s-tab> <gv
+nnoremap > >>
+nnoremap < <<
+vnoremap > >gv
+vnoremap < <gv
 
 " 左右分割窗口Ctrl+w +v
 " 上下分割窗口Ctrl+w +s
