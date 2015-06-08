@@ -38,6 +38,9 @@ MacOS X (unix) version
 - [indentLine](https://github.com/Yggdroot/indentLine) A vim plugin to display the indention levels with thin vertical lines
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter) A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
 - [favorite-vim-colorscheme](https://github.com/axiaoxin/favorite-vim-colorscheme) Tomorrow night bright color scheme
+- [vim-node](https://github.com/moll/vim-node) Tools and environment to make Vim superb for developing with Node.js. Like Rails.vim for Node.
+- [jshint](https://github.com/jshint/jshint) JSHint is a tool that helps to detect errors and potential problems in your JavaScript code
+- [vim-javascript-syntax](https://github.com/jelera/vim-javascript-syntax) Enhanced javascript syntax file for Vim
 
 ###Short Keys
 
