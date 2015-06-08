@@ -19,6 +19,9 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'walm/jshint.vim'
+Plugin 'moll/vim-node'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Yggdroot/indentLine'
 Plugin 'nvie/vim-flake8'
@@ -172,7 +175,6 @@ autocmd BufReadPost *
       \     endif |
       \ endif
 
-autocmd! BufRead,BufWritePost *.py call Flake8()
 
 
 """""""""""""""""""""""""KEY MAPPING""""""""""""""""""""
@@ -220,7 +222,7 @@ map <F6> <Esc>:tabnew<CR>
 set pastetoggle=<F7>
 
 " <F8> sort import and auto pep8
-autocmd FileType python map <buffer> <F8> :!yapf -i %;isort %;<CR><CR>
+autocmd FileType python map <buffer> <F8> :!yapf -i % --style=google;isort %;<CR><CR>
 
 " 给当前单词添加引号
 nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
@@ -247,6 +249,8 @@ imap <C-e> <C-X><C-U>
 
 
 """"""""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""""""""
+" NerdCommenter
+let g:NERDSpaceDelims=1
 
 " NERDTREE
 " 不显示的文件
@@ -283,6 +287,7 @@ let g:jedi#completions_command = "<C-n>"
 " flake8
 let g:flake8_show_in_file = 1
 let g:flake8_show_in_gutter = 1
+autocmd! BufRead,BufWritePost *.py call Flake8()
 
 " gitgutter
 let g:gitgutter_sign_modified = '*'
@@ -292,3 +297,6 @@ let g:gitgutter_sign_removed = '-'
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" jshint
+autocmd! BufRead,BufWritePost *.js :JSHint
