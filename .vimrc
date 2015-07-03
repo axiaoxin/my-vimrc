@@ -210,9 +210,9 @@ nmap <silent> <F4> :TagbarToggle<CR>
 
 " F5运行脚本
 if exists("$VIRTUAL_ENV")
-    autocmd BufRead,BufNewFile *.py noremap <F5> :!$VIRTUAL_ENV'/bin/python' %<CR>
+    autocmd FileType python map <buffer> <F5> :!$VIRTUAL_ENV'/bin/python' %<CR>
 else
-    autocmd BufRead,BufNewFile *.py noremap <F5> :!python %<CR>
+    autocmd FileType python map <buffer> <F5> :!python %<CR>
 endif
 
 " <F6> 新建标签页
