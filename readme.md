@@ -41,6 +41,7 @@ MacOS X (unix) version
 - [vim-node](https://github.com/moll/vim-node) Tools and environment to make Vim superb for developing with Node.js. Like Rails.vim for Node.
 - [jshint](https://github.com/jshint/jshint) JSHint is a tool that helps to detect errors and potential problems in your JavaScript code
 - [vim-javascript-syntax](https://github.com/jelera/vim-javascript-syntax) Enhanced javascript syntax file for Vim
+- [vim-coloresque](https://github.com/gorodinskiy/vim-coloresque) css/less/sass/html color preview for vim
 
 ###Short Keys
 
