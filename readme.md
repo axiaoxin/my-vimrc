@@ -42,6 +42,7 @@ MacOS X (unix) version
 - [jshint](https://github.com/jshint/jshint) JSHint is a tool that helps to detect errors and potential problems in your JavaScript code
 - [vim-javascript-syntax](https://github.com/jelera/vim-javascript-syntax) Enhanced javascript syntax file for Vim
 - [vim-coloresque](https://github.com/gorodinskiy/vim-coloresque) css/less/sass/html color preview for vim
+- [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode) VIM Table Mode for instant table creation.
 
 ###Short Keys
 
@@ -65,7 +66,8 @@ MacOS X (unix) version
 - format json line: `<leader>jw` `<leader>jp`
 - change surround: `csXY`
 - del surround: `dsX`
-- comment/uncomment: `<leader>cc`/`<leader>cu`
+- comment/uncomment: `\cc`/`\cu`
+- table format: `\tt`
 
 
 ###Features
@@ -89,7 +91,8 @@ MacOS X (unix) version
 - multiple cursors for editing
 - auto complete python sniptes by `<tab>` or `<shift-tab>`
 - use tomorrow-night-bright color scheme
-
+- color preview for .css files
+- format markdown tables
 
 ###Screenshots
 

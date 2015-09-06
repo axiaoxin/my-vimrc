@@ -19,6 +19,7 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
+Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'walm/jshint.vim'
@@ -301,3 +302,6 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " jshint
 autocmd! BufRead,BufWritePost *.js :JSHint
+
+" vim-table-mode: markdown
+let g:table_mode_corner="|"
