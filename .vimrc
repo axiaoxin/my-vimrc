@@ -196,7 +196,7 @@ nmap <C-c> gg"+yG
 vmap <C-c> "+y
 
 " Ctrl+v原样粘贴剪切板内容
-inoremap <C-v> <ESC>"+pi
+inoremap <C-v> <ESC>"+pa
 
 " w!!写入只读文件
 cmap w!! w !sudo tee >/dev/null %
