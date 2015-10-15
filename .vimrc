@@ -19,6 +19,7 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
+Plugin 'mattn/emmet-vim'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'jelera/vim-javascript-syntax'
