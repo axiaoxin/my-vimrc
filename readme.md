@@ -43,6 +43,7 @@ MacOS X (unix) version
 - [vim-javascript-syntax](https://github.com/jelera/vim-javascript-syntax) Enhanced javascript syntax file for Vim
 - [vim-coloresque](https://github.com/gorodinskiy/vim-coloresque) css/less/sass/html color preview for vim
 - [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode) VIM Table Mode for instant table creation.
+- [emmet-vim](https://github.com/mattn/emmet-vim) emmet for vim: <http://mattn.github.io/emmet-vim>
 
 ###Short Keys
 
@@ -67,7 +68,7 @@ MacOS X (unix) version
 - change surround: `csXY`
 - del surround: `dsX`
 - comment/uncomment: `\cc`/`\cu`
-- table format: `\tt`
+- table mode: `\tm`
 
 
 ###Features
@@ -92,7 +93,8 @@ MacOS X (unix) version
 - auto complete python sniptes by `<tab>` or `<shift-tab>`
 - use tomorrow-night-bright color scheme
 - color preview for .css files
-- format markdown tables
+- auto format markdown tables in table mode
+- emmet for vim, chinese tutorial <http://www.zfanw.com/blog/zencoding-vim-tutorial-chinese.html>
 
 ###Screenshots
 
@@ -139,6 +141,14 @@ startify
 multiple cursors
 
 ![](https://github.com/terryma/vim-multiple-cursors/raw/master/assets/example1.gif?raw=true)
+
+vim-coloresque
+
+![](https://camo.githubusercontent.com/70916a51f45b5729332803c5de303f6f1849fc50/68747470733a2f2f7261772e6769746875622e636f6d2f676f726f64696e736b69792f76696d2d636f6c6f7265737175652f6d61737465722f73637265656e2e706e67)
+
+vim-table-mode
+
+<a href="http://www.youtube.com/watch?v=9lVQ0VJY3ps"><img src="https://raw.github.com/axil/vim-table-mode/master/youtube.png"/></a>
 
 ###Usage
 
