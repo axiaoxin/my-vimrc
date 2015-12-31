@@ -114,7 +114,6 @@ set ignorecase
 set smartcase
 
 set guifont=Menlo:h14
-set lines=24 columns=90
 
 colorscheme Tomorrow-Night-Bright
 " 使用自带配色
