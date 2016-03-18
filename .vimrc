@@ -264,6 +264,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " CtrlP
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_cmd = 'CtrlPMixed'
 
 "Ctrl-X Ctrl-U emoji补全
 set completefunc=emoji#complete
