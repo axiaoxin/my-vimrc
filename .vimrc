@@ -224,7 +224,10 @@ map <F6> <Esc>:tabnew<CR>
 set pastetoggle=<F7>
 
 " <F8> sort import and auto pep8
-autocmd FileType python map <buffer> <F8> :!yapf -i % --style=google;isort %;<CR><CR>
+autocmd FileType python map <buffer> <F8> :!autopep8 -i -a --ignore=W690,E501 %;isort %;<CR><CR>
+
+" <F9> pep8 by yapf
+autocmd FileType python map <buffer> <F9> :!yapf -i % --style=pep8;isort %;<CR><CR>
 
 " 给当前单词添加引号
 nnoremap w" viw<esc>a"<esc>hbi"<esc>lel

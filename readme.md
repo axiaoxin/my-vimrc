@@ -14,7 +14,7 @@ MacOS X (unix) version
 
     brew install vim git npm ctags
     sudo npm -g install instant-markdown-d jshint
-    sudo pip install isort jedi yapf flake8 virtualenvwrapper
+    sudo pip install isort jedi yapf flake8 virtualenvwrapper autopep8
 
 [Maybe I have forgot some other dependences :( ]
 
@@ -57,7 +57,8 @@ MacOS X (unix) version
 - run python script: `<F5>`
 - open a new tab: `<F6>`
 - paste toggle: `<F7>`
-- PEP8 format: `<F8>`
+- PEP8 format by autopep8: `<F8>`
+- PEP8 format by yapf: `<F9>`
 - wrap `"`/`'` for a word: `w"`/`w'`
 - continue indent text to left or right on select/normal mode: `>` `<`
 - change window: `<C-HJKL>`
