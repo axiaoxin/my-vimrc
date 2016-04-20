@@ -65,7 +65,7 @@ MacOS X (unix) version
 - preview to select emoji: :`<C-e>`
 - find files: `<C-p>`
 - complete python code: `<C-n>`
-- format json line: `<leader>jw` `<leader>jp`
+- format json line: `<leader>wj` `<leader>pj`
 - change surround: `csXY`
 - del surround: `dsX`
 - comment/uncomment: `\cc`/`\cu`
