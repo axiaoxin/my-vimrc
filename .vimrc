@@ -19,6 +19,9 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
+Plugin 'guns/vim-sexp'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'dhruvasagar/vim-table-mode'
