@@ -2,7 +2,7 @@ My VIM Settings
 ===============
 This project is extracted from [my dot files](https://github.com/axiaoxin/mac-dotfiles)
 
-This VIM settings is for Python programmers on Mac OSX. It use Vundle to manage the plugins.
+This VIM settings is for Python programmers on Mac OSX, may be you will write some html, css, js, Markdown, NodeJS and Clojure. It use Vundle to manage the plugins.
 
 ###VIM Version
 
@@ -20,6 +20,10 @@ MacOS X (unix) version
 
 ###Plugins
 
+**use vundle manage plugins**：
+
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 - [nerdtree](https://github.com/scrooloose/nerdtree) A tree explorer plugin for vim.
 - [nerdcommenter](https://github.com/scrooloose/nerdcommenter) Vim plugin for intensely orgasmic commenting
 - [tagbar](https://github.com/majutsushi/tagbar) Vim plugin that displays tags in a window(ctags is needed)
@@ -34,7 +38,7 @@ MacOS X (unix) version
 - [vim-emoji](https://github.com/junegunn/vim-emoji) Named Emoji in Vim
 - [vim-json-line-format](https://github.com/axiaoxin/vim-json-line-format) format json line
 - [jedi-vim](https://github.com/davidhalter/jedi-vim) Using the jedi autocompletion library for VIM.
-- [vim-flake8](https://github.com/nvie/vim-flake8) Flake8 plugin for Vim
+- [vim-flake8](https://github.com/nvie/vim-flake8) Flake8 plugin for Vim (I like it more than [syntastic](https://github.com/scrooloose/syntastic), it's better.)
 - [indentLine](https://github.com/Yggdroot/indentLine) A vim plugin to display the indention levels with thin vertical lines
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter) A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
 - [favorite-vim-colorscheme](https://github.com/axiaoxin/favorite-vim-colorscheme) Tomorrow night bright color scheme
