@@ -19,6 +19,8 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
+Plugin 'kabbamine/vcoolor.vim'
+Plugin 'guns/vim-clojure-highlight'
 Plugin 'guns/vim-sexp'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
@@ -339,3 +341,18 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" vim-clojure-static
+let g:clojure_syntax_keywords = {
+    \ 'clojureMacro': ["defproject", "defcustom"],
+    \ 'clojureFunc': ["string/join", "string/replace"]
+    \ }
+
+" vim-clojure-highlight
+autocmd BufRead *.clj try | silent! Require | catch /^Fireplace/ | endtry
+
+" vCoolor.vim
+let g:vcoolor_map = '<leader>cp'
+let g:vcool_ins_rgb_map = '<leader>cpr'       " Insert rgb color.
+let g:vcool_ins_hsl_map = '<leader>cph'       " Insert hsl color.
+let g:vcool_ins_rgba_map = '<leader>cpra'      " Insert rgba color.

@@ -48,6 +48,7 @@ MacOS X (unix) version
 - [vim-coloresque](https://github.com/gorodinskiy/vim-coloresque) css/less/sass/html color preview for vim
 - [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode) VIM Table Mode for instant table creation.
 - [emmet-vim](https://github.com/mattn/emmet-vim) emmet for vim: <http://mattn.github.io/emmet-vim>
+- [vCoolor](https://github.com/KabbAmine/vCoolor.vim) Simple color selector/picker plugin for Vim.
 
 ###Short Keys
 
@@ -74,6 +75,7 @@ MacOS X (unix) version
 - del surround: `dsX`
 - comment/uncomment: `\cc`/`\cu`
 - table mode: `\tm`
+- color picker: `\cp` `\cpr` `\cph` `\cpra`
 
 
 ###Features
