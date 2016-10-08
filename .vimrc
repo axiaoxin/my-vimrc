@@ -72,6 +72,7 @@ filetype plugin indent on
 " 取消备份
 set nobackup
 set noswapfile
+set noundofile
 
 " 解决中文乱码
 set encoding=utf-8
