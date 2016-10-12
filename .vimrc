@@ -219,11 +219,17 @@ map <F6> <Esc>:tabnew<CR>
 " <F7> 拷贝粘贴代码不破坏缩进
 set pastetoggle=<F7>
 
-" <F8> sort import and auto pep8
-autocmd FileType python map <buffer> <F8> :!autopep8 -i -a --ignore=W690,E501 %;isort %;<CR><CR>
-
-" <F9> pep8 by yapf
-autocmd FileType python map <buffer> <F9> :!yapf -i % --style=pep8;isort %;<CR><CR>
+if has("win64") || has("win32")
+    " <F8> sort import and auto pep8
+    autocmd FileType python map <buffer> <F8> :!autopep8 -i -a --ignore=W690,E501 %<CR><CR>
+    " <F9> pep8 by yapf
+    autocmd FileType python map <buffer> <F9> :!yapf -i % --style=pep8<CR><CR>
+else
+    " <F8> sort import and auto pep8
+    autocmd FileType python map <buffer> <F8> :!autopep8 -i -a --ignore=W690,E501 %;isort %;<CR><CR>
+    " <F9> pep8 by yapf
+    autocmd FileType python map <buffer> <F9> :!yapf -i % --style=pep8;isort %;<CR><CR>
+endif
 
 " 给当前单词添加引号
 nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
