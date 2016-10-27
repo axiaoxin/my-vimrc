@@ -159,11 +159,6 @@ vim-table-mode
 
 ###Usage
 
-Copy the **.vim** and **.vimrc** to your home.
-
-    cp -r .vim ~
-    cp .vimrc ~
-
-or use vundle, just need copy `.vimrc` and:
+use vundle, just need copy `.vimrc` and:
 
     :PluginInstall
