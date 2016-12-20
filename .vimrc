@@ -195,7 +195,7 @@ vmap <C-c> "+y
 inoremap <C-v> <ESC>"+pa
 
 " w!!写入只读文件
-cmap w!! w !sudo tee >/dev/null %
+cmap w!! w !sudo tee >/dev/null %:p
 
 " F2切换行号显示
 nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
@@ -208,9 +208,9 @@ nmap <silent> <F4> :TagbarToggle<CR>
 
 " F5运行脚本
 if exists("$VIRTUAL_ENV")
-    autocmd FileType python map <buffer> <F5> :!$VIRTUAL_ENV'/bin/python' %<CR>
+    autocmd FileType python map <buffer> <F5> :!$VIRTUAL_ENV'/bin/python' %:p<CR>
 else
-    autocmd FileType python map <buffer> <F5> :!python %<CR>
+    autocmd FileType python map <buffer> <F5> :!python %:p<CR>
 endif
 
 " <F6> 新建标签页
@@ -221,14 +221,14 @@ set pastetoggle=<F7>
 
 if has("win64") || has("win32")
     " <F8> sort import and auto pep8
-    autocmd FileType python map <buffer> <F8> :!autopep8 -i -a --ignore=W690,E501 %<CR><CR>
+    autocmd FileType python map <buffer> <F8> :!autopep8 -i -a --ignore=W690,E501 %:p<CR><CR>
     " <F9> pep8 by yapf
-    autocmd FileType python map <buffer> <F9> :!yapf -i % --style=pep8<CR><CR>
+    autocmd FileType python map <buffer> <F9> :!yapf -i %:p --style=pep8<CR><CR>
 else
     " <F8> sort import and auto pep8
-    autocmd FileType python map <buffer> <F8> :!autopep8 -i -a --ignore=W690,E501 %;isort %;<CR><CR>
+    autocmd FileType python map <buffer> <F8> :!autopep8 -i -a --ignore=W690,E501 %:p;isort %:p;<CR><CR>
     " <F9> pep8 by yapf
-    autocmd FileType python map <buffer> <F9> :!yapf -i % --style=pep8;isort %;<CR><CR>
+    autocmd FileType python map <buffer> <F9> :!yapf -i %:p --style=pep8;isort %:p;<CR><CR>
 endif
 
 " 给当前单词添加引号
