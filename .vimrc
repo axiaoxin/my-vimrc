@@ -3,6 +3,9 @@
 " 不兼容vi
 set nocompatible
 
+" dos2unix
+set ff=unix
+
 " 不检测文件类型
 filetype off
 
