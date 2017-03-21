@@ -1,13 +1,13 @@
-ï»¿set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
+set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
 """"""""""""""""""""""VUNDLE PLUGIN""""""""""""""""""""
 
-" ²»¼æÈİvi
+" ä¸å…¼å®¹vi
 set nocompatible
 
 " dos2unix
 set ff=unix
 
-" ²»¼ì²âÎÄ¼şÀàĞÍ
+" ä¸æ£€æµ‹æ–‡ä»¶ç±»å‹
 filetype off
 
 " set the runtime path to include Vundle and initialize
@@ -58,7 +58,7 @@ Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 
-" Õë¶Ô²»Í¬µÄÎÄ¼şÀàĞÍ²ÉÓÃ²»Í¬µÄËõ½ø¸ñÊ½
+" é’ˆå¯¹ä¸åŒçš„æ–‡ä»¶ç±»å‹é‡‡ç”¨ä¸åŒçš„ç¼©è¿›æ ¼å¼
 filetype plugin indent on
 
 " Brief help
@@ -75,101 +75,101 @@ filetype plugin indent on
 
 """"""""""""""""""""""BASE CONFIG"""""""""""""""""""""""
 
-" È¡Ïû±¸·İ
+" å–æ¶ˆå¤‡ä»½
 set nobackup
 set noswapfile
 set noundofile
 
-" ½â¾öconsleÊä³öÂÒÂë
+" è§£å†³consleè¾“å‡ºä¹±ç 
 language messages zh_CN.utf-8
 
-" ×´Ì¬À¸ÅäÖÃ
+" çŠ¶æ€æ é…ç½®
 set laststatus=2
 
-" ´ò¿ªÓï·¨¸ßÁÁ
+" æ‰“å¼€è¯­æ³•é«˜äº®
 syntax enable
 
-" ¿ªÆôÓï·¨¼ì²â
+" å¼€å¯è¯­æ³•æ£€æµ‹
 syntax on
 
-" vimrcÎÄ¼şĞŞ¸ÄÖ®ºó×Ô¶¯¼ÓÔØ
+" vimrcæ–‡ä»¶ä¿®æ”¹ä¹‹åè‡ªåŠ¨åŠ è½½
 autocmd! bufwritepost .vimrc source %
 
-" ÎÄ¼şĞŞ¸ÄÖ®ºó×Ô¶¯ÔØÈë
+" æ–‡ä»¶ä¿®æ”¹ä¹‹åè‡ªåŠ¨è½½å…¥
 set autoread
 
-" yyÖ±½Ó¸´ÖÆµ½ÏµÍ³¼ôÇĞ°å£¨For macvim£©
+" yyç›´æ¥å¤åˆ¶åˆ°ç³»ç»Ÿå‰ªåˆ‡æ¿ï¼ˆFor macvimï¼‰
 "set clipboard=unnamed
 
-" ¸ßÁÁËÑË÷ÃüÖĞµÄÎÄ±¾
+" é«˜äº®æœç´¢å‘½ä¸­çš„æ–‡æœ¬
 set hlsearch
 
-" Ëæ×Å¼üÈë¼´Ê±ËÑË÷
+" éšç€é”®å…¥å³æ—¶æœç´¢
 set incsearch
 
-" ËÑË÷Ê±ºöÂÔ´óĞ¡Ğ´
+" æœç´¢æ—¶å¿½ç•¥å¤§å°å†™
 set ignorecase
 
-" ÓĞÒ»¸ö»òÒÔÉÏ´óĞ´×ÖÄ¸Ê±ÈÔ´óĞ¡Ğ´Ãô¸Ğ
+" æœ‰ä¸€ä¸ªæˆ–ä»¥ä¸Šå¤§å†™å­—æ¯æ—¶ä»å¤§å°å†™æ•æ„Ÿ
 set smartcase
 
 set guifont=Menlo:h14
 
 colorscheme Tomorrow-Night-Bright
-" Ê¹ÓÃ×Ô´øÅäÉ«
+" ä½¿ç”¨è‡ªå¸¦é…è‰²
 "colorscheme elflord
 "set background=dark
 
-" ÔÚ×´Ì¬À¸ÏÔÊ¾ÕıÔÚÊäÈëµÄÃüÁî
+" åœ¨çŠ¶æ€æ æ˜¾ç¤ºæ­£åœ¨è¾“å…¥çš„å‘½ä»¤
 set showcmd
 
-" ÏÔÊ¾À¨ºÅÅä¶ÔÇé¿ö
+" æ˜¾ç¤ºæ‹¬å·é…å¯¹æƒ…å†µ
 set showmatch
 
-" :next, :make ÃüÁîÖ®Ç°×Ô¶¯±£´æ
+" :next, :make å‘½ä»¤ä¹‹å‰è‡ªåŠ¨ä¿å­˜
 set autowrite
 
-" ÔÊĞíÊ¹ÓÃÊó±ê
+" å…è®¸ä½¿ç”¨é¼ æ ‡
 set mouse=a
 
-" ÉèÖÃĞĞºÅ
+" è®¾ç½®è¡Œå·
 set nu
 
-" ÍË¸ñ¼ü¿ÉÓÃ
+" é€€æ ¼é”®å¯ç”¨
 set backspace=2
 
-" ÍË¸ñ¼üÒ»´ÎÉ¾µô4¸ö¿Õ¸ñ
+" é€€æ ¼é”®ä¸€æ¬¡åˆ æ‰4ä¸ªç©ºæ ¼
 set smarttab
 
-" Ëõ½ø
+" ç¼©è¿›
 set autoindent
 set smartindent
 
-" ±£´æÎÄ¼şÊ±×Ô¶¯É¾³ıĞĞÎ²¿Õ¸ñ»òTab
+" ä¿å­˜æ–‡ä»¶æ—¶è‡ªåŠ¨åˆ é™¤è¡Œå°¾ç©ºæ ¼æˆ–Tab
 autocmd BufWritePre * :%s/\s\+$//e
 
-" ±£´æÎÄ¼şÊ±×Ô¶¯É¾³ıÄ©Î²¿ÕĞĞ
+" ä¿å­˜æ–‡ä»¶æ—¶è‡ªåŠ¨åˆ é™¤æœ«å°¾ç©ºè¡Œ
 autocmd BufWritePre * :%s/^$\n\+\%$//ge
 
-" Ìî³äTab
+" å¡«å……Tab
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set shiftround
 
-" ´úÂëÕÛµş ¹â±êÔÚËõ½øÏÂ·½Ê±ÓÃzaÃüÁîÕÛµş»òÕ¹¿ª
+" ä»£ç æŠ˜å  å…‰æ ‡åœ¨ç¼©è¿›ä¸‹æ–¹æ—¶ç”¨zaå‘½ä»¤æŠ˜å æˆ–å±•å¼€
 set fdm=indent
-" Ä¬ÈÏÕ¹¿ª
+" é»˜è®¤å±•å¼€
 set foldlevel=99
 
-" Í»³öÏÔÊ¾µ±Ç°ĞĞ£¬ÁĞ
+" çªå‡ºæ˜¾ç¤ºå½“å‰è¡Œï¼Œåˆ—
 "set cursorline
 "set cursorcolumn
 
-" ÉèÖÃ ÍË³övimºó£¬ÄÚÈİÏÔÊ¾ÔÚÖÕ¶ËÆÁÄ», ¿ÉÒÔÓÃÓÚ²é¿´ºÍ¸´ÖÆ
+" è®¾ç½® é€€å‡ºvimåï¼Œå†…å®¹æ˜¾ç¤ºåœ¨ç»ˆç«¯å±å¹•, å¯ä»¥ç”¨äºæŸ¥çœ‹å’Œå¤åˆ¶
 set t_ti= t_te=
 
-" ´ò¿ªÎÄ¼şÊ±Ê¼ÖÕÌø×ªµ½ÉÏ´Î¹â±êËùÔÚÎ»ÖÃ
+" æ‰“å¼€æ–‡ä»¶æ—¶å§‹ç»ˆè·³è½¬åˆ°ä¸Šæ¬¡å…‰æ ‡æ‰€åœ¨ä½ç½®
 autocmd BufReadPost *
       \ if ! exists("g:leave_my_cursor_position_alone") |
       \     if line("'\"") > 0 && line ("'\"") <= line("$") |
@@ -181,46 +181,46 @@ autocmd BufReadPost *
 
 """""""""""""""""""""""""KEY MAPPING""""""""""""""""""""
 
-" Ó³ÉäÇĞ»»bufferµÄ¼üÎ»
+" æ˜ å°„åˆ‡æ¢bufferçš„é”®ä½
 nnoremap [b :bp<CR>
 nnoremap ]b :bn<CR>
 
-" Ó³ÉäÇĞ»»tabµÄ¼üÎ»
+" æ˜ å°„åˆ‡æ¢tabçš„é”®ä½
 nnoremap [t :tabp<CR>
 nnoremap ]t :tabn<CR>
 
-" normalÄ£Ê½ÏÂCtrl+cÈ«Ñ¡²¢¸´ÖÆµ½ÏµÍ³¼ôÌù°å(linux±ØĞë×°ÓĞvim-gnome)
+" normalæ¨¡å¼ä¸‹Ctrl+cå…¨é€‰å¹¶å¤åˆ¶åˆ°ç³»ç»Ÿå‰ªè´´æ¿(linuxå¿…é¡»è£…æœ‰vim-gnome)
 nmap <C-c> gg"+yG
 
-" visualÄ£Ê½ÏÂCtrl+c¸´ÖÆÑ¡ÖĞÄÚÈİµ½¼ôÌù°å
+" visualæ¨¡å¼ä¸‹Ctrl+cå¤åˆ¶é€‰ä¸­å†…å®¹åˆ°å‰ªè´´æ¿
 vmap <C-c> "+y
 
-" Ctrl+vÔ­ÑùÕ³Ìù¼ôÇĞ°åÄÚÈİ
+" Ctrl+våŸæ ·ç²˜è´´å‰ªåˆ‡æ¿å†…å®¹
 inoremap <C-v> <ESC>"+pa
 
-" w!!Ğ´ÈëÖ»¶ÁÎÄ¼ş
+" w!!å†™å…¥åªè¯»æ–‡ä»¶
 cmap w!! w !sudo tee >/dev/null %:p
 
-" F2ÇĞ»»ĞĞºÅÏÔÊ¾
+" F2åˆ‡æ¢è¡Œå·æ˜¾ç¤º
 nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
 
-" F3´ò¿ªÄ¿Â¼Ê÷
+" F3æ‰“å¼€ç›®å½•æ ‘
 nmap <silent> <F3> :NERDTreeToggle<CR>
 
-" F4ÏÔÊ¾TagList
+" F4æ˜¾ç¤ºTagList
 nmap <silent> <F4> :TagbarToggle<CR>
 
-" F5ÔËĞĞ½Å±¾
+" F5è¿è¡Œè„šæœ¬
 if exists("$VIRTUAL_ENV")
     autocmd FileType python map <buffer> <F5> :!$VIRTUAL_ENV'/bin/python' %:p<CR>
 else
     autocmd FileType python map <buffer> <F5> :!python %:p<CR>
 endif
 
-" <F6> ĞÂ½¨±êÇ©Ò³
+" <F6> æ–°å»ºæ ‡ç­¾é¡µ
 map <F6> <Esc>:tabnew<CR>
 
-" <F7> ¿½±´Õ³Ìù´úÂë²»ÆÆ»µËõ½ø
+" <F7> æ‹·è´ç²˜è´´ä»£ç ä¸ç ´åç¼©è¿›
 set pastetoggle=<F7>
 
 if has("win64") || has("win32")
@@ -235,19 +235,19 @@ else
     autocmd FileType python map <buffer> <F9> :!yapf -i %:p --style=pep8;isort %:p;<CR><CR>
 endif
 
-" ¸øµ±Ç°µ¥´ÊÌí¼ÓÒıºÅ
+" ç»™å½“å‰å•è¯æ·»åŠ å¼•å·
 nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap w' viw<esc>a'<esc>hbi'<esc>lel
 
-" ÔÚNormal ModeºÍVisual/Select ModeÏÂ£¬ÀûÓÃTab¼üºÍShift-Tab¼üÀ´Ëõ½øÎÄ±¾
+" åœ¨Normal Modeå’ŒVisual/Select Modeä¸‹ï¼Œåˆ©ç”¨Tabé”®å’ŒShift-Tabé”®æ¥ç¼©è¿›æ–‡æœ¬
 nnoremap > >>
 nnoremap < <<
 vnoremap > >gv
 vnoremap < <gv
 
-" ×óÓÒ·Ö¸î´°¿ÚCtrl+w +v
-" ÉÏÏÂ·Ö¸î´°¿ÚCtrl+w +s
-" ¹Ø±Õ´°¿ÚCtrl+w  +q
+" å·¦å³åˆ†å‰²çª—å£Ctrl+w +v
+" ä¸Šä¸‹åˆ†å‰²çª—å£Ctrl+w +s
+" å…³é—­çª—å£Ctrl+w  +q
 
 " quicker window switching
 nnoremap <C-h> <C-w>h
@@ -271,18 +271,18 @@ imap <C-e> <C-X><C-U>
 let g:NERDSpaceDelims=1
 
 " NERDTREE
-" ²»ÏÔÊ¾µÄÎÄ¼ş
+" ä¸æ˜¾ç¤ºçš„æ–‡ä»¶
 let NERDTreeIgnore=['\.pyc$', '\~$']
 " show nerdtree when starts up
 "autocmd vimenter * NERDTree
-" ÍË³ö×îºóÒ»¸öbuffÊ±Ò²ÍË³önerdtree
+" é€€å‡ºæœ€åä¸€ä¸ªbuffæ—¶ä¹Ÿé€€å‡ºnerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " CtrlP
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_cmd = 'CtrlPMixed'
 
-"Ctrl-X Ctrl-U emoji²¹È«
+"Ctrl-X Ctrl-U emojiè¡¥å…¨
 set completefunc=emoji#complete
 
 " instant-markdown
@@ -290,13 +290,13 @@ let g:instant_markdown_slow = 1
 
 " airline
 let g:airline_section_y = '%{strftime("%H:%M")}'
-" ¿ªÆôtabline
+" å¼€å¯tabline
 let g:airline#extensions#tabline#enabled = 1
-" tablineÖĞµ±Ç°bufferÁ½¶ËµÄ·Ö¸ô×Ö·û
+" tablineä¸­å½“å‰bufferä¸¤ç«¯çš„åˆ†éš”å­—ç¬¦
 let g:airline#extensions#tabline#left_sep = ' '
-" tablineÖĞÎ´¼¤»îbufferÁ½¶ËµÄ·Ö¸ô×Ö·û
+" tablineä¸­æœªæ¿€æ´»bufferä¸¤ç«¯çš„åˆ†éš”å­—ç¬¦
 let g:airline#extensions#tabline#left_alt_sep = '|'
-" tablineÖĞbufferÏÔÊ¾±àºÅ
+" tablineä¸­bufferæ˜¾ç¤ºç¼–å·
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
 " jedi
