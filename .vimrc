@@ -4,8 +4,8 @@ set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
 " 不兼容vi
 set nocompatible
 
-" dos2unix
-set ff=unix
+" 搜索到文件两端时不重新搜索
+set nowrapscan
 
 " 不检测文件类型
 filetype off
