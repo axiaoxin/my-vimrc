@@ -199,7 +199,7 @@ vmap <C-c> "+y
 inoremap <C-v> <ESC>"+pa
 
 " w!!写入只读文件
-cmap w!! w !sudo tee >/dev/null %:p
+cmap w!! w !sudo tee >/dev/null %
 
 " F2切换行号显示
 nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
