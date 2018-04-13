@@ -4,13 +4,13 @@ This project is extracted from [my dot files](https://github.com/axiaoxin/mac-do
 
 This VIM settings is for Python programmers on Mac OSX, may be you will write some html, css, js, Markdown, NodeJS and Clojure. It use Vundle to manage the plugins.
 
-###VIM Version
+### VIM Version
 
 VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Apr 13 2015 00:22:48)
 
 MacOS X (unix) version
 
-###Dependences
+### Dependences
 
     brew install vim git npm ctags
     sudo npm -g install instant-markdown-d jshint
@@ -18,7 +18,7 @@ MacOS X (unix) version
 
 [Maybe I have forgot some other dependences :( ]
 
-###Plugins
+### Plugins
 
 **use vundle manage plugins**：
 
@@ -50,7 +50,7 @@ MacOS X (unix) version
 - [emmet-vim](https://github.com/mattn/emmet-vim) emmet for vim: <http://mattn.github.io/emmet-vim>
 - [vCoolor](https://github.com/KabbAmine/vCoolor.vim) Simple color selector/picker plugin for Vim.
 
-###Short Keys
+### Short Keys
 
 - change buf: `]b` `[b`
 - change tab: `]t` `[t`
@@ -78,7 +78,7 @@ MacOS X (unix) version
 - color picker: `\cp` `\cpr` `\cph` `\cpra`
 
 
-###Features
+### Features
 
 - no backup and swap file
 - correct encoding for chinese
@@ -103,7 +103,7 @@ MacOS X (unix) version
 - auto format markdown tables in table mode
 - emmet for vim, chinese tutorial <http://www.zfanw.com/blog/zencoding-vim-tutorial-chinese.html>
 
-###Screenshots
+### Screenshots
 
 default open a python file
 
@@ -157,7 +157,7 @@ vim-table-mode
 
 <a href="http://www.youtube.com/watch?v=9lVQ0VJY3ps"><img src="https://raw.github.com/axil/vim-table-mode/master/youtube.png"/></a>
 
-###Usage
+### Usage
 
 use vundle, just need copy `.vimrc` and:
 
