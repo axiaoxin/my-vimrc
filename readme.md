@@ -16,8 +16,6 @@ MacOS X (unix) version
     sudo npm -g install instant-markdown-d jshint
     sudo pip install isort jedi yapf flake8 virtualenvwrapper autopep8
 
-[Maybe I have forgot some other dependences :( ]
-
 ### Plugins
 
 **use vundle manage plugins**：
@@ -49,6 +47,7 @@ MacOS X (unix) version
 - [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode) VIM Table Mode for instant table creation.
 - [emmet-vim](https://github.com/mattn/emmet-vim) emmet for vim: <http://mattn.github.io/emmet-vim>
 - [vCoolor](https://github.com/KabbAmine/vCoolor.vim) Simple color selector/picker plugin for Vim.
+- [vim-go](https://github.com/fatih/vim-go) Go development plugin for Vim
 
 ### Short Keys
 
@@ -159,6 +158,6 @@ vim-table-mode
 
 ### Usage
 
-use vundle, just need copy `.vimrc` and:
+use vundle, just need copy `.vimrc` to your HOME path and run `:PluginInstall` in vim.
 
-    :PluginInstall
+if added vim-go, must need your vim version > 7.4+， and need run `:GoInstallBinaries` to install all the vim-go necessary binaries
