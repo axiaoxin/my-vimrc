@@ -23,6 +23,7 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 
+Plugin 'fatih/vim-go'
 Plugin 'kabbamine/vcoolor.vim'
 Plugin 'guns/vim-clojure-highlight'
 Plugin 'guns/vim-sexp'
@@ -177,6 +178,8 @@ autocmd BufReadPost *
       \     endif |
       \ endif
 
+" go文件tab显示方式 不填充tab tab显示为4个空格的长度
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
 
 """""""""""""""""""""""""KEY MAPPING""""""""""""""""""""
@@ -265,6 +268,24 @@ nnoremap <C-Down> <C-w>-
 " emoji
 imap <C-e> <C-X><C-U>
 
+" 编译golang同时运行测试
+" run :GoBuild or :GoTestCompile based on the go file
+function! s:build_go_files()
+  let l:file = expand('%')
+  if l:file =~# '^\f\+_test\.go$'
+    call go#test#Test(0, 1)
+  elseif l:file =~# '^\f\+\.go$'
+    call go#cmd#Build(0)
+  endif
+endfunction
+autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
+" 运行golang
+autocmd FileType go nmap <leader>r  <Plug>(go-run)
+
+" golang错误之间跳转
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+nnoremap <leader>a :cclose<CR>
 
 """"""""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""""""""
 " NerdCommenter
@@ -363,3 +384,13 @@ let g:vcoolor_map = '<leader>cp'
 let g:vcool_ins_rgb_map = '<leader>cpr'       " Insert rgb color.
 let g:vcool_ins_hsl_map = '<leader>cph'       " Insert hsl color.
 let g:vcool_ins_rgba_map = '<leader>cpra'      " Insert rgba color.
+
+" vim-go
+let g:go_list_type = "quickfix"  " 使用quickfix显示错误信息
+let g:go_fmt_command = "goimports"  " 使用goimports格式化代码并自动整理import
+let g:go_highlight_types = 1 " 高亮显示type后的名称
+let g:go_highlight_fields = 1 " 高亮显示结构体字段
+let g:go_highlight_function_calls = 1  " 高亮显示函数名
+let g:go_highlight_operators = 1    " 高亮运算符
+let g:go_highlight_extra_types = 1  " 高亮其他types
+let g:go_highlight_build_constraints = 1  " 高亮编译标签
