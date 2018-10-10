@@ -183,6 +183,9 @@ autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
 
 """""""""""""""""""""""""KEY MAPPING""""""""""""""""""""
+" j k 移动行的时候光标始终在屏幕中间
+nnoremap j jzz
+nnoremap k kzz
 
 " 映射切换buffer的键位
 nnoremap [b :bp<CR>
