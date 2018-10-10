@@ -6,9 +6,11 @@ This VIM settings is for Python programmers on Mac OSX, may be you will write so
 
 ### VIM Version
 
-VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Apr 13 2015 00:22:48)
+VIM - Vi IMproved 8.1 (2018 May 18, compiled Oct 10 2018 15:24:01)
 
 MacOS X (unix) version
+
+CentOS 7
 
 ### Dependences
 
