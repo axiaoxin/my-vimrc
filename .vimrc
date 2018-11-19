@@ -157,6 +157,8 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set shiftround
+" 配置go文件tab显示方式：不填充tab但tab显示为4个空格的长度
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
 " 代码折叠 光标在缩进下方时用za命令折叠或展开
 set fdm=indent
@@ -177,9 +179,6 @@ autocmd BufReadPost *
       \         exe "normal g'\"" |
       \     endif |
       \ endif
-
-" go文件tab显示方式 不填充tab tab显示为4个空格的长度
-autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
 
 """""""""""""""""""""""""KEY MAPPING""""""""""""""""""""
