@@ -244,6 +244,9 @@ endif
 nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap w' viw<esc>a'<esc>hbi'<esc>lel
 
+" 大写转小写前面加_
+nnoremap ~~ i_<esc>l~
+
 " 在Normal Mode和Visual/Select Mode下，利用Tab键和Shift-Tab键来缩进文本
 nnoremap > >>
 nnoremap < <<
