@@ -246,6 +246,8 @@ nnoremap w' viw<esc>a'<esc>hbi'<esc>lel
 
 " 大小写转换时自动在前面加_
 nnoremap ! i_<esc>l~
+" 删除下划线和后面的字符
+nnoremap @ x~
 
 " 在Normal Mode和Visual/Select Mode下，利用Tab键和Shift-Tab键来缩进文本
 nnoremap > >>
