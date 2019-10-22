@@ -18,7 +18,7 @@ macOS version
 
 ### Plugins
 
-**use vim-plug manage plugins**： the `.vimrc` will automatic download the vim-plugin
+**use vim-plug manage plugins**： the `.vimrc` will automatic download the vim-plug
 
 - [nerdtree](https://github.com/scrooloose/nerdtree) A tree explorer plugin for vim.
 - [nerdcommenter](https://github.com/scrooloose/nerdcommenter) Vim plugin for intensely orgasmic commenting
@@ -71,6 +71,7 @@ macOS version
 - table mode: `\tm`
 - build gofile: `\gb`
 - run gofile: `\gr`
+- code complete: `<c-z>`
 
 ### Features
 
@@ -83,10 +84,10 @@ macOS version
 - auto remove whitespace which at the line tail and blank line at the latest
 - show content in terminal when exit the vim
 - open a file at the latest change position
-- auto check PEP8 format when read or write a python script
-- one key to format python code with PEP8
+- auto check syntax
+- one key to fix linter check
 - run python script with virtualenv if there is a `$VIRTUAL_ENV` (open script with virtualenv in terminal)
-- auto complete the code use <c-z>
+- auto complete the code
 - show git diff in vim
 - multiple cursors for editing
 - use tomorrow-night-bright color scheme
@@ -94,6 +95,8 @@ macOS version
 - auto format markdown tables in table mode
 
 ### Screenshots
+
+some pics are old, don't trust them...
 
 default open a python file
 
