@@ -1,83 +1,76 @@
-My VIM Settings
-===============
-This project is extracted from [my dot files](https://github.com/axiaoxin/mac-dotfiles)
+# My VIM Settings
 
-This VIM settings is for Python programmers on Mac OSX, may be you will write some html, css, js, Markdown, NodeJS and Clojure. It use Vundle to manage the plugins.
+This VIM settings is newest for my MacOSX,
+I usually use my VIM to write some Golang, Python, Markdown, etc.
+It use vim-plug replace to the vundle to manage the plugins.
+Replaced many old plugins with new plugin which are more suitable in VIM-8
+And remove some plugin which I dose not usually use.
 
 ### VIM Version
 
-VIM - Vi IMproved 8.1 (2018 May 18, compiled Oct 10 2018 15:24:01)
-
-MacOS X (unix) version
-
-CentOS 7
+VIM - Vi IMproved 8.1 (2018 May 18, compiled Oct 15 2019 10:20:59)
+macOS version
 
 ### Dependences
 
-    brew install vim git npm ctags
-    sudo npm -g install instant-markdown-d jshint
-    sudo pip install isort jedi yapf flake8 virtualenvwrapper autopep8
+    brew install cmake macvim pygments global
+    sudo pip install isort yapf flake8 autopep8 pylint
 
 ### Plugins
 
-**use vundle manage plugins**：
-
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+**use vim-plug manage plugins**： the `.vimrc` will automatic download the vim-plugin
 
 - [nerdtree](https://github.com/scrooloose/nerdtree) A tree explorer plugin for vim.
 - [nerdcommenter](https://github.com/scrooloose/nerdcommenter) Vim plugin for intensely orgasmic commenting
-- [tagbar](https://github.com/majutsushi/tagbar) Vim plugin that displays tags in a window(ctags is needed)
-- [ctrlp](https://github.com/kien/ctrlp.vim) Fuzzy file, buffer, mru, tag, etc finder.
 - [vim-airline](https://github.com/bling/vim-airline) lean & mean status/tabline for vim that's light as air
-- [vim-snippets](https://github.com/honza/vim-snippets) vim-snipmate default snippets
-- [UltiSnips](https://github.com/SirVer/ultisnips) The ultimate snippet solution for Vim
 - [vim-surround](https://github.com/tpope/vim-surround) quoting/parenthesizing made simple
-- [vim-instant-markdown](https://github.com/suan/vim-instant-markdown) Instant Markdown previews from VIM!
-- [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) True Sublime Text style multiple selections for Vim
 - [vim-startify](https://github.com/mhinz/vim-startify) A fancy start screen for Vim
-- [vim-emoji](https://github.com/junegunn/vim-emoji) Named Emoji in Vim
 - [vim-json-line-format](https://github.com/axiaoxin/vim-json-line-format) format json line
-- [jedi-vim](https://github.com/davidhalter/jedi-vim) Using the jedi autocompletion library for VIM.
-- [vim-flake8](https://github.com/nvie/vim-flake8) Flake8 plugin for Vim (I like it more than [syntastic](https://github.com/scrooloose/syntastic), it's better.)
-- [indentLine](https://github.com/Yggdroot/indentLine) A vim plugin to display the indention levels with thin vertical lines
-- [vim-gitgutter](https://github.com/airblade/vim-gitgutter) A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
+- [vim-signify](https://github.com/mhinz/vim-signify) Show a diff using Vim its sign column.
 - [favorite-vim-colorscheme](https://github.com/axiaoxin/favorite-vim-colorscheme) Tomorrow night bright color scheme
-- [vim-node](https://github.com/moll/vim-node) Tools and environment to make Vim superb for developing with Node.js. Like Rails.vim for Node.
-- [jshint](https://github.com/jshint/jshint) JSHint is a tool that helps to detect errors and potential problems in your JavaScript code
-- [vim-javascript-syntax](https://github.com/jelera/vim-javascript-syntax) Enhanced javascript syntax file for Vim
-- [vim-coloresque](https://github.com/gorodinskiy/vim-coloresque) css/less/sass/html color preview for vim
 - [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode) VIM Table Mode for instant table creation.
-- [emmet-vim](https://github.com/mattn/emmet-vim) emmet for vim: <http://mattn.github.io/emmet-vim>
-- [vCoolor](https://github.com/KabbAmine/vCoolor.vim) Simple color selector/picker plugin for Vim.
 - [vim-go](https://github.com/fatih/vim-go) Go development plugin for Vim
+- [rainbow_parentheses.vim](https://github.com/kien/rainbow_parentheses.vim) Better Rainbow Parentheses.
+- [vim-coloresque](https://github.com/gko/vim-coloresque) css/less/sass/html color preview for vim.
+- [asyncrun.vim](https://github.com/skywind3000/asyncrun.vim) Run Async Shell Commands in Vim 8.0 / NeoVim and Output to Quickfix Window.
+- [vim-json-line-format](https://github.com/axiaoxin/vim-json-line-format) format json line in Vim.
+- [vim-visual-multi](https://github.com/mg979/vim-visual-multi) Multiple cursors project for vim/neovim.
+- [vim-airline](https://github.com/vim-airline/vim-airline) lean & mean status/tabline for vim that's light as air.
+- [LeaderF](https://github.com/Yggdroot/LeaderF) An asynchronous fuzzy finder which is used to quickly locate files, buffers,mrus, tags, etc. in large project
+- [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) A code-completion engine for Vim.
+- [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) A Vim plugin that manages your tag files.
+- [gutentags_plus](https://github.com/skywind3000/gutentags_plus) The right way to use gtags with gutentags.
+- [ale](https://github.com/dense-analysis/ale) Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
 
 ### Short Keys
 
 - change buf: `]b` `[b`
+- open a new tab: `<F6>`
 - change tab: `]t` `[t`
 - copy (all/selected) content: `Ctrl+c`
 - write RO file: `w!!`
 - line number toggle: `<F2>`
 - nerdtree toggle: `<F3>`
-- tagbar toggle: `<F4>`
+- function list: `<F4>`
 - run python script: `<F5>`
-- open a new tab: `<F6>`
 - paste toggle: `<F7>`
-- PEP8 format by autopep8: `<F8>`
-- PEP8 format by yapf: `<F9>`
+- lint fix: `<F8>`
 - wrap `"`/`'` for a word: `w"`/`w'`
+- uppercase/lowercase toggle with a `_` prefix: `!`
+- delete current letter and toggle uppercase/lowercase: `@`
 - continue indent text to left or right on select/normal mode: `>` `<`
-- change window: `<C-HJKL>`
-- preview to select emoji: :`<C-e>`
-- find files: `<C-p>`
+- switch window: `<C-HJKL>`
+- resize window: `<C-UpDownLeftRightEnter>`
+- close quickfix window: `\q`
+- find files: `\f`
 - complete python code: `<C-n>`
 - format json line: `<leader>wj` `<leader>pj`
 - change surround: `csXY`
 - del surround: `dsX`
 - comment/uncomment: `\cc`/`\cu`
 - table mode: `\tm`
-- color picker: `\cp` `\cpr` `\cph` `\cpra`
-
+- build gofile: `\gb`
+- run gofile: `\gr`
 
 ### Features
 
@@ -93,16 +86,12 @@ CentOS 7
 - auto check PEP8 format when read or write a python script
 - one key to format python code with PEP8
 - run python script with virtualenv if there is a `$VIRTUAL_ENV` (open script with virtualenv in terminal)
-- auto open browser to preview when you open a markdown file, auto close the browser when you close the markdown file.
-- auto complete the python code, use Ctrl+n
+- auto complete the code use <c-z>
 - show git diff in vim
-- show indent guides
 - multiple cursors for editing
-- auto complete python sniptes by `<tab>` or `<shift-tab>`
 - use tomorrow-night-bright color scheme
 - color preview for .css files
 - auto format markdown tables in table mode
-- emmet for vim, chinese tutorial <http://www.zfanw.com/blog/zencoding-vim-tutorial-chinese.html>
 
 ### Screenshots
 
@@ -114,41 +103,17 @@ working
 
 ![](http://ww1.sinaimg.cn/large/67ac78cfjw1erenwlnhc7j21kw0zkwpe.jpg)
 
---------------
+---
 
 next pics come from the plugin projects
-
-ctrlp find files:
-
-![](https://camo.githubusercontent.com/0a0b4c0d24a44d381cbad420ecb285abc2aaa4cb/687474703a2f2f692e696d6775722e636f6d2f7949796e722e706e67)
-
-ultisnips (I am not using YouCompleteMe, using jedi-vim)
-
-![](https://camo.githubusercontent.com/296aecf30e1607233814196db6bd3f5f47e70c73/68747470733a2f2f7261772e6769746875622e636f6d2f5369725665722f756c7469736e6970732f6d61737465722f646f632f64656d6f2e676966)
-
-jedi complete
-
-![](https://github.com/davidhalter/jedi/raw/master/docs/_screenshots/screenshot_complete.png)
-
-preview markdown
-
-![](https://camo.githubusercontent.com/6e7dc465d334c2f962ad8c8bfee654d0e8da24ff/687474703a2f2f646c2e64726f70626f782e636f6d2f752f32383935363236372f696e7374616e742d6d61726b646f776e2d64656d6f5f7468756d622e676966)
 
 json line format(I am the author :flushed:)
 
 ![](https://github.com/axiaoxin/vim-json-line-format/raw/master/pic.gif)
 
-emoji
-
-![](https://camo.githubusercontent.com/c2c6add271b0719215f2cac78e6a777f83184bed/68747470733a2f2f7261772e6769746875622e636f6d2f6a756e6567756e6e2f692f6d61737465722f656d6f6a692d636f6d706c6574652e676966)
-
 startify
 
 ![](https://raw.githubusercontent.com/mhinz/vim-startify/102aa438b2d2a88e2b4e331d8ff5320eed52f0c4/startify.png)
-
-multiple cursors
-
-![](https://github.com/terryma/vim-multiple-cursors/raw/master/assets/example1.gif?raw=true)
 
 vim-coloresque
 
@@ -160,6 +125,4 @@ vim-table-mode
 
 ### Usage
 
-use vundle, just need copy `.vimrc` to your HOME path and run `:PluginInstall` in vim.
-
-if added vim-go, must need your vim version > 7.4+， and need run `:GoInstallBinaries` to install all the vim-go necessary binaries
+use vim-plug, just need copy `.vimrc` to your HOME path and run `:PlugInstall` in vim.

@@ -1,88 +1,70 @@
-set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
-""""""""""""""""""""""VUNDLE PLUGIN""""""""""""""""""""
-
-" 不兼容vi
-set nocompatible
-
-" 搜索到文件两端时不重新搜索
-set nowrapscan
-
-" 不检测文件类型
-filetype off
-
-" set the runtime path to include Vundle and initialize
-set rtp+=$HOME/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-
-Plugin 'fatih/vim-go'
-Plugin 'kabbamine/vcoolor.vim'
-Plugin 'guns/vim-clojure-highlight'
-Plugin 'guns/vim-sexp'
-Plugin 'guns/vim-clojure-static'
-Plugin 'tpope/vim-fireplace'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'mattn/emmet-vim'
-Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'gorodinskiy/vim-coloresque'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'walm/jshint.vim'
-Plugin 'moll/vim-node'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'Yggdroot/indentLine'
-Plugin 'nvie/vim-flake8'
-if has('python')
-    Plugin 'davidhalter/jedi-vim'
-    Plugin 'axiaoxin/vim-json-line-format'
-    Plugin 'SirVer/ultisnips'
+""""""""""""""""""""""VIM-PLUG""""""""""""""""""""
+" download plug.vim
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-Plugin 'axiaoxin/favorite-vim-colorscheme'
-Plugin 'junegunn/vim-emoji'
-Plugin 'mhinz/vim-startify'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'suan/vim-instant-markdown'
-Plugin 'tpope/vim-surround'
-Plugin 'honza/vim-snippets'
-Plugin 'bling/vim-airline'
-Plugin 'kien/ctrlp.vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
 
-call vundle#end()
+" Initialize plugin system
+call plug#begin('~/.vim/plugged')
+" color scheme. https://github.com/axiaoxin/favorite-vim-colorscheme
+Plug 'axiaoxin/favorite-vim-colorscheme'
+" The fancy start screen for Vim. https://github.com/mhinz/vim-startify
+Plug 'mhinz/vim-startify'
+" Go development plugin for Vim. https://github.com/fatih/vim-go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
+" Better Rainbow Parentheses. https://github.com/kien/rainbow_parentheses.vim
+Plug 'kien/rainbow_parentheses.vim'
+" VIM Table Mode for instant table creation. https://github.com/dhruvasagar/vim-table-mode
+Plug 'dhruvasagar/vim-table-mode', { 'for': ['md', 'markdown']}
+" css/less/sass/html color preview for vim. https://github.com/gko/vim-coloresque
+Plug 'gorodinskiy/vim-coloresque'
+" Run Async Shell Commands in Vim 8.0 / NeoVim and Output to Quickfix Window. https://github.com/skywind3000/asyncrun.vim
+Plug 'skywind3000/asyncrun.vim'
+" Show a diff using Vim its sign column. https://github.com/mhinz/vim-signify
+Plug 'mhinz/vim-signify'
+" A vim plugin to display the indention levels with thin vertical lines. https://github.com/Yggdroot/indentLine
+"Plug 'Yggdroot/indentLine'  " not working now
+" format json line in Vim. https://github.com/axiaoxin/vim-json-line-format
+Plug 'axiaoxin/vim-json-line-format', {'for': 'json'}
+" Multiple cursors project for vim/neovim. https://github.com/mg979/vim-visual-multi
+Plug 'mg979/vim-visual-multi'
+" surround.vim: quoting/parenthesizing made simple. https://github.com/tpope/vim-surround
+Plug 'tpope/vim-surround'
+" lean & mean status/tabline for vim that's light as air. https://github.com/vim-airline/vim-airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" A tree explorer plugin for vim. https://github.com/scrooloose/nerdtree
+Plug 'scrooloose/nerdtree'
+" Vim plugin for intensely orgasmic commenting. https://github.com/scrooloose/nerdcommenter
+Plug 'scrooloose/nerdcommenter'
+" An asynchronous fuzzy finder which is used to quickly locate files, buffers,
+" mrus, tags, etc. in large project. https://github.com/Yggdroot/LeaderF
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+" A code-completion engine for Vim. (need macvim) https://github.com/ycm-core/YouCompleteMe
+Plug 'ycm-core/YouCompleteMe'
+" A Vim plugin that manages your tag files. https://github.com/ludovicchabant/vim-gutentags
+Plug 'ludovicchabant/vim-gutentags'
+" The right way to use gtags with gutentags. https://github.com/skywind3000/gutentags_plus
+Plug 'skywind3000/gutentags_plus'
+" Check syntax in Vim asynchronously and fix files, with Language Server
+" Protocol (LSP) support. https://github.com/dense-analysis/ale
+Plug 'dense-analysis/ale'
 
-" 针对不同的文件类型采用不同的缩进格式
-filetype plugin indent on
-
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just
-" :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to
-" auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
+call plug#end()
 
 """"""""""""""""""""""BASE CONFIG"""""""""""""""""""""""
+" 设置编码为utf-8
+set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
+
+" 解决consle输出乱码
+language messages zh_CN.utf-8
 
 " 取消备份
 set nobackup
 set noswapfile
 set noundofile
-
-" 解决consle输出乱码
-language messages zh_CN.utf-8
 
 " 状态栏配置
 set laststatus=2
@@ -100,7 +82,7 @@ autocmd! bufwritepost .vimrc source %
 set autoread
 
 " yy直接复制到系统剪切板（For macvim）
-"set clipboard=unnamed
+set clipboard=unnamed
 
 " 高亮搜索命中的文本
 set hlsearch
@@ -160,10 +142,11 @@ set shiftround
 " 配置go文件tab显示方式：不填充tab但tab显示为4个空格的长度
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
-" 代码折叠 光标在缩进下方时用za命令折叠或展开
-set fdm=indent
+" 代码折叠 用za命令折叠或展开
+"set fdm=indent
+set foldmethod=syntax
 " 默认展开
-set foldlevel=99
+set nofoldenable
 
 " 突出显示当前行，列
 "set cursorline
@@ -180,6 +163,11 @@ autocmd BufReadPost *
       \     endif |
       \ endif
 
+" 退出vim后，仍然可以undo上次编辑
+if has('persistent_undo')      "check if your vim version supports it
+  set undofile                 "turn on the feature
+  set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
+endif
 
 """""""""""""""""""""""""KEY MAPPING""""""""""""""""""""
 " j k 移动行的时候光标始终在屏幕中间
@@ -212,14 +200,14 @@ nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
 " F3打开目录树
 nmap <silent> <F3> :NERDTreeToggle<CR>
 
-" F4显示TagList
-nmap <silent> <F4> :TagbarToggle<CR>
+" F4显示函数List
+nmap <silent> <F4> :Leaderf! function --right<CR>
 
-" F5运行脚本
+" F5运行当前Python脚本
 if exists("$VIRTUAL_ENV")
-    autocmd FileType python map <buffer> <F5> :!$VIRTUAL_ENV'/bin/python' %:p<CR>
+    autocmd FileType python map <buffer> <F5> :AsyncRun $VIRTUAL_ENV'/bin/python' %:p<CR>
 else
-    autocmd FileType python map <buffer> <F5> :!python %:p<CR>
+    autocmd FileType python map <buffer> <F5> :AsyncRun python %:p<CR>
 endif
 
 " <F6> 新建标签页
@@ -228,17 +216,8 @@ map <F6> <Esc>:tabnew<CR>
 " <F7> 拷贝粘贴代码不破坏缩进
 set pastetoggle=<F7>
 
-if has("win64") || has("win32")
-    " <F8> sort import and auto pep8
-    autocmd FileType python map <buffer> <F8> :!autopep8 -i -a --ignore=W690,E501 %:p<CR><CR>
-    " <F9> pep8 by yapf
-    autocmd FileType python map <buffer> <F9> :!yapf -i %:p --style=pep8<CR><CR>
-else
-    " <F8> sort import and auto pep8
-    autocmd FileType python map <buffer> <F8> :!autopep8 -i -a --ignore=W690,E501 %:p;isort %:p;<CR><CR>
-    " <F9> pep8 by yapf
-    autocmd FileType python map <buffer> <F9> :!yapf -i %:p --style=pep8;isort %:p;<CR><CR>
-endif
+" <F8> ale lint fix
+nnoremap <F8> :ALEFix<CR>
 
 " 给当前单词添加引号
 nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
@@ -246,7 +225,7 @@ nnoremap w' viw<esc>a'<esc>hbi'<esc>lel
 
 " 大小写转换时自动在前面加_
 nnoremap ! i_<esc>l~
-" 删除下划线和后面的字符
+" 删除当前字符并~后面的字符
 nnoremap @ x~
 
 " 在Normal Mode和Visual/Select Mode下，利用Tab键和Shift-Tab键来缩进文本
@@ -272,9 +251,19 @@ nnoremap <C-Right> <C-w>>
 nnoremap <C-Up> <C-w>+
 nnoremap <C-Down> <C-w>-
 
-" emoji
-imap <C-e> <C-X><C-U>
+" close quickfix windows
+nnoremap <leader>q :ccl<cr>
 
+""""""""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""""""""
+" vim-go
+let g:go_list_type = "quickfix"  " 使用quickfix显示错误信息
+let g:go_fmt_command = "goimports"  " 使用goimports格式化代码并自动整理import
+let g:go_highlight_types = 1 " 高亮显示type后的名称
+let g:go_highlight_fields = 1 " 高亮显示结构体字段
+let g:go_highlight_function_calls = 1  " 高亮显示函数名
+let g:go_highlight_operators = 1    " 高亮运算符
+let g:go_highlight_extra_types = 1  " 高亮其他types
+let g:go_highlight_build_constraints = 1  " 高亮编译标签
 " 编译golang同时运行测试
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
@@ -285,71 +274,13 @@ function! s:build_go_files()
     call go#cmd#Build(0)
   endif
 endfunction
-autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
+autocmd FileType go nmap <leader>gb :<C-u>call <SID>build_go_files()<CR>
 " 运行golang
-autocmd FileType go nmap <leader>r  <Plug>(go-run)
-
+autocmd FileType go nmap <leader>gr  <Plug>(go-run)
 " golang错误之间跳转
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
-nnoremap <leader>a :cclose<CR>
 
-""""""""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""""""""
-" NerdCommenter
-let g:NERDSpaceDelims=1
-
-" NERDTREE
-" 不显示的文件
-let NERDTreeIgnore=['\.pyc$', '\~$']
-" show nerdtree when starts up
-"autocmd vimenter * NERDTree
-" 退出最后一个buff时也退出nerdtree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-" CtrlP
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_cmd = 'CtrlPMixed'
-
-"Ctrl-X Ctrl-U emoji补全
-set completefunc=emoji#complete
-
-" instant-markdown
-let g:instant_markdown_slow = 1
-
-" airline
-let g:airline_section_y = '%{strftime("%H:%M")}'
-" 开启tabline
-let g:airline#extensions#tabline#enabled = 1
-" tabline中当前buffer两端的分隔字符
-let g:airline#extensions#tabline#left_sep = ' '
-" tabline中未激活buffer两端的分隔字符
-let g:airline#extensions#tabline#left_alt_sep = '|'
-" tabline中buffer显示编号
-let g:airline#extensions#tabline#buffer_nr_show = 1
-
-" jedi
-autocmd FileType python setlocal completeopt-=preview
-let g:jedi#completions_command = "<C-n>"
-
-" flake8
-let g:flake8_show_in_file = 1
-let g:flake8_show_in_gutter = 1
-autocmd! BufRead,BufWritePost *.py call Flake8()
-
-" gitgutter
-let g:gitgutter_sign_modified = '*'
-let g:gitgutter_sign_removed = '-'
-
-" ultisnips
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-" jshint
-autocmd! BufRead,BufWritePost *.js :JSHint
-
-" vim-table-mode: markdown
-let g:table_mode_corner="|"
 
 " rainbow_parentheses
 let g:rbpt_colorpairs = [
@@ -369,7 +300,6 @@ let g:rbpt_colorpairs = [
     \ ['darkred',     'DarkOrchid3'],
     \ ['red',         'firebrick3'],
     \ ]
-
 let g:rbpt_max = 16
 let g:rbpt_loadcmd_toggle = 0
 au VimEnter * RainbowParenthesesToggle
@@ -377,27 +307,120 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-" vim-clojure-static
-let g:clojure_syntax_keywords = {
-    \ 'clojureMacro': ["defproject", "defcustom"],
-    \ 'clojureFunc': ["string/join", "string/replace"]
-    \ }
 
-" vim-clojure-highlight
-autocmd BufRead *.clj try | silent! Require | catch /^Fireplace/ | endtry
+" vim-table-mode: markdown
+let g:table_mode_corner="|"
 
-" vCoolor.vim
-let g:vcoolor_map = '<leader>cp'
-let g:vcool_ins_rgb_map = '<leader>cpr'       " Insert rgb color.
-let g:vcool_ins_hsl_map = '<leader>cph'       " Insert hsl color.
-let g:vcool_ins_rgba_map = '<leader>cpra'      " Insert rgba color.
 
-" vim-go
-let g:go_list_type = "quickfix"  " 使用quickfix显示错误信息
-let g:go_fmt_command = "goimports"  " 使用goimports格式化代码并自动整理import
-let g:go_highlight_types = 1 " 高亮显示type后的名称
-let g:go_highlight_fields = 1 " 高亮显示结构体字段
-let g:go_highlight_function_calls = 1  " 高亮显示函数名
-let g:go_highlight_operators = 1    " 高亮运算符
-let g:go_highlight_extra_types = 1  " 高亮其他types
-let g:go_highlight_build_constraints = 1  " 高亮编译标签
+" NerdCommenter
+let g:NERDSpaceDelims=1
+
+
+" NERDTREE
+" 不显示的文件
+let NERDTreeIgnore=['\.pyc$', '\~$']
+" show nerdtree when starts up
+"autocmd vimenter * NERDTree
+" 退出最后一个buff时也退出nerdtree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+
+" airline
+let g:airline_section_y = '%{strftime("%H:%M")}'
+" 开启tabline
+let g:airline#extensions#tabline#enabled = 1
+" tabline中当前buffer两端的分隔字符
+let g:airline#extensions#tabline#left_sep = ' '
+" tabline中未激活buffer两端的分隔字符
+let g:airline#extensions#tabline#left_alt_sep = '|'
+" tabline中buffer显示编号
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+
+" AsyncRun
+" automatically open quickfix window when AsyncRun command is executed
+" set the quickfix window 6 lines height.
+let g:asyncrun_open = 6
+" ring the bell to notify you job finished
+let g:asyncrun_bell = 1
+" vim-airline displaying the status of AsyncRun
+let g:asyncrun_status = ''
+let g:airline_section_error = airline#section#create_right(['%{g:asyncrun_status}'])
+
+
+" gtags envvar
+let $GTAGSLABEL = 'native-pygments'
+let $GTAGSCONF = '/usr/local/share/gtags/gtags.conf'
+
+
+" gutentags
+" gutentags 搜索工程目录的标志，当前文件路径向上递归直到碰到这些文件/目录名
+let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']
+" 所生成的数据文件的名称
+let g:gutentags_ctags_tagfile = '.tags'
+" 同时开启 ctags 和 gtags 支持：
+let g:gutentags_modules = []
+if executable('ctags')
+	let g:gutentags_modules += ['ctags']
+endif
+if executable('gtags-cscope') && executable('gtags')
+	let g:gutentags_modules += ['gtags_cscope']
+endif
+" 将自动生成的 ctags/gtags 文件全部放入 ~/.cache/tags 目录中，避免污染工程目录
+let g:gutentags_cache_dir = expand('~/.cache/tags')
+" 禁用 gutentags 自动加载 gtags 数据库的行为
+let g:gutentags_auto_add_gtags_cscope = 0
+" change focus to quickfix window after search (optional).
+let g:gutentags_plus_switch = 1
+" 配置 ctags 的参数
+"let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+"let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
+"let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+" 如果使用 universal ctags 需要增加下面一行
+"let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
+
+
+" YouCompleteMe
+" 不弹出函数原型预览窗口
+set completeopt=menu,menuone
+let g:ycm_add_preview_to_completeopt = 0
+" 不显示诊断信息
+let g:ycm_show_diagnostics_ui = 0
+let g:ycm_server_log_level = 'info'
+" 两个字符以后自动弹出的是基于符号的补全
+let g:ycm_min_num_identifier_candidate_chars = 2
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_complete_in_strings=1
+" 触发语义补全
+let g:ycm_key_invoke_completion = '<c-z>'
+noremap <c-z> <NOP>
+" 输入符号的两个字母，即可自动弹出语义补全
+let g:ycm_semantic_triggers =  {
+\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
+\ 'cs,lua,javascript': ['re!\w{2}'],
+\ }
+" 编辑白名单
+let g:ycm_filetype_whitelist = {
+\ "c":1,
+\ "cpp":1,
+\ "go":1,
+\ "python":1,
+\ "java":1,
+\ "javascript":1,
+\ "perl":1,
+\ "lua":1,
+\ "sh":1,
+\ "zsh":1,
+\ }
+
+
+" ALE
+let g:airline#extensions#ale#enabled = 1
+let g:ale_linters = {
+\   'python': ['pylint', 'flake8'],
+\ }
+let b:ale_fixers = {
+\ '*': ['remove_trailing_lines', 'trim_whitespace'],
+\ 'python': ['yapf', 'isort'],
+\ 'markdown': ['prettier'],
+\ }
