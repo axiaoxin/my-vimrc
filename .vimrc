@@ -51,6 +51,8 @@ Plug 'skywind3000/gutentags_plus'
 " Check syntax in Vim asynchronously and fix files, with Language Server
 " Protocol (LSP) support. https://github.com/dense-analysis/ale
 Plug 'dense-analysis/ale'
+" Print documents in echo area. https://github.com/Shougo/echodoc.vim
+Plug 'Shougo/echodoc.vim'
 
 call plug#end()
 
@@ -418,9 +420,17 @@ let g:ycm_filetype_whitelist = {
 let g:airline#extensions#ale#enabled = 1
 let g:ale_linters = {
 \   'python': ['pylint', 'flake8'],
+\   'c': ['gcc', 'cppcheck'],
+\   'cpp': ['gcc', 'cppcheck'],
+\   'go': ['gofmt', 'golint'],
 \ }
 let b:ale_fixers = {
 \ '*': ['remove_trailing_lines', 'trim_whitespace'],
 \ 'python': ['yapf', 'isort'],
 \ 'markdown': ['prettier'],
 \ }
+
+
+" echodoc
+set cmdheight=2
+let g:echodoc_enable_at_startup = 1

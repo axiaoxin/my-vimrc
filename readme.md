@@ -1,7 +1,7 @@
 # My VIM Settings
 
 This VIM settings is newest for my MacOSX,
-I usually use my VIM to write some Golang, Python, Markdown, etc.
+I usually use my VIM to write some Golang, Python, Markdown, C/C++, etc.
 It use vim-plug replace to the vundle to manage the plugins.
 Replaced many old plugins with new plugin which are more suitable in VIM-8
 And remove some plugin which I dose not usually use.
@@ -13,7 +13,7 @@ macOS version
 
 ### Dependences
 
-    brew install cmake macvim pygments global
+    brew install cmake macvim pygments global cppcheck prettier
     sudo pip install isort yapf flake8 autopep8 pylint
 
 ### Plugins
@@ -41,6 +41,7 @@ macOS version
 - [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) A Vim plugin that manages your tag files.
 - [gutentags_plus](https://github.com/skywind3000/gutentags_plus) The right way to use gtags with gutentags.
 - [ale](https://github.com/dense-analysis/ale) Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
+- [echodoc.vim](https://github.com/Shougo/echodoc.vim) Print documents in echo area.
 
 ### Short Keys
 
