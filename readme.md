@@ -42,6 +42,7 @@ macOS version
 - [gutentags_plus](https://github.com/skywind3000/gutentags_plus) The right way to use gtags with gutentags.
 - [ale](https://github.com/dense-analysis/ale) Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
 - [echodoc.vim](https://github.com/Shougo/echodoc.vim) Print documents in echo area.
+- [vimwiki](https://github.com/vimwiki/vimwiki) Personal Wiki for Vim
 
 ### Short Keys
 
@@ -73,6 +74,7 @@ macOS version
 - build gofile: `\gb`
 - run gofile: `\gr`
 - code complete: `<c-z>`
+- write vimwiki: `\ww`
 
 ### Features
 

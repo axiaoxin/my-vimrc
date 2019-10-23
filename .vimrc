@@ -53,6 +53,8 @@ Plug 'skywind3000/gutentags_plus'
 Plug 'dense-analysis/ale'
 " Print documents in echo area. https://github.com/Shougo/echodoc.vim
 Plug 'Shougo/echodoc.vim'
+" Personal Wiki for Vim. https://github.com/vimwiki/vimwiki
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
