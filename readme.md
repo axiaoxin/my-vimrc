@@ -75,6 +75,7 @@ macOS version
 - table mode: `\tm`
 - build gofile: `\gb`
 - run gofile: `\gr`
+- run go test: `\gt`
 - code complete: `<c-z>`
 - write vimwiki: `\ww`
 

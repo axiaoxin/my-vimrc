@@ -285,6 +285,7 @@ endfunction
 autocmd FileType go nmap <leader>gb :<C-u>call <SID>build_go_files()<CR>
 " 运行golang
 autocmd FileType go nmap <leader>gr  <Plug>(go-run)
+autocmd FileType go nmap <leader>gt  :GoTest<cr>
 " golang错误之间跳转
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
