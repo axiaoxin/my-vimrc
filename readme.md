@@ -14,6 +14,7 @@ macOS version
 ### Dependences
 
     brew install cmake macvim pygments global cppcheck prettier
+    brew unlink ctags && brew install --HEAD universal-ctags/universal-ctags/universal-ctags
     sudo pip install isort yapf flake8 autopep8 pylint
 
 ### Plugins
@@ -65,6 +66,7 @@ macOS version
 - resize window: `<C-UpDownLeftRightEnter>`
 - close quickfix window: `\q`
 - find files: `\f`
+- find mru files: `\m`
 - complete python code: `<C-n>`
 - format json line: `<leader>wj` `<leader>pj`
 - change surround: `csXY`
