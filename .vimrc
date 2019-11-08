@@ -55,6 +55,8 @@ Plug 'dense-analysis/ale'
 Plug 'Shougo/echodoc.vim'
 " Personal Wiki for Vim. https://github.com/vimwiki/vimwiki
 Plug 'vimwiki/vimwiki'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
@@ -443,3 +445,7 @@ let b:ale_fixers = {
 " echodoc
 set cmdheight=2
 let g:echodoc_enable_at_startup = 1
+
+
+" utilsnips
+let g:UltiSnipsExpandTrigger = "<c-e>"

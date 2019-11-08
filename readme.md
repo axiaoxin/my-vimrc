@@ -44,6 +44,8 @@ macOS version
 - [ale](https://github.com/dense-analysis/ale) Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
 - [echodoc.vim](https://github.com/Shougo/echodoc.vim) Print documents in echo area.
 - [vimwiki](https://github.com/vimwiki/vimwiki) Personal Wiki for Vim
+- [vim-snippets](https://github.com/honza/vim-snippets) vim-snipmate default snippets
+- [UltiSnips](https://github.com/SirVer/ultisnips) The ultimate snippet solution for Vim
 
 ### Short Keys
 
@@ -78,6 +80,7 @@ macOS version
 - run go test: `\gt`
 - code complete: `<c-z>`
 - write vimwiki: `\ww`
+- expand snips: `<c-e>`
 
 ### Features
 
