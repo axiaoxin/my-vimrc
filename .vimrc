@@ -266,6 +266,8 @@ nnoremap \m :LeaderfMru<CR>
 
 
 " vim-go
+let g:go_test_show_name = 1
+let g:go_auto_sameids = 1
 let g:go_list_type = "quickfix"  " 使用quickfix显示错误信息
 let g:go_fmt_command = "goimports"  " 使用goimports格式化代码并自动整理import
 let g:go_highlight_types = 1 " 高亮显示type后的名称
@@ -291,6 +293,8 @@ autocmd FileType go nmap <leader>gt  :GoTest<cr>
 " golang错误之间跳转
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
+
+autocmd BufWritePost *.go !gofmt -s -w %
 
 
 " rainbow_parentheses
