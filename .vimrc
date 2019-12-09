@@ -225,6 +225,9 @@ set pastetoggle=<F7>
 " <F8> ale lint fix
 nnoremap <F8> :ALEFix<CR>
 
+" <F9> format json
+nnoremap <F9> :%!python -m json.tool<CR>
+
 " 给当前单词添加引号
 nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap w' viw<esc>a'<esc>hbi'<esc>lel
@@ -267,7 +270,6 @@ nnoremap \m :LeaderfMru<CR>
 
 " vim-go
 let g:go_test_show_name = 1
-let g:go_auto_sameids = 1
 let g:go_list_type = "quickfix"  " 使用quickfix显示错误信息
 let g:go_fmt_command = "goimports"  " 使用goimports格式化代码并自动整理import
 let g:go_highlight_types = 1 " 高亮显示type后的名称
