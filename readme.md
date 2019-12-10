@@ -60,7 +60,7 @@ macOS version
 - run python script: `<F5>`
 - paste toggle: `<F7>`
 - lint fix: `<F8>`
-- wrap `"`/`'` for a word: `w"`/`w'`
+- wrap `"`/`'` for a word: `\w"`/`\w'`
 - uppercase/lowercase toggle with a `_` prefix: `!`
 - delete current letter and toggle uppercase/lowercase: `@`
 - continue indent text to left or right on select/normal mode: `>` `<`
