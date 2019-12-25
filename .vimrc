@@ -55,7 +55,9 @@ Plug 'dense-analysis/ale'
 Plug 'Shougo/echodoc.vim'
 " Personal Wiki for Vim. https://github.com/vimwiki/vimwiki
 Plug 'vimwiki/vimwiki'
+" The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!  https://github.com/SirVer/ultisnips
 Plug 'SirVer/ultisnips'
+" vim-snipmate default snippets (Previously snipmate-snippets) https://github.com/honza/vim-snippets
 Plug 'honza/vim-snippets'
 
 call plug#end()
