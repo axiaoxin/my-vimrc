@@ -46,6 +46,7 @@ macOS version
 - [vimwiki](https://github.com/vimwiki/vimwiki) Personal Wiki for Vim
 - [vim-snippets](https://github.com/honza/vim-snippets) vim-snipmate default snippets
 - [UltiSnips](https://github.com/SirVer/ultisnips) The ultimate snippet solution for Vim
+- [auto-pairs](https://github.com/jiangmiao/auto-pairs) Insert or delete brackets, parens, quotes in pair.
 
 ### Short Keys
 

@@ -59,6 +59,8 @@ Plug 'vimwiki/vimwiki'
 Plug 'SirVer/ultisnips'
 " vim-snipmate default snippets (Previously snipmate-snippets) https://github.com/honza/vim-snippets
 Plug 'honza/vim-snippets'
+" Insert or delete brackets, parens, quotes in pair.  https://github.com/jiangmiao/auto-pairs
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
