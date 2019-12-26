@@ -10,6 +10,8 @@ endif
 call plug#begin('~/.vim/plugged')
 " color scheme. https://github.com/axiaoxin/favorite-vim-colorscheme
 Plug 'axiaoxin/favorite-vim-colorscheme'
+" Pick the VIM colorscheme that you are destined to be with.:)  https://github.com/sunuslee/vim-plugin-random-colorscheme-picker
+Plug 'bkbncn/vim-colorschemes-picker'
 " The fancy start screen for Vim. https://github.com/mhinz/vim-startify
 Plug 'mhinz/vim-startify'
 " Go development plugin for Vim. https://github.com/fatih/vim-go
@@ -61,6 +63,10 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " Insert or delete brackets, parens, quotes in pair.  https://github.com/jiangmiao/auto-pairs
 Plug 'jiangmiao/auto-pairs'
+" A calendar application for Vim  https://github.com/itchyny/calendar.vim
+Plug 'itchyny/calendar.vim'
+" Silly game for Vim 8.2  https://github.com/vim/killersheep
+Plug 'vim/killersheep'
 
 call plug#end()
 
@@ -108,7 +114,6 @@ set smartcase
 
 set guifont=Menlo:h14
 
-colorscheme Tomorrow-Night-Bright
 " 使用自带配色
 "colorscheme elflord
 "set background=dark

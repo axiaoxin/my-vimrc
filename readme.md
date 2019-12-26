@@ -47,6 +47,9 @@ macOS version
 - [vim-snippets](https://github.com/honza/vim-snippets) vim-snipmate default snippets
 - [UltiSnips](https://github.com/SirVer/ultisnips) The ultimate snippet solution for Vim
 - [auto-pairs](https://github.com/jiangmiao/auto-pairs) Insert or delete brackets, parens, quotes in pair.
+- [calendar.vim](https://github.com/itchyny/calendar.vim)  A calendar application for Vim
+- [killersheep](https://github.com/vim/killersheep)  Silly game for Vim 8.2
+- [vim-plugin-random-colorscheme-picker](https://github.com/sunuslee/vim-plugin-random-colorscheme-picker)  Pick the VIM colorscheme that you are destined to be with.:)
 
 ### Short Keys
 
