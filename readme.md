@@ -85,6 +85,7 @@ macOS version
 - code complete: `<c-z>`
 - write vimwiki: `\ww`
 - expand snips: `<c-e>`
+- change random colorscheme: `\c`
 
 ### Features
 
@@ -106,6 +107,7 @@ macOS version
 - use tomorrow-night-bright color scheme
 - color preview for .css files
 - auto format markdown tables in table mode
+- auto choice randome colorscheme, use <leader>c can change the theme
 
 ### Screenshots
 

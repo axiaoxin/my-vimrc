@@ -114,10 +114,6 @@ set smartcase
 
 set guifont=Menlo:h14
 
-" 使用自带配色
-"colorscheme elflord
-"set background=dark
-
 " 在状态栏显示正在输入的命令
 set showcmd
 
@@ -272,9 +268,12 @@ nnoremap <C-Down> <C-w>-
 " close quickfix windows
 nnoremap <leader>q :ccl<cr>
 
+" reload vimrc to change color scheme
+nnoremap <leader>c :so $MYVIMRC<cr>
+
 """"""""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""""""""
 " Leaderf
-nnoremap \m :LeaderfMru<CR>
+nnoremap <leader>m :LeaderfMru<CR>
 
 
 " vim-go
