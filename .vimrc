@@ -8,10 +8,17 @@ endif
 
 " Initialize plugin system
 call plug#begin('~/.vim/plugged')
-" color scheme. https://github.com/axiaoxin/favorite-vim-colorscheme
-Plug 'axiaoxin/favorite-vim-colorscheme'
+" A tree explorer plugin for vim. https://github.com/scrooloose/nerdtree
+Plug 'scrooloose/nerdtree'
+" Vim plugin for intensely orgasmic commenting. https://github.com/scrooloose/nerdcommenter
+Plug 'scrooloose/nerdcommenter'
+" lean & mean status/tabline for vim that's light as air. https://github.com/vim-airline/vim-airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" color scheme. https://github.com/axiaoxin/vim-colorschemes
+Plug 'axiaoxin/vim-colorschemes'
 " Pick the VIM colorscheme that you are destined to be with.:)  https://github.com/sunuslee/vim-plugin-random-colorscheme-picker
-Plug 'bkbncn/vim-colorschemes-picker'
+Plug 'sunuslee/vim-plugin-random-colorscheme-picker'
 " The fancy start screen for Vim. https://github.com/mhinz/vim-startify
 Plug 'mhinz/vim-startify'
 " Go development plugin for Vim. https://github.com/fatih/vim-go
@@ -34,13 +41,6 @@ Plug 'axiaoxin/vim-json-line-format', {'for': 'json'}
 Plug 'mg979/vim-visual-multi'
 " surround.vim: quoting/parenthesizing made simple. https://github.com/tpope/vim-surround
 Plug 'tpope/vim-surround'
-" lean & mean status/tabline for vim that's light as air. https://github.com/vim-airline/vim-airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-" A tree explorer plugin for vim. https://github.com/scrooloose/nerdtree
-Plug 'scrooloose/nerdtree'
-" Vim plugin for intensely orgasmic commenting. https://github.com/scrooloose/nerdcommenter
-Plug 'scrooloose/nerdcommenter'
 " An asynchronous fuzzy finder which is used to quickly locate files, buffers,
 " mrus, tags, etc. in large project. https://github.com/Yggdroot/LeaderF
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
@@ -67,20 +67,23 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/calendar.vim'
 " Silly game for Vim 8.2  https://github.com/vim/killersheep
 Plug 'vim/killersheep'
+" Improved nginx vim plugin (incl. syntax highlighting)
+Plug 'chr4/nginx.vim'
+" Instant Markdown previews from VIm!  https://github.com/suan/vim-instant-markdown
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 
 call plug#end()
 
 """"""""""""""""""""""BASE CONFIG"""""""""""""""""""""""
-" 设置编码为utf-8
+" 设置编码为 utf-8
 set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
 
-" 解决consle输出乱码
+" 解决 console 输出乱码
 language messages zh_CN.utf-8
 
 " 取消备份
 set nobackup
 set noswapfile
-set noundofile
 
 " 状态栏配置
 set laststatus=2
@@ -91,14 +94,12 @@ syntax enable
 " 开启语法检测
 syntax on
 
-" vimrc文件修改之后自动加载
+" vimrc 文件修改之后自动加载
 autocmd! bufwritepost .vimrc source %
 
 " 文件修改之后自动载入
 set autoread
 
-" yy直接复制到系统剪切板（For macvim）
-set clipboard=unnamed
 
 " 高亮搜索命中的文本
 set hlsearch
@@ -132,38 +133,48 @@ set nu
 " 退格键可用
 set backspace=2
 
-" 退格键一次删掉4个空格
+" 退格键一次删掉 4 个空格
 set smarttab
 
 " 缩进
 set autoindent
 set smartindent
 
-" 保存文件时自动删除行尾空格或Tab
+" 保存文件时自动删除行尾空格或 Tab
 autocmd BufWritePre * :%s/\s\+$//e
 
 " 保存文件时自动删除末尾空行
 autocmd BufWritePre * :%s/^$\n\+\%$//ge
 
-" 填充Tab
+" 保存文件时自动对中文中的英文单词和数字添加空格
+" autocmd BufWritePre * silent! :%s/[^\x00-\xff]\zs\ze\w\|\w\zs\ze[^\x00-\xff]/ /g
+
+" 填充 Tab
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set shiftround
-" 配置go文件tab显示方式：不填充tab但tab显示为4个空格的长度
+" 配置 go 文件 tab 显示方式：不填充 tab 但 tab 显示为 4 个空格的长度
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 
-" 代码折叠 用za命令折叠或展开
-"set fdm=indent
-set foldmethod=syntax
+" 代码折叠 用 za 命令折叠或展开
+set foldmethod=indent
 " 默认展开
 set nofoldenable
+" 有6种方法来选定折叠：
+" 1    manual          手工定义折叠
+" 2    indent           更多的缩进表示更高级别的折叠
+" 3    expr              用表达式来定义折叠
+" 4    syntax           用语法高亮来定义折叠
+" 5    diff                对没有更改的文本进行折叠
+" 6    marker           对文中的标志折叠
+
 
 " 突出显示当前行，列
 "set cursorline
 "set cursorcolumn
 
-" 设置 退出vim后，内容显示在终端屏幕, 可以用于查看和复制
+" 设置 退出 vim 后，内容显示在终端屏幕, 可以用于查看和复制
 set t_ti= t_te=
 
 " 打开文件时始终跳转到上次光标所在位置
@@ -174,7 +185,7 @@ autocmd BufReadPost *
       \     endif |
       \ endif
 
-" 退出vim后，仍然可以undo上次编辑
+" 退出 vim 后，仍然可以 undo 上次编辑
 if has('persistent_undo')      "check if your vim version supports it
   set undofile                 "turn on the feature
   set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
@@ -185,36 +196,36 @@ endif
 nnoremap j jzz
 nnoremap k kzz
 
-" 映射切换buffer的键位
+" 映射切换 buffer 的键位
 nnoremap [b :bp<CR>
 nnoremap ]b :bn<CR>
 
-" 映射切换tab的键位
+" 映射切换 tab 的键位
 nnoremap [t :tabp<CR>
 nnoremap ]t :tabn<CR>
 
-" normal模式下Ctrl+c全选并复制到系统剪贴板(linux必须装有vim-gnome)
+" normal 模式下 Ctrl+c 全选并复制到系统剪贴板(linux 必须装有 vim-gnome)
 nmap <C-c> gg"+yG
 
-" visual模式下Ctrl+c复制选中内容到剪贴板
+" visual 模式下 Ctrl+c 复制选中内容到剪贴板
 vmap <C-c> "+y
 
-" Ctrl+v原样粘贴剪切板内容
+" Ctrl+v 原样粘贴剪切板内容
 inoremap <C-v> <ESC>"+pa
 
 " w!!写入只读文件
 cmap w!! w !sudo tee >/dev/null %
 
-" F2切换行号显示
+" F2 切换行号显示
 nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
 
-" F3打开目录树
+" F3 打开目录树
 nmap <silent> <F3> :NERDTreeToggle<CR>
 
-" F4显示函数List
+" F4 显示函数 List
 nmap <silent> <F4> :Leaderf! function --right<CR>
 
-" F5运行当前Python脚本
+" F5 运行当前 Python 脚本
 if exists("$VIRTUAL_ENV")
     autocmd FileType python map <buffer> <F5> :AsyncRun $VIRTUAL_ENV'/bin/python' %:p<CR>
 else
@@ -224,8 +235,7 @@ endif
 " <F6> 新建标签页
 map <F6> <Esc>:tabnew<CR>
 
-" <F7> 拷贝粘贴代码不破坏缩进
-set pastetoggle=<F7>
+" <F7>
 
 " <F8> ale lint fix
 nnoremap <F8> :ALEFix<CR>
@@ -233,24 +243,23 @@ nnoremap <F8> :ALEFix<CR>
 " <F9> format json
 nnoremap <F9> :%!python -m json.tool<CR>
 
+" <F10> 中文中夹杂的英文和数字添加空格(注意\\| " 在 map 里面需要转义，直接执行使用\|)
+nnoremap <F10> :%s/[^\x00-\xff]\zs\ze\w\\|\w\zs\ze[^\x00-\xff]/ /g<CR>
+
 " 给当前单词添加引号
 nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap w' viw<esc>a'<esc>hbi'<esc>lel
 
-" 大小写转换时自动在前面加_
+" 大小写转换并自动在前面加 _ （用于 abc`D`ef -> abc_def）
 nnoremap ! i_<esc>l~
-" 删除当前字符并~后面的字符
+" 删除当前字符并对后面的字符进行大小写转换 （用于 abc`_`def -> abcDef）
 nnoremap @ x~
 
-" 在Normal Mode和Visual/Select Mode下，利用Tab键和Shift-Tab键来缩进文本
+" 在 Normal Mode 和 Visual/Select Mode 下，利用 > 键和 < 键来缩进文本
 nnoremap > >>
 nnoremap < <<
 vnoremap > >gv
 vnoremap < <gv
-
-" 左右分割窗口Ctrl+w +v
-" 上下分割窗口Ctrl+w +s
-" 关闭窗口Ctrl+w  +q
 
 " quicker window switching
 nnoremap <C-h> <C-w>h
@@ -259,17 +268,37 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " quicker window resize
-nnoremap <C-Enter> <C-w>=
-nnoremap <C-Left> <C-w><
-nnoremap <C-Right> <C-w>>
-nnoremap <C-Up> <C-w>+
-nnoremap <C-Down> <C-w>-
+nnoremap <C-S-Left> <C-w><
+nnoremap <C-S-Right> <C-w>>
+nnoremap <C-S-Up> <C-w>+
+nnoremap <C-S-Down> <C-w>-
+
+" VIM 窗口操作命令：
+"
+" 左右分割窗口 Ctrl+w +v
+" 上下分割窗口 Ctrl+w +s
+"
+" 关闭窗口 Ctrl+w  +q
+"
+" 光标在所有窗口间按顺序移动 Ctrl+w +w
+" 光标移动到左边窗口 Ctrl+w +h
+" 光标移动到下面窗口 Ctrl+w +j
+" 光标移动到上面窗口 Ctrl+w +k
+" 光标移动到右面窗口 Ctrl+w +l
+" 光标移动到最左上角的窗口 Ctrl+w +t
+" 光标移动到最右下角的窗口 Ctrl+w +b
+" 光标移动到上一次访问的窗口 Ctrl+w +p
+"
+" 交换窗口位置 Ctrl+w +r     Ctrl+w +R     Ctrl+w +x
+"
+" 交换窗口位置并还原大小 Ctrl+w +H    Ctrl+w +J    Ctrl+w +K    Ctrl+w +L
+"
+" 将所有窗口调整到相同大小 Ctrl+w +=
+" 将当前窗口最大化 Ctrl+w +|
+" 将当前窗口覆盖全部只剩一个窗口 Ctrl+w +T
 
 " close quickfix windows
 nnoremap <leader>q :ccl<cr>
-
-" reload vimrc to change color scheme
-nnoremap <leader>c :so $MYVIMRC<cr>
 
 """"""""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""""""""
 " Leaderf
@@ -278,15 +307,15 @@ nnoremap <leader>m :LeaderfMru<CR>
 
 " vim-go
 let g:go_test_show_name = 1
-let g:go_list_type = "quickfix"  " 使用quickfix显示错误信息
-let g:go_fmt_command = "goimports"  " 使用goimports格式化代码并自动整理import
-let g:go_highlight_types = 1 " 高亮显示type后的名称
+let g:go_list_type = "quickfix"  " 使用 quickfix 显示错误信息
+let g:go_fmt_command = "goimports"  " 使用 goimports 格式化代码并自动整理 import
+let g:go_highlight_types = 1 " 高亮显示 type 后的名称
 let g:go_highlight_fields = 1 " 高亮显示结构体字段
 let g:go_highlight_function_calls = 1  " 高亮显示函数名
 let g:go_highlight_operators = 1    " 高亮运算符
-let g:go_highlight_extra_types = 1  " 高亮其他types
+let g:go_highlight_extra_types = 1  " 高亮其他 types
 let g:go_highlight_build_constraints = 1  " 高亮编译标签
-" 编译golang同时运行测试
+" 编译 golang 同时运行测试
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
   let l:file = expand('%')
@@ -297,10 +326,10 @@ function! s:build_go_files()
   endif
 endfunction
 autocmd FileType go nmap <leader>gb :<C-u>call <SID>build_go_files()<CR>
-" 运行golang
+" 运行 golang
 autocmd FileType go nmap <leader>gr  <Plug>(go-run)
 autocmd FileType go nmap <leader>gt  :GoTest<cr>
-" golang错误之间跳转
+" golang 错误之间跳转
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
 
@@ -346,19 +375,19 @@ let g:NERDSpaceDelims=1
 let NERDTreeIgnore=['\.pyc$', '\~$']
 " show nerdtree when starts up
 "autocmd vimenter * NERDTree
-" 退出最后一个buff时也退出nerdtree
+" 退出最后一个 buff 时也退出 nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 
 " airline
 let g:airline_section_y = '%{strftime("%H:%M")}'
-" 开启tabline
+" 开启 tabline
 let g:airline#extensions#tabline#enabled = 1
-" tabline中当前buffer两端的分隔字符
+" tabline 中当前 buffer 两端的分隔字符
 let g:airline#extensions#tabline#left_sep = ' '
-" tabline中未激活buffer两端的分隔字符
+" tabline 中未激活 buffer 两端的分隔字符
 let g:airline#extensions#tabline#left_alt_sep = '|'
-" tabline中buffer显示编号
+" tabline 中 buffer 显示编号
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
 
@@ -382,7 +411,7 @@ let $GTAGSCONF = '/usr/local/share/gtags/gtags.conf'
 " 打印日志
 "let g:gutentags_trace = 1
 " gutentags 搜索工程目录的标志，当前文件路径向上递归直到碰到这些文件/目录名
-let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project', 'go.mod']
+let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project', 'go.mod', 'requirements.txt']
 " 所生成的数据文件的名称
 let g:gutentags_ctags_tagfile = '.tags'
 " 同时开启 ctags 和 gtags 支持：
@@ -439,6 +468,7 @@ let g:ycm_filetype_whitelist = {
 \ "sh":1,
 \ "zsh":1,
 \ }
+autocmd FileType python nmap gd :YcmCompleter GoToDefinitionElseDeclaration<cr>
 
 
 " ALE
@@ -448,12 +478,17 @@ let g:ale_linters = {
 \   'c': ['gcc', 'cppcheck'],
 \   'cpp': ['gcc', 'cppcheck'],
 \   'go': ['gofmt', 'golint'],
+\   'vimwiki': ['markdownlint'],
+\   'markdown': ['markdownlint'],
 \ }
-let b:ale_fixers = {
+let g:ale_fixers = {
 \ '*': ['remove_trailing_lines', 'trim_whitespace'],
 \ 'python': ['yapf', 'isort'],
+\ 'html': ['prettier'],
+\ 'vimwiki': ['prettier'],
 \ 'markdown': ['prettier'],
 \ }
+let g:ale_fix_on_save = 1
 
 
 " echodoc
@@ -463,3 +498,12 @@ let g:echodoc_enable_at_startup = 1
 
 " utilsnips
 let g:UltiSnipsExpandTrigger = "<c-e>"
+
+" random-colorscheme-picker
+let g:colorscheme_user_path = '~/.vim/plugged/vim-colorschemes/colors'
+" change color scheme
+nnoremap <leader>c :CSnext<cr>
+
+" vim-instant-markdown
+let g:instant_markdown_open_to_the_world = 1
+let g:instant_markdown_port = 10086
