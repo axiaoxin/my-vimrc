@@ -53,8 +53,6 @@ Plug 'skywind3000/gutentags_plus'
 " Check syntax in Vim asynchronously and fix files, with Language Server
 " Protocol (LSP) support. https://github.com/dense-analysis/ale
 Plug 'dense-analysis/ale'
-" Print documents in echo area. https://github.com/Shougo/echodoc.vim
-Plug 'Shougo/echodoc.vim'
 " Personal Wiki for Vim. https://github.com/vimwiki/vimwiki
 Plug 'vimwiki/vimwiki'
 " The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!  https://github.com/SirVer/ultisnips
@@ -65,8 +63,6 @@ Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
 " A calendar application for Vim  https://github.com/itchyny/calendar.vim
 Plug 'itchyny/calendar.vim'
-" Silly game for Vim 8.2  https://github.com/vim/killersheep
-Plug 'vim/killersheep'
 " Improved nginx vim plugin (incl. syntax highlighting)
 Plug 'chr4/nginx.vim'
 " Instant Markdown previews from VIm!  https://github.com/suan/vim-instant-markdown
@@ -440,8 +436,8 @@ let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
 " 不弹出函数原型预览窗口
 set completeopt=menu,menuone
 let g:ycm_add_preview_to_completeopt = 0
-" 不显示诊断信息
-let g:ycm_show_diagnostics_ui = 0
+" 显示诊断信息
+let g:ycm_show_diagnostics_ui = 1
 let g:ycm_server_log_level = 'info'
 " 两个字符以后自动弹出的是基于符号的补全
 let g:ycm_min_num_identifier_candidate_chars = 2
@@ -489,11 +485,6 @@ let g:ale_fixers = {
 \ 'markdown': ['prettier'],
 \ }
 let g:ale_fix_on_save = 1
-
-
-" echodoc
-set cmdheight=2
-let g:echodoc_enable_at_startup = 1
 
 
 " utilsnips

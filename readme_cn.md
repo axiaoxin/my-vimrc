@@ -53,7 +53,6 @@ macOS version
 - 支持多行编辑
 - 支持快速修改单词两端的包裹字符
 - 使用 YouCompleteMe 支持代码自动补全
-- 支持在 echo 区域显示文档
 - 集成 vimwiki
 - 自动配对编辑括号、引号
 - 支持展示屏幕日历
@@ -84,7 +83,6 @@ macOS version
 - [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) A Vim plugin that manages your tag files.
 - [gutentags_plus](https://github.com/skywind3000/gutentags_plus) The right way to use gtags with gutentags.
 - [ale](https://github.com/dense-analysis/ale) Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
-- [echodoc.vim](https://github.com/Shougo/echodoc.vim) Print documents in echo area.
 - [vimwiki](https://github.com/vimwiki/vimwiki) Personal Wiki for Vim
 - [ultisnips](https://github.com/SirVer/ultisnips) The ultimate snippet solution for Vim
 - [vim-snippets](https://github.com/honza/vim-snippets) vim-snipmate default snippets
