@@ -167,7 +167,7 @@ set nofoldenable
 
 
 " 突出显示当前行，列
-"set cursorline
+set cursorline
 "set cursorcolumn
 
 " 设置 退出 vim 后，内容显示在终端屏幕, 可以用于查看和复制
