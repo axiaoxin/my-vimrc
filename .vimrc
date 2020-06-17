@@ -325,6 +325,7 @@ autocmd FileType go nmap <leader>gb :<C-u>call <SID>build_go_files()<CR>
 " 运行 golang
 autocmd FileType go nmap <leader>gr  <Plug>(go-run)
 autocmd FileType go nmap <leader>gt  :GoTest<cr>
+autocmd FileType go nmap <leader>r  :GoReferrers<cr>
 " golang 错误之间跳转
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>

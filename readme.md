@@ -127,6 +127,7 @@ macOS version
 - expand snips: `Ctrl-e`
 - change random colorscheme: `\c
 - copy content to system clipboard: `Ctrl-c`
+- show referrers for go file: `\r`
 
 ## Screenshots
 

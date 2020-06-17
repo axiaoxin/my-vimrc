@@ -107,8 +107,8 @@ macOS version
 - 中文中夹杂的英文和数字添加空格: `<F10>`
 - 给当前单词添加引号: `\w'`、`\w"`
 - 快速编辑单词包裹字符: `csXY` `dsX`
-- 大小写转换并自动在前面加 \_ （用于 abc`D`ef -> abc_def）: `!`
-- 删除当前字符并对后面的字符进行大小写转换 （用于 abc`_`def -> abcDef）: `@`
+- 大小写转换并自动在前面加 \_ （用于 abc`D`ef -> abc_def ）: `!`
+- 删除当前字符并对后面的字符进行大小写转换 （用于 abc`_`def -> abcDef ）: `@`
 - 在 Normal Mode 和 Visual/Select Mode 下，利用 > 键和 < 键来缩进文本: `>` `<`
 - 上下左右切换窗口: `Ctrl-k` `Ctrl-j` `Ctrl-h` `Ctrl-l`
 - 调整窗口大小: `Ctrl-Shift-方向键`
@@ -125,6 +125,7 @@ macOS version
 - 展开代码片段: `Ctrl-e`
 - 切换随机主题配色: `\c`
 - 复制内容到系统剪贴板: `Ctrl-c`
+- 显示 Golang 代码引用列表: `\r`
 
 ## 屏幕截图
 
