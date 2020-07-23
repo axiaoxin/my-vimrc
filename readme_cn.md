@@ -187,12 +187,18 @@ Markdown 表格模式
 
 ## 安装及使用
 
+!!! VIM 版本必须在 8 以上 且 Python 版本是 3.x.x
+
+VIM 升级可参考 wiki: <https://github.com/axiaoxin/my-vimrc/wiki/Upgrade-VIM-to-8.x>
+
+Python 升级可参考 wiki: <https://github.com/axiaoxin/my-vimrc/wiki/Upgrade-Python-to-3.x>
+
 ### 外部依赖
 
 使用该配置需要执行以下命令安装一些外部依赖：
 
 ```
-brew install cmake macvim pygments global cppcheck prettier
+brew install cmake macvim mono go nodejs pygments global cppcheck
 brew unlink ctags && brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 [sudo] pip install isort yapf flake8 autopep8 pylint
 npm -g install instant-markdown-d prettier markdownlint
@@ -200,4 +206,13 @@ npm -g install instant-markdown-d prettier markdownlint
 
 ### 安装插件
 
-复制 `.vimrc` 文件到你的 `$HOME`目录下，打开 VIM ，执行 `:PlugInstall` ，等待插件安装完成即可。
+复制 `.vimrc` 文件到你的 `$HOME`目录下，打开 VIM ，执行 `:PlugInstall` ，等待插件安装完成。
+
+配置 YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
+
+执行 `install.py` 脚本前，可能你需要先安装好 go、rust、java、npm，未安装可参考:<https://github.com/axiaoxin/my-vimrc/wiki/YouCompleteMe-install-all-dependencies>
+
+```
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --all
+```

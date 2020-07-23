@@ -188,12 +188,18 @@ Markdown table mode
 
 ## Install & Usage
 
+[!] VIM version must be above 8 and python version is 3.x.x
+
+For VIM upgrade, please refer to wiki: <https://github.com/axiaoxin/my-vimrc/wiki/Upgrade-VIM-to-8.x>
+
+For Python upgrade, please refer to wiki: <https://github.com/axiaoxin/my-vimrc/wiki/Upgrade-Python-to-3.x>
+
 ### External dependence
 
 Using this configuration requires the following commands to install some external dependencies:
 
 ```
-brew install cmake macvim pygments global cppcheck prettier
+brew install cmake macvim mono go nodejs pygments global cppcheck
 brew unlink ctags && brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 [sudo] pip install isort yapf flake8 autopep8 pylint
 npm -g install instant-markdown-d prettier markdownlint
@@ -202,3 +208,10 @@ npm -g install instant-markdown-d prettier markdownlint
 ### Install plugins
 
 Copy the `.vimrc` file to your `$HOME` directory, open VIM, execute `:PlugInstall`, and wait for the plugins installation to complete.
+
+Setting the YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
+
+```
+cd ~/.vim/bundle/YouCompleteMe
+python install.py --all
+```
