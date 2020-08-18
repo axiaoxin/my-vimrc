@@ -215,3 +215,8 @@ Setting the YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
 cd ~/.vim/bundle/YouCompleteMe
 python install.py --all
 ```
+
+
+# Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/axiaoxin/my-vimrc.svg)](https://starchart.cc/axiaoxin/my-vimrc)
