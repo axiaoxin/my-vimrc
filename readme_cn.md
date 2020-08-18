@@ -216,3 +216,7 @@ npm -g install instant-markdown-d prettier markdownlint
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --all
 ```
+
+# Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/axiaoxin/my-vimrc.svg)](https://starchart.cc/axiaoxin/my-vimrc)
