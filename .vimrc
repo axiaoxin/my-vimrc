@@ -481,7 +481,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
 \ '*': ['remove_trailing_lines', 'trim_whitespace'],
 \ 'python': ['yapf', 'isort'],
-\ 'html': ['prettier'],
+\ 'html': [],
 \ 'vimwiki': ['prettier'],
 \ 'markdown': ['prettier'],
 \ }
