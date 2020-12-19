@@ -209,13 +209,14 @@ npm -g install instant-markdown-d prettier markdownlint
 
 Copy the `.vimrc` file to your `$HOME` directory, open VIM, execute `:PlugInstall`, and wait for the plugins installation to complete.
 
+Install vim-go binaries: `:GoInstallBinaries`
+
 Setting the YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
 
 ```
-cd ~/.vim/bundle/YouCompleteMe
+cd ~/.vim/plugged/YouCompleteMe
 python install.py --all
 ```
-
 
 # Stargazers over time
 

@@ -208,12 +208,14 @@ npm -g install instant-markdown-d prettier markdownlint
 
 复制 `.vimrc` 文件到你的 `$HOME`目录下，打开 VIM ，执行 `:PlugInstall` ，等待插件安装完成。
 
+安装 vim-go 依赖的二进制文件: `:GoInstallBinaries`
+
 配置 YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
 
 执行 `install.py` 脚本前，可能你需要先安装好 go、rust、java、npm，未安装可参考:<https://github.com/axiaoxin/my-vimrc/wiki/YouCompleteMe-install-all-dependencies>
 
 ```
-cd ~/.vim/bundle/YouCompleteMe
+cd ~/.vim/plugged/YouCompleteMe
 python3 install.py --all
 ```
 
