@@ -199,7 +199,7 @@ For Python upgrade, please refer to wiki: <https://github.com/axiaoxin/my-vimrc/
 Using this configuration requires the following commands to install some external dependencies:
 
 ```
-brew install cmake macvim mono go nodejs pygments global cppcheck
+brew install cmake python mono go nodejs pygments global cppcheck
 brew unlink ctags && brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 [sudo] pip3 install isort yapf flake8 autopep8 pylint
 npm -g install instant-markdown-d prettier markdownlint
@@ -209,7 +209,7 @@ npm -g install instant-markdown-d prettier markdownlint
 
 Copy the `.vimrc` file to your `$HOME` directory, open VIM, execute `:PlugInstall`, and wait for the plugins installation to complete.
 
-Install vim-go binaries: `:GoInstallBinaries`
+Install vim-go binaries: open a go file then run `:GoInstallBinaries`
 
 Setting the YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
 

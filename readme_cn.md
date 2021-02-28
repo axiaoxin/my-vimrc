@@ -185,7 +185,7 @@ Markdown 表格模式
 
 <a href="http://www.youtube.com/watch?v=9lVQ0VJY3ps"><img src="https://raw.github.com/axil/vim-table-mode/master/youtube.png"/></a>
 
-## 安装及使用
+# 安装及使用
 
 !!! VIM 版本必须在 8 以上 且 Python 版本是 3.x.x
 
@@ -198,7 +198,7 @@ Python 升级可参考 wiki: <https://github.com/axiaoxin/my-vimrc/wiki/Upgrade-
 使用该配置需要执行以下命令安装一些外部依赖：
 
 ```
-brew install cmake macvim mono go nodejs pygments global cppcheck
+brew install cmake python mono go nodejs pygments global cppcheck
 brew unlink ctags && brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 [sudo] pip3 install isort yapf flake8 autopep8 pylint
 npm -g install instant-markdown-d prettier markdownlint
@@ -208,7 +208,7 @@ npm -g install instant-markdown-d prettier markdownlint
 
 复制 `.vimrc` 文件到你的 `$HOME`目录下，打开 VIM ，执行 `:PlugInstall` ，等待插件安装完成。
 
-安装 vim-go 依赖的二进制文件: `:GoInstallBinaries`
+安装 vim-go 依赖的二进制文件: 打开一个 go 文件执行 `:GoInstallBinaries`
 
 配置 YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
 

@@ -440,6 +440,7 @@ let g:ycm_add_preview_to_completeopt = 0
 " 显示诊断信息
 let g:ycm_show_diagnostics_ui = 1
 let g:ycm_server_log_level = 'info'
+let g:ycm_server_keep_logfiles = 1
 " 两个字符以后自动弹出的是基于符号的补全
 let g:ycm_min_num_identifier_candidate_chars = 2
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
@@ -468,7 +469,7 @@ let g:ycm_filetype_whitelist = {
 autocmd FileType python nmap gd :YcmCompleter GoToDefinitionElseDeclaration<cr>
 "关于设置 YouCompleteMe Python3 语法支持的帮助
 "https://github.com/ycm-core/YouCompleteMe/issues/2876
-let g:ycm_server_python_interpreter='/usr/bin/python3'
+"let g:ycm_server_python_interpreter='/usr/bin/python3'
 
 
 " ALE
