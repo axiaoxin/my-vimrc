@@ -200,7 +200,7 @@ Python 升级可参考 wiki: <https://github.com/axiaoxin/my-vimrc/wiki/Upgrade-
 ```
 brew install cmake macvim mono go nodejs pygments global cppcheck
 brew unlink ctags && brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-[sudo] pip install isort yapf flake8 autopep8 pylint
+[sudo] pip3 install isort yapf flake8 autopep8 pylint
 npm -g install instant-markdown-d prettier markdownlint
 ```
 

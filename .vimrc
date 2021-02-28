@@ -157,7 +157,7 @@ autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 set foldmethod=indent
 " 默认展开
 set nofoldenable
-" 有6种方法来选定折叠：
+" 有 6 种方法来选定折叠：
 " 1    manual          手工定义折叠
 " 2    indent           更多的缩进表示更高级别的折叠
 " 3    expr              用表达式来定义折叠
@@ -246,9 +246,9 @@ nnoremap <F10> :%s/[^\x00-\xff]\zs\ze\w\\|\w\zs\ze[^\x00-\xff]/ /g<CR>
 nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap w' viw<esc>a'<esc>hbi'<esc>lel
 
-" 大小写转换并自动在前面加 _ （用于 abc`D`ef -> abc_def）
+" 大小写转换并自动在前面加 _ （用于 abc`D`ef -> abc_def ）
 nnoremap ! i_<esc>l~
-" 删除当前字符并对后面的字符进行大小写转换 （用于 abc`_`def -> abcDef）
+" 删除当前字符并对后面的字符进行大小写转换 （用于 abc`_`def -> abcDef ）
 nnoremap @ x~
 
 " 在 Normal Mode 和 Visual/Select Mode 下，利用 > 键和 < 键来缩进文本
@@ -466,6 +466,9 @@ let g:ycm_filetype_whitelist = {
 \ "zsh":1,
 \ }
 autocmd FileType python nmap gd :YcmCompleter GoToDefinitionElseDeclaration<cr>
+"关于设置 YouCompleteMe Python3 语法支持的帮助
+"https://github.com/ycm-core/YouCompleteMe/issues/2876
+let g:ycm_server_python_interpreter='/usr/bin/python3'
 
 
 " ALE
