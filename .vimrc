@@ -9,9 +9,9 @@ endif
 " Initialize plugin system
 call plug#begin('~/.vim/plugged')
 " A tree explorer plugin for vim. https://github.com/scrooloose/nerdtree
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 " Vim plugin for intensely orgasmic commenting. https://github.com/scrooloose/nerdcommenter
-Plug 'scrooloose/nerdcommenter'
+Plug 'preservim/nerdcommenter'
 " lean & mean status/tabline for vim that's light as air. https://github.com/vim-airline/vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -216,7 +216,7 @@ cmap w!! w !sudo tee >/dev/null %
 nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
 
 " F3 打开目录树
-nmap <silent> <F3> :NERDTreeToggle<CR>
+nnoremap <F3> :NERDTreeToggle<CR>
 
 " F4 显示函数 List
 nmap <silent> <F4> :Leaderf! function --right<CR>
