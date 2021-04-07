@@ -92,6 +92,7 @@ macOS version
 - [calendar.vim](https://github.com/itchyny/calendar.vim) A calendar application for Vim
 - [nginx.vim](https://github.com/chr4/nginx.vim) Improved nginx vim plugin (incl. syntax highlighting)
 - [vim-instant-markdown](https://github.com/suan/vim-instant-markdown) Instant Markdown previews from VIm!
+- [git-messenger.vim](https://github.com/rhysd/git-messenger.vim) Vim and Neovim plugin to reveal the commit messages under the cursor
 
 ## Custom key mapping
 
@@ -128,6 +129,7 @@ macOS version
 - change random colorscheme: `\c
 - copy content to system clipboard: `Ctrl-c`
 - show referrers for go file: `\r`
+- show git message: `\gm`
 
 ## Screenshots
 

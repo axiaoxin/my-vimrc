@@ -67,6 +67,8 @@ Plug 'itchyny/calendar.vim'
 Plug 'chr4/nginx.vim'
 " Instant Markdown previews from VIm!  https://github.com/suan/vim-instant-markdown
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+" Vim and Neovim plugin to reveal the commit messages under the cursor
+Plug 'rhysd/git-messenger.vim'
 
 call plug#end()
 
