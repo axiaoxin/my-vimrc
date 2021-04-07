@@ -90,6 +90,7 @@ macOS version
 - [calendar.vim](https://github.com/itchyny/calendar.vim) A calendar application for Vim
 - [nginx.vim](https://github.com/chr4/nginx.vim) Improved nginx vim plugin (incl. syntax highlighting)
 - [vim-instant-markdown](https://github.com/suan/vim-instant-markdown) Instant Markdown previews from VIm!
+- [git-messenger.vim](https://github.com/rhysd/git-messenger.vim) Vim and Neovim plugin to reveal the commit messages under the cursor
 
 ## 自定义按键映射
 
@@ -126,6 +127,7 @@ macOS version
 - 切换随机主题配色: `\c`
 - 复制内容到系统剪贴板: `Ctrl-c`
 - 显示 Golang 代码引用列表: `\r`
+- 显示git提交信息: `\gm`
 
 ## 屏幕截图
 
