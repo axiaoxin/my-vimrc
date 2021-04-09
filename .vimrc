@@ -12,6 +12,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 " Vim plugin for intensely orgasmic commenting. https://github.com/scrooloose/nerdcommenter
 Plug 'preservim/nerdcommenter'
+" fugitive.vim: A Git wrapper so awesome, it should be illegal，放在最后可能airline不能显示branch
+Plug 'tpope/vim-fugitive'
 " lean & mean status/tabline for vim that's light as air. https://github.com/vim-airline/vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -373,7 +375,7 @@ let g:NERDSpaceDelims=1
 " 不显示的文件
 let NERDTreeIgnore=['\.pyc$', '\~$']
 " 删除侧边栏状态栏中的内容不进行展示
-let NERDTreeStatusline="%{matchstr(getline('.'), '\\s\\zs\\w\\(.*\\)')}"
+" let NERDTreeStatusline="%{matchstr(getline('.'), '\\s\\zs\\w\\(.*\\)')}"
 " show nerdtree when starts up
 "autocmd vimenter * NERDTree
 " 退出最后一个 buff 时也退出 nerdtree
@@ -381,8 +383,10 @@ autocmd BufEnter * if 0 == len(filter(range(1, winnr('$')), 'empty(getbufvar(win
 
 
 " airline
-" airline 随机主题
-let g:airline_theme='random'
+" airline 主题
+if !exists('g:airline_theme')
+    let g:airline_theme='random'
+endif
 " section c 显示完整文件路径
 let g:airline_section_c = '%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
 " section y 的时间格式
@@ -397,7 +401,6 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#buffer_nr_show = 1
 " tabline 格式： default, jsformatter, unique_tail, unique_tail_improved
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-
 
 " AsyncRun
 " automatically open quickfix window when AsyncRun command is executed

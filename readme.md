@@ -93,6 +93,7 @@ macOS version
 - [nginx.vim](https://github.com/chr4/nginx.vim) Improved nginx vim plugin (incl. syntax highlighting)
 - [vim-instant-markdown](https://github.com/suan/vim-instant-markdown) Instant Markdown previews from VIm!
 - [git-messenger.vim](https://github.com/rhysd/git-messenger.vim) Vim and Neovim plugin to reveal the commit messages under the cursor
+- [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) fugitive.vim: A Git wrapper so awesome, it should be illegal
 
 ## Custom key mapping
 
