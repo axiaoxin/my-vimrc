@@ -377,7 +377,7 @@ let NERDTreeIgnore=['\.pyc$', '\~$']
 " 删除侧边栏状态栏中的内容不进行展示
 " let NERDTreeStatusline="%{matchstr(getline('.'), '\\s\\zs\\w\\(.*\\)')}"
 " show nerdtree when starts up
-"autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 " 退出最后一个 buff 时也退出 nerdtree
 autocmd BufEnter * if 0 == len(filter(range(1, winnr('$')), 'empty(getbufvar(winbufnr(v:val), "&bt"))')) | qa! | endif
 
@@ -385,7 +385,7 @@ autocmd BufEnter * if 0 == len(filter(range(1, winnr('$')), 'empty(getbufvar(win
 " airline
 " airline 主题
 if !exists('g:airline_theme')
-    let g:airline_theme='random'
+    let g:airline_theme = 'random'
 endif
 " section c 显示完整文件路径
 let g:airline_section_c = '%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
@@ -401,6 +401,33 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#buffer_nr_show = 1
 " tabline 格式： default, jsformatter, unique_tail, unique_tail_improved
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+" https://github.com/vim-airline/vim-airline/blob/master/doc/airline.txt
+let g:airline_left_sep='>'
+let g:airline_right_sep='<'
+let g:airline_detect_modified=1
+let g:airline_detect_paste=1
+let g:airline_detect_crypt=1
+let g:airline_detect_spell=1
+let g:airline_detect_spelllang=1
+let g:airline_detect_iminsert=1
+let g:airline_inactive_collapse=1
+let g:airline_inactive_alt_sep=1
+let g:airline_filetype_overrides = {
+    \ 'coc-explorer':  [ 'CoC Explorer', '' ],
+    \ 'defx':  ['defx', '%{b:defx.paths[0]}'],
+    \ 'fugitive': ['fugitive', '%{airline#util#wrap(airline#extensions#branch#get_head(),80)}'],
+    \ 'gundo': [ 'Gundo', '' ],
+    \ 'help':  [ 'Help', '%f' ],
+    \ 'minibufexpl': [ 'MiniBufExplorer', '' ],
+    \ 'nerdtree': [ get(g:, 'NERDTreeStatusline', 'NERD'), '' ],
+    \ 'startify': [ 'startify', '' ],
+    \ 'vim-plug': [ 'Plugins', '' ],
+    \ 'vimfiler': [ 'vimfiler', '%{vimfiler#get_status_string()}' ],
+    \ 'vimshell': ['vimshell','%{vimshell#get_status_string()}'],
+    \ 'vaffle' : [ 'Vaffle', '%{b:vaffle.dir}' ],
+    \ }
+let g:airline_exclude_preview = 0
+let g:airline#extensions#nerdtree_statusline = 1
 
 " AsyncRun
 " automatically open quickfix window when AsyncRun command is executed
@@ -488,6 +515,11 @@ autocmd FileType python nmap gd :YcmCompleter GoToDefinitionElseDeclaration<cr>
 
 " ALE
 let g:airline#extensions#ale#enabled = 1
+let airline#extensions#ale#error_symbol = 'E:'
+let airline#extensions#ale#warning_symbol = 'W:'
+let airline#extensions#ale#show_line_numbers = 1
+let airline#extensions#ale#open_lnum_symbol = '(L'
+let airline#extensions#ale#close_lnum_symbol = ')'
 let g:ale_linters = {
 \   'python': ['pylint', 'flake8'],
 \   'c': ['gcc', 'cppcheck'],
