@@ -372,10 +372,12 @@ let g:NERDSpaceDelims=1
 " NERDTREE
 " 不显示的文件
 let NERDTreeIgnore=['\.pyc$', '\~$']
+" 删除侧边栏状态栏中的内容不进行展示
+let NERDTreeStatusline="%{matchstr(getline('.'), '\\s\\zs\\w\\(.*\\)')}"
 " show nerdtree when starts up
 "autocmd vimenter * NERDTree
 " 退出最后一个 buff 时也退出 nerdtree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd BufEnter * if 0 == len(filter(range(1, winnr('$')), 'empty(getbufvar(winbufnr(v:val), "&bt"))')) | qa! | endif
 
 
 " airline
