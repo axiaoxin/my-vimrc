@@ -379,6 +379,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 
 " airline
+" airline 随机主题
+let g:airline_theme='random'
+" section c 显示完整文件路径
+let g:airline_section_c = '%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
+" section y 的时间格式
 let g:airline_section_y = '%{strftime("%H:%M")}'
 " 开启 tabline
 let g:airline#extensions#tabline#enabled = 1
