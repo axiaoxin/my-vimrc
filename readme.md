@@ -94,6 +94,7 @@ macOS version
 - [vim-instant-markdown](https://github.com/suan/vim-instant-markdown) Instant Markdown previews from VIm!
 - [git-messenger.vim](https://github.com/rhysd/git-messenger.vim) Vim and Neovim plugin to reveal the commit messages under the cursor
 - [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) fugitive.vim: A Git wrapper so awesome, it should be illegal
+- [ryanoasis/vim-devicons](https://github.com/ryanoasis/vim-devicons) Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more
 
 ## Custom key mapping
 
@@ -210,16 +211,18 @@ npm -g install instant-markdown-d prettier markdownlint
 
 ### Install plugins
 
-Copy the `.vimrc` file to your `$HOME` directory, open VIM, execute `:PlugInstall`, and wait for the plugins installation to complete.
+1. Copy the `.vimrc` file to your `$HOME` directory, open VIM, execute `:PlugInstall`, and wait for the plugins installation to complete.
 
-Install vim-go binaries: open a go file then run `:GoInstallBinaries`
+2. Install vim-go binaries: open a go file then run `:GoInstallBinaries`
 
-Setting the YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
+3. Setting the YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
 
 ```
 cd ~/.vim/plugged/YouCompleteMe
 python3 install.py --all
 ```
+
+4. Install nerdfont: https://www.nerdfonts.com/font-downloads
 
 # Stargazers over time
 

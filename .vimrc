@@ -71,6 +71,8 @@ Plug 'chr4/nginx.vim'
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 " Vim and Neovim plugin to reveal the commit messages under the cursor
 Plug 'rhysd/git-messenger.vim'
+" Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -374,6 +376,8 @@ let g:NERDSpaceDelims=1
 " NERDTREE
 " 不显示的文件
 let NERDTreeIgnore=['\.pyc$', '\~$']
+" 显示隐藏文件
+let NERDTreeShowHidden=1
 " 删除侧边栏状态栏中的内容不进行展示
 " let NERDTreeStatusline="%{matchstr(getline('.'), '\\s\\zs\\w\\(.*\\)')}"
 " show nerdtree when starts up
@@ -402,8 +406,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 " tabline 格式： default, jsformatter, unique_tail, unique_tail_improved
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 " https://github.com/vim-airline/vim-airline/blob/master/doc/airline.txt
-let g:airline_left_sep='>'
-let g:airline_right_sep='<'
+let g:airline_powerline_fonts = 1 " need nerdfont
 let g:airline_detect_modified=1
 let g:airline_detect_paste=1
 let g:airline_detect_crypt=1

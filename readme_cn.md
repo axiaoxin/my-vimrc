@@ -92,6 +92,8 @@ macOS version
 - [vim-instant-markdown](https://github.com/suan/vim-instant-markdown) Instant Markdown previews from VIm!
 - [git-messenger.vim](https://github.com/rhysd/git-messenger.vim) Vim and Neovim plugin to reveal the commit messages under the cursor
 - [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) fugitive.vim: A Git wrapper so awesome, it should be illegal
+- [ryanoasis/vim-devicons](https://github.com/ryanoasis/vim-devicons) Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more
+
 
 ## 自定义按键映射
 
@@ -209,11 +211,11 @@ npm -g install instant-markdown-d prettier markdownlint
 
 ### 安装插件
 
-复制 `.vimrc` 文件到你的 `$HOME`目录下，打开 VIM ，执行 `:PlugInstall` ，等待插件安装完成。
+1. 复制 `.vimrc` 文件到你的 `$HOME`目录下，打开 VIM ，执行 `:PlugInstall` ，等待插件安装完成。
 
-安装 vim-go 依赖的二进制文件: 打开一个 go 文件执行 `:GoInstallBinaries`
+2. 安装 vim-go 依赖的二进制文件: 打开一个 go 文件执行 `:GoInstallBinaries`
 
-配置 YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
+3. 配置 YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
 
 执行 `install.py` 脚本前，可能你需要先安装好 go、rust、java、npm，未安装可参考:<https://github.com/axiaoxin/my-vimrc/wiki/YouCompleteMe-install-all-dependencies>
 
@@ -221,6 +223,8 @@ npm -g install instant-markdown-d prettier markdownlint
 cd ~/.vim/plugged/YouCompleteMe
 python3 install.py --all
 ```
+
+4. 安装 nerdfont 字体：https://www.nerdfonts.com/font-downloads
 
 # Stargazers over time
 
