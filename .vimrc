@@ -302,6 +302,9 @@ nnoremap <C-S-Down> <C-w>-
 " close quickfix windows
 nnoremap <leader>q :ccl<cr>
 
+autocmd FileType markdown nnoremap <buffer> <leader>p :InstantMarkdownPreview<CR>
+autocmd FileType markdown nnoremap <buffer> <leader>q :InstantMarkdownStop<CR>
+
 """"""""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""""""""
 " Leaderf
 nnoremap <leader>m :LeaderfMru<CR>
@@ -550,5 +553,6 @@ let g:colorscheme_user_path = '~/.vim/plugged/vim-colorschemes/colors'
 nnoremap <leader>c :CSnext<cr>
 
 " vim-instant-markdown
+let g:instant_markdown_autostart = 0
 let g:instant_markdown_open_to_the_world = 1
 let g:instant_markdown_port = 10086

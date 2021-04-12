@@ -94,7 +94,6 @@ macOS version
 - [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) fugitive.vim: A Git wrapper so awesome, it should be illegal
 - [ryanoasis/vim-devicons](https://github.com/ryanoasis/vim-devicons) Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more
 
-
 ## 自定义按键映射
 
 - 切换 buffer: `]b` `[b`
@@ -131,6 +130,8 @@ macOS version
 - 复制内容到系统剪贴板: `Ctrl-c`
 - 显示 Golang 代码引用列表: `\r`
 - 显示 git 提交信息: `\gm`
+- 打开 markdown 预览：`\p`
+- 关闭 markdown 预览：`\q`
 
 ## 屏幕截图
 
@@ -217,14 +218,14 @@ npm -g install instant-markdown-d prettier markdownlint
 
 3. 配置 YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
 
-执行 `install.py` 脚本前，可能你需要先安装好 go、rust、java、npm，未安装可参考:<https://github.com/axiaoxin/my-vimrc/wiki/YouCompleteMe-install-all-dependencies>
+执行 `install.py` 脚本前，可能你需要先安装好 go 、 rust 、 java 、 npm ，未安装可参考:<https://github.com/axiaoxin/my-vimrc/wiki/YouCompleteMe-install-all-dependencies>
 
 ```
 cd ~/.vim/plugged/YouCompleteMe
 python3 install.py --all
 ```
 
-4. 安装 nerdfont 字体：https://www.nerdfonts.com/font-downloads
+4. 安装 nerdfont 字体： https://www.nerdfonts.com/font-downloads
 
 # Stargazers over time
 

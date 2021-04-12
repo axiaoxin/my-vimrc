@@ -132,6 +132,8 @@ macOS version
 - copy content to system clipboard: `Ctrl-c`
 - show referrers for go file: `\r`
 - show git message: `\gm`
+- markdown file open preview: `\p`
+- markdown file stop preview: `\q`
 
 ## Screenshots
 
