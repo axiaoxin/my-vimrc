@@ -134,6 +134,9 @@ macOS version
 - show git message: `\gm`
 - markdown file open preview: `\p`
 - markdown file stop preview: `\q`
+- leaderf find by filename: `\ff`
+- leaderf find by mru: `\fm`
+- leaderf find by rg: `\fg`
 
 ## Screenshots
 
@@ -225,6 +228,7 @@ python3 install.py --all
 ```
 
 4. Install nerdfont: https://www.nerdfonts.com/font-downloads
+5. Install LeaderF C Extension(Optional): `:LeaderfInstallCExtension`
 
 # Stargazers over time
 

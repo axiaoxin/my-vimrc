@@ -307,7 +307,9 @@ autocmd FileType markdown nnoremap <buffer> <leader>q :InstantMarkdownStop<CR>
 
 """"""""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""""""""
 " Leaderf
-nnoremap <leader>m :LeaderfMru<CR>
+let g:Lf_ShortcutF = "<leader>ff"
+nnoremap <leader>fg :Leaderf rg<CR>
+nnoremap <leader>fm :LeaderfMru<CR>
 
 
 " vim-go

@@ -132,6 +132,10 @@ macOS version
 - 显示 git 提交信息: `\gm`
 - 打开 markdown 预览：`\p`
 - 关闭 markdown 预览：`\q`
+- 按文件名查找文件: `\ff`
+- 查找最近使用的文件: `\fm`
+- 按文件内容查找文件: `\fg`
+
 
 ## 屏幕截图
 
@@ -226,6 +230,7 @@ python3 install.py --all
 ```
 
 4. 安装 nerdfont 字体： https://www.nerdfonts.com/font-downloads
+5. 安装 LeaderF C 扩展（可选）：`:LeaderfInstallCExtension`
 
 # Stargazers over time
 
