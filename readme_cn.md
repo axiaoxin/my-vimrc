@@ -132,7 +132,6 @@ macOS version
 - 跳转到 Golang 代码声明位置: `gd`
 - 代码补全: `Ctrl-z`
 - vimwiki 模式，启动界面执行: `\ww`
-- 展开代码片段: `Ctrl-e`
 - 切换随机主题配色: `\c`
 - 复制内容到系统剪贴板: `Ctrl-c`
 - 显示 git 提交信息: `\gm`
