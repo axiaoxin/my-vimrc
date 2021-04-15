@@ -122,13 +122,19 @@ macOS version
 - markdown 表格模式: `\tm`
 - 编译 go 文件: `\gb`
 - 运行 go 文件: `\gr`
-- 运行 go 单元测试: `\gt`
+- 运行 go 单元测试: `\gT`
+- 运行 go 函数单元测试: `\gt`
+- 显示 Golang 代码引用列表: `\r`
+- 显示 Golang 代码接口函数的实现: `\i`
+- 增加 Golang 结构体 JSON tag: `\t`
+- 删除 Golang 结构体 JSON tag: `\T`
+- 添加 Golang if err 检查代码: `Ctrl-e`
+- 跳转到 Golang 代码声明位置: `gd`
 - 代码补全: `Ctrl-z`
 - vimwiki 模式，启动界面执行: `\ww`
 - 展开代码片段: `Ctrl-e`
 - 切换随机主题配色: `\c`
 - 复制内容到系统剪贴板: `Ctrl-c`
-- 显示 Golang 代码引用列表: `\r`
 - 显示 git 提交信息: `\gm`
 - 打开 markdown 预览：`\p`
 - 关闭 markdown 预览：`\q`

@@ -124,13 +124,18 @@ macOS version
 - markdown table mode: `\tm`
 - build go file: `\gb`
 - run go file: `\gr`
-- run go test: `\gt`
+- run go test: `\gT`
+- run go test for function: `\gt`
+- goto symbol/declaration for go file: `gd`
+- show interface function implement for go file: `\i`
+- show referrers for go file: `\r`
+- add json tag for go struct: `\t`
+- remove tag for go struct: `\T`
+- add if err check for go: `Ctrl-e`
 - code complete: `Ctrl-z`
 - vimwiki mode: `\ww`
-- expand snips: `Ctrl-e`
 - change random colorscheme: `\c
 - copy content to system clipboard: `Ctrl-c`
-- show referrers for go file: `\r`
 - show git message: `\gm`
 - markdown file open preview: `\p`
 - markdown file stop preview: `\q`
@@ -220,10 +225,12 @@ npm -g install instant-markdown-d prettier markdownlint
 2. Install vim-go binaries: open a go file then run `:GoInstallBinaries`
 3. Install vim-go go_fmt_command tool: `go get -u github.com/segmentio/golines`
 4. Setting the YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
+
 ```
 cd ~/.vim/plugged/YouCompleteMe
 python3 install.py --all
 ```
+
 5. Install nerdfont: https://www.nerdfonts.com/font-downloads
 6. Install LeaderF C Extension(Optional): `:LeaderfInstallCExtension`
 

@@ -337,15 +337,21 @@ function! s:build_go_files()
 endfunction
 autocmd FileType go nmap <leader>gb :<C-u>call <SID>build_go_files()<CR>
 " 运行 golang
-autocmd FileType go nmap <leader>gr  <Plug>(go-run)
-autocmd FileType go nmap <leader>gt  :GoTest<cr>
-autocmd FileType go nmap <leader>r  :GoReferrers<cr>
-" golang 错误之间跳转
-map <C-n> :cnext<CR>
-map <C-m> :cprevious<CR>
-
-autocmd BufWritePost *.go !gofmt -s -w %
-
+autocmd FileType go nmap <leader>gr <Plug>(go-run)
+" 运行单元测试
+autocmd FileType go nmap <leader>gT :GoTest<cr>
+" 运行光标处函数的单元测试
+autocmd FileType go nmap <leader>gt :GoTestFunc<cr>
+" 显示引用
+autocmd FileType go nmap <leader>r :GoReferrers<cr>
+" 显示接口实现
+autocmd FileType go nmap <leader>i :GoImplements<cr>
+" 结构体添加 json tag
+autocmd FileType go nmap <leader>t :GoAddTags<cr>
+" 删除结构体 tag
+autocmd FileType go nmap <leader>T :GoRemoveTags<cr>
+" 代码添加 if err
+autocmd FileType go inoremap <C-e> <ESC>:GoIfErr<cr>i
 
 " rainbow_parentheses
 let g:rbpt_colorpairs = [
