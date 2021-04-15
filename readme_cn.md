@@ -136,7 +136,6 @@ macOS version
 - 查找最近使用的文件: `\fm`
 - 按文件内容查找文件: `\fg`
 
-
 ## 屏幕截图
 
 有的截图可能不是最新的，仅供参考。
@@ -217,20 +216,18 @@ npm -g install instant-markdown-d prettier markdownlint
 ### 安装插件
 
 1. 复制 `.vimrc` 文件到你的 `$HOME`目录下，打开 VIM ，执行 `:PlugInstall` ，等待插件安装完成。
-
 2. 安装 vim-go 依赖的二进制文件: 打开一个 go 文件执行 `:GoInstallBinaries`
-
-3. 配置 YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
-
-执行 `install.py` 脚本前，可能你需要先安装好 go 、 rust 、 java 、 npm ，未安装可参考:<https://github.com/axiaoxin/my-vimrc/wiki/YouCompleteMe-install-all-dependencies>
+3. 安装 vim-go go_fmt_command 工具: `go get -u github.com/segmentio/golines`
+4. 配置 YouCompleteMe: <https://github.com/ycm-core/YouCompleteMe#macos>
+   执行 `install.py` 脚本前，可能你需要先安装好 go 、 rust 、 java 、 npm ，未安装可参考:<https://github.com/axiaoxin/my-vimrc/wiki/YouCompleteMe-install-all-dependencies>
 
 ```
 cd ~/.vim/plugged/YouCompleteMe
 python3 install.py --all
 ```
 
-4. 安装 nerdfont 字体： https://www.nerdfonts.com/font-downloads
-5. 安装 LeaderF C 扩展（可选）：`:LeaderfInstallCExtension`
+5. 安装 nerdfont 字体： https://www.nerdfonts.com/font-downloads
+6. 安装 LeaderF C 扩展（可选）：`:LeaderfInstallCExtension`
 
 # Stargazers over time
 
