@@ -128,6 +128,7 @@ macOS version
 - 显示 Golang 代码接口函数的实现: `\i`
 - 增加 Golang 结构体 JSON tag: `\t`
 - 删除 Golang 结构体 JSON tag: `\T`
+- 填充 golang 结构体字段：`\fs`
 - 添加 Golang if err 检查代码: `Ctrl-e`
 - 跳转到 Golang 代码声明位置: `gd`
 - 代码补全: `Ctrl-z`

@@ -131,6 +131,7 @@ macOS version
 - show referrers for go file: `\r`
 - add json tag for go struct: `\t`
 - remove tag for go struct: `\T`
+- fill go struct: `\fs`
 - add if err check for go: `Ctrl-e`
 - code complete: `Ctrl-z`
 - vimwiki mode: `\ww`

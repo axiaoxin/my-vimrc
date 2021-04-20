@@ -340,7 +340,7 @@ autocmd FileType go nmap <leader>gb :<C-u>call <SID>build_go_files()<CR>
 autocmd FileType go nmap <leader>gr <Plug>(go-run)
 " 运行单元测试
 autocmd FileType go nmap <leader>gT :GoTest<cr>
-" 运行光标处函数的单元测试
+" 运行光标处单元测试
 autocmd FileType go nmap <leader>gt :GoTestFunc<cr>
 " 显示引用
 autocmd FileType go nmap <leader>r :GoReferrers<cr>
@@ -350,6 +350,8 @@ autocmd FileType go nmap <leader>i :GoImplements<cr>
 autocmd FileType go nmap <leader>t :GoAddTags<cr>
 " 删除结构体 tag
 autocmd FileType go nmap <leader>T :GoRemoveTags<cr>
+" 填充结构体字段
+autocmd FileType go nmap <leader>fs :GoFillStruct<cr>
 " 代码添加 if err
 autocmd FileType go inoremap <C-e> <ESC>:GoIfErr<cr>i
 
