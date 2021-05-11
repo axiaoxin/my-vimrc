@@ -38,7 +38,7 @@ Plug 'mhinz/vim-signify'
 " A vim plugin to display the indention levels with thin vertical lines. https://github.com/Yggdroot/indentLine
 "Plug 'Yggdroot/indentLine'  " not working now
 " format json line in Vim. https://github.com/axiaoxin/vim-json-line-format
-Plug 'axiaoxin/vim-json-line-format', {'for': 'json'}
+Plug 'axiaoxin/vim-json-line-format'
 " Multiple cursors project for vim/neovim. https://github.com/mg979/vim-visual-multi
 Plug 'mg979/vim-visual-multi'
 " surround.vim: quoting/parenthesizing made simple. https://github.com/tpope/vim-surround
@@ -317,7 +317,7 @@ let g:go_test_show_name = 1
 let g:go_list_type = "quickfix"  " 使用 quickfix 显示错误信息
 let g:go_fmt_command = "golines"
 let g:go_fmt_options = {
-    \ 'golines': '-m 128',
+    \ 'golines': '-m 130',
     \ }
 let g:go_highlight_types = 1 " 高亮显示 type 后的名称
 let g:go_highlight_fields = 1 " 高亮显示结构体字段
@@ -476,9 +476,6 @@ let g:gutentags_modules = []
 if executable('gtags-cscope') && executable('gtags')
     let g:gutentags_modules += ['gtags_cscope']
 endif
-if executable('ctags')
-    let g:gutentags_modules += ['ctags']
-endif
 " 将自动生成的 ctags/gtags 文件全部放入 ~/.cache/tags 目录中，避免污染工程目录
 let g:gutentags_cache_dir = expand('~/.cache/tags')
 " 禁用 gutentags 自动加载 gtags 数据库的行为
@@ -489,13 +486,16 @@ let g:gutentags_plus_switch = 1
 let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
-" 如果使用 universal ctags 需要增加下面一行
-let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
+if executable('ctags')
+    let g:gutentags_modules += ['ctags']
+    " 如果使用 universal ctags 需要增加下面一行
+    let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
+endif
 
 
 " YouCompleteMe
-" 不弹出函数原型预览窗口
 set completeopt=menu,menuone
+" 是否显示函数原型预览窗口
 let g:ycm_add_preview_to_completeopt = 0
 " 显示诊断信息
 let g:ycm_show_diagnostics_ui = 1

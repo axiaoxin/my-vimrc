@@ -234,6 +234,7 @@ python3 install.py --all
 
 5. 安装 nerdfont 字体： https://www.nerdfonts.com/font-downloads
 6. 安装 LeaderF C 扩展（可选）：`:LeaderfInstallCExtension`
+7. 安装 Markdown 预览依赖: `[sudo] npm -g install instant-markdown-d`
 
 # Stargazers over time
 
