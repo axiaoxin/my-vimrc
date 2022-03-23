@@ -208,6 +208,8 @@ VIM 升级可参考 wiki: <https://github.com/axiaoxin/my-vimrc/wiki/Upgrade-VIM
 
 Python 升级可参考 wiki: <https://github.com/axiaoxin/my-vimrc/wiki/Upgrade-Python-to-3.x>
 
+系统剪贴板支持 wiki: <https://github.com/axiaoxin/my-vimrc/wiki/sys-clipboard>
+
 ### 外部依赖
 
 使用该配置需要执行以下命令安装一些外部依赖：
