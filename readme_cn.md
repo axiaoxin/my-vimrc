@@ -208,7 +208,7 @@ VIM 升级可参考 wiki: <https://github.com/axiaoxin/my-vimrc/wiki/Upgrade-VIM
 
 Python 升级可参考 wiki: <https://github.com/axiaoxin/my-vimrc/wiki/Upgrade-Python-to-3.x>
 
-系统剪贴板支持 wiki: <https://github.com/axiaoxin/my-vimrc/wiki/sys-clipboard>
+系统剪贴板支持 wiki: <https://github.com/axiaoxin/my-vimrc/wiki/note-for-ubuntu#ctrl-c%E5%A4%8D%E5%88%B6%E5%88%B0%E7%B3%BB%E7%BB%9F%E5%89%AA%E8%B4%B4%E6%9D%BF>
 
 ### 外部依赖
 
