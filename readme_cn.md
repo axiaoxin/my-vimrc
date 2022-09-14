@@ -53,11 +53,11 @@ macOS version
 - 支持多行编辑
 - 支持快速修改单词两端的包裹字符
 - 使用 YouCompleteMe 支持代码自动补全
-- 集成 vimwiki
 - 自动配对编辑括号、引号
 - 支持展示屏幕日历
 - 支持 Nginx 配置高亮显示
 - 支持 Markdown 实时预览
+- 支持时序图
 
 ## 插件列表
 
@@ -83,7 +83,6 @@ macOS version
 - [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) A Vim plugin that manages your tag files.
 - [gutentags_plus](https://github.com/skywind3000/gutentags_plus) The right way to use gtags with gutentags.
 - [ale](https://github.com/dense-analysis/ale) Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
-- [vimwiki](https://github.com/vimwiki/vimwiki) Personal Wiki for Vim
 - [ultisnips](https://github.com/SirVer/ultisnips) The ultimate snippet solution for Vim
 - [vim-snippets](https://github.com/honza/vim-snippets) vim-snipmate default snippets
 - [auto-pairs](https://github.com/jiangmiao/auto-pairs) Insert or delete brackets, parens, quotes in pair.
@@ -93,6 +92,7 @@ macOS version
 - [git-messenger.vim](https://github.com/rhysd/git-messenger.vim) Vim and Neovim plugin to reveal the commit messages under the cursor
 - [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) fugitive.vim: A Git wrapper so awesome, it should be illegal
 - [ryanoasis/vim-devicons](https://github.com/ryanoasis/vim-devicons) Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more
+- [xavierchow/vim-sequence-diagram](https://github.com/xavierchow/vim-sequence-diagram) A Vim plugin for previewing sequence diagram in a browser
 
 ## 自定义按键映射
 
@@ -132,7 +132,6 @@ macOS version
 - 添加 Golang if err 检查代码: `Ctrl-e`
 - 跳转到 Golang 代码声明位置: `gd`
 - 代码补全: `Ctrl-z`
-- vimwiki 模式，启动界面执行: `\ww`
 - 切换随机主题配色: `\c`
 - 复制内容到系统剪贴板: `Ctrl-c`
 - 显示 git 提交信息: `\gm`
@@ -141,6 +140,7 @@ macOS version
 - 按文件名查找文件: `\ff`
 - 查找最近使用的文件: `\fm`
 - 按文件内容查找文件: `\fg`
+- `.seq`或`.sequence`的时序图文件预览：`\t`
 
 ## 屏幕截图
 

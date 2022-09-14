@@ -55,8 +55,6 @@ Plug 'skywind3000/gutentags_plus'
 " Check syntax in Vim asynchronously and fix files, with Language Server
 " Protocol (LSP) support. https://github.com/dense-analysis/ale
 Plug 'dense-analysis/ale'
-" Personal Wiki for Vim. https://github.com/vimwiki/vimwiki
-Plug 'vimwiki/vimwiki'
 " The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!  https://github.com/SirVer/ultisnips
 Plug 'SirVer/ultisnips'
 " vim-snipmate default snippets (Previously snipmate-snippets) https://github.com/honza/vim-snippets
@@ -73,7 +71,7 @@ Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'rhysd/git-messenger.vim'
 " Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more
 Plug 'ryanoasis/vim-devicons'
-" A Vim plugin for previewing sequence diagram in a browser 
+" A Vim plugin for previewing sequence diagram in a browser
 Plug 'xavierchow/vim-sequence-diagram'
 
 call plug#end()
@@ -546,7 +544,6 @@ let g:ale_linters = {
 \   'c': ['gcc', 'cppcheck'],
 \   'cpp': ['gcc', 'cppcheck'],
 \   'go': ['gofmt', 'golint'],
-\   'vimwiki': ['markdownlint'],
 \   'markdown': ['markdownlint'],
 \ }
 let g:ale_fixers = {
@@ -554,7 +551,6 @@ let g:ale_fixers = {
 \ 'python': ['yapf', 'isort'],
 \ 'css': ['prettier'],
 \ 'javascript': ['prettier'],
-\ 'vimwiki': ['prettier'],
 \ 'markdown': ['prettier'],
 \ }
 let g:ale_fix_on_save = 1

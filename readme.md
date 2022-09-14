@@ -55,7 +55,6 @@ macOS version
 - Support multi line editing
 - Support quick modification of wrapping characters at both ends of words
 - Use youcompleteme to support code auto completion
-- Integrate vimwiki
 - Auto pair edit parentheses, quotes
 - Support display screen calendar
 - Support nginx configuration highlighting
@@ -85,7 +84,6 @@ macOS version
 - [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) A Vim plugin that manages your tag files.
 - [gutentags_plus](https://github.com/skywind3000/gutentags_plus) The right way to use gtags with gutentags.
 - [ale](https://github.com/dense-analysis/ale) Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
-- [vimwiki](https://github.com/vimwiki/vimwiki) Personal Wiki for Vim
 - [ultisnips](https://github.com/SirVer/ultisnips) The ultimate snippet solution for Vim
 - [vim-snippets](https://github.com/honza/vim-snippets) vim-snipmate default snippets
 - [auto-pairs](https://github.com/jiangmiao/auto-pairs) Insert or delete brackets, parens, quotes in pair.
@@ -134,7 +132,6 @@ macOS version
 - fill go struct: `\fs`
 - add if err check for go: `Ctrl-e`
 - code complete: `Ctrl-z`
-- vimwiki mode: `\ww`
 - change random colorscheme: `\c
 - copy content to system clipboard: `Ctrl-c`
 - show git message: `\gm`
