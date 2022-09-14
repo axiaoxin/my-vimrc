@@ -73,6 +73,8 @@ Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'rhysd/git-messenger.vim'
 " Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more
 Plug 'ryanoasis/vim-devicons'
+" A Vim plugin for previewing sequence diagram in a browser 
+Plug 'xavierchow/vim-sequence-diagram'
 
 call plug#end()
 
