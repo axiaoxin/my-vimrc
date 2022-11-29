@@ -314,11 +314,8 @@ nnoremap <leader>fm :LeaderfMru<CR>
 
 " vim-go
 let g:go_test_show_name = 1
-let g:go_list_type = "quickfix"  " 使用 quickfix 显示错误信息
-let g:go_fmt_command = "golines"
-let g:go_fmt_options = {
-   \ 'golines': '-m 158',
-\ }
+let g:go_fmt_command="gopls"
+let g:go_gopls_gofumpt=1
 let g:go_highlight_types = 1 " 高亮显示 type 后的名称
 let g:go_highlight_fields = 1 " 高亮显示结构体字段
 let g:go_highlight_function_calls = 1  " 高亮显示函数名
