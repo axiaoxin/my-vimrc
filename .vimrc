@@ -73,7 +73,8 @@ Plug 'rhysd/git-messenger.vim'
 Plug 'ryanoasis/vim-devicons'
 " A Vim plugin for previewing sequence diagram in a browser
 Plug 'xavierchow/vim-sequence-diagram'
-
+" A vim plugin for adding import statements (for python and more) without LSP
+Plug 'wookayin/vim-autoimport'
 call plug#end()
 
 """"""""""""""""""""""BASE CONFIG"""""""""""""""""""""""
@@ -526,6 +527,8 @@ let g:ycm_filetype_whitelist = {
 autocmd FileType python nmap gd :YcmCompleter GoToDefinitionElseDeclaration<cr>
 autocmd FileType python nmap <leader>r :YcmCompleter GoToReferences<cr>
 autocmd FileType python nmap <leader>g :YcmCompleter GoTo<cr>
+autocmd FileType python nmap <leader>i :ImportSymbol<cr> "光标所在行按 \i 自动import该行缺失的module
+
 "关于设置 YouCompleteMe Python3 语法支持的帮助
 "https://github.com/ycm-core/YouCompleteMe/issues/2876
 "let g:ycm_server_python_interpreter='/usr/bin/python3'
@@ -539,7 +542,7 @@ let airline#extensions#ale#show_line_numbers = 1
 let airline#extensions#ale#open_lnum_symbol = '(L'
 let airline#extensions#ale#close_lnum_symbol = ')'
 let g:ale_linters = {
-\   'python': ['pylint', 'flake8'],
+\   'python': ['pyright', 'pylint', 'flake8'],
 \   'c': ['gcc', 'cppcheck'],
 \   'cpp': ['gcc', 'cppcheck'],
 \   'go': ['gofmt', 'golint'],

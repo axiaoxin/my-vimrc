@@ -213,7 +213,7 @@ Using this configuration requires the following commands to install some externa
 ```
 brew install cmake python mono go nodejs pygments global cppcheck
 brew unlink ctags && brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-[sudo] pip3 install isort yapf flake8 autopep8 pylint
+[sudo] pip3 install isort yapf flake8 autopep8 pylint pyright
 npm -g install instant-markdown-d prettier markdownlint
 ```
 
