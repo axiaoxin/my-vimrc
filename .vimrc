@@ -524,6 +524,8 @@ let g:ycm_filetype_whitelist = {
 \ "zsh":1,
 \ }
 autocmd FileType python nmap gd :YcmCompleter GoToDefinitionElseDeclaration<cr>
+autocmd FileType python nmap <leader>r :YcmCompleter GoToReferences<cr>
+autocmd FileType python nmap <leader>g :YcmCompleter GoTo<cr>
 "关于设置 YouCompleteMe Python3 语法支持的帮助
 "https://github.com/ycm-core/YouCompleteMe/issues/2876
 "let g:ycm_server_python_interpreter='/usr/bin/python3'
