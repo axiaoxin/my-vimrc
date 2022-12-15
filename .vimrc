@@ -542,7 +542,7 @@ let airline#extensions#ale#show_line_numbers = 1
 let airline#extensions#ale#open_lnum_symbol = '(L'
 let airline#extensions#ale#close_lnum_symbol = ')'
 let g:ale_linters = {
-\   'python': ['pyright', 'pylint', 'flake8'],
+\   'python': ['mypy', 'pylint', 'flake8'],
 \   'c': ['gcc', 'cppcheck'],
 \   'cpp': ['gcc', 'cppcheck'],
 \   'go': ['gofmt', 'golint'],
