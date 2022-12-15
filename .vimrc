@@ -75,6 +75,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'xavierchow/vim-sequence-diagram'
 " A vim plugin for adding import statements (for python and more) without LSP
 Plug 'wookayin/vim-autoimport'
+" https://black.readthedocs.io/en/stable/integrations/editors.html#vim
+Plug 'psf/black', { 'branch': 'stable' }
 call plug#end()
 
 """"""""""""""""""""""BASE CONFIG"""""""""""""""""""""""
@@ -550,11 +552,13 @@ let g:ale_linters = {
 \ }
 let g:ale_fixers = {
 \ '*': ['remove_trailing_lines', 'trim_whitespace'],
-\ 'python': ['yapf', 'isort'],
+\ 'python': ['black', 'isort'],
 \ 'css': ['prettier'],
 \ 'javascript': ['prettier'],
 \ 'markdown': ['prettier'],
 \ }
+let g:ale_python_black_options='--line-length=100'
+let g:ale_python_flake8_options = '--max-line-length=100'
 let g:ale_fix_on_save = 1
 
 
