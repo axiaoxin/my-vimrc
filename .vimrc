@@ -547,11 +547,12 @@ let g:ale_linters = {
 \   'python': ['mypy', 'pylint', 'flake8'],
 \   'c': ['gcc', 'cppcheck'],
 \   'cpp': ['gcc', 'cppcheck'],
-\   'go': ['gofmt', 'golint'],
+\   'go': ['gofmt', 'golint', 'gopls', 'govet'],
 \   'markdown': ['markdownlint'],
 \ }
 let g:ale_fixers = {
 \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+\ 'go': ['gofmt'],
 \ 'python': ['black', 'isort'],
 \ 'css': ['prettier'],
 \ 'javascript': ['prettier'],
