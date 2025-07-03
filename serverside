@@ -1,0 +1,203 @@
+""""""""""""""""""""""BASE CONFIG"""""""""""""""""""""""
+" 设置编码为 utf-8
+set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
+
+" 取消备份
+set nobackup
+set noswapfile
+
+" 状态栏配置
+set laststatus=2
+
+" 打开语法高亮
+syntax enable
+
+" 开启语法检测
+syntax on
+
+" vimrc 文件修改之后自动加载
+autocmd! bufwritepost .vimrc source %
+
+" 文件修改之后自动载入
+set autoread
+
+
+" 高亮搜索命中的文本
+set hlsearch
+
+" 随着键入即时搜索
+set incsearch
+
+" 搜索时忽略大小写
+set ignorecase
+
+" 有一个或以上大写字母时仍大小写敏感
+set smartcase
+
+" 在状态栏显示正在输入的命令
+set showcmd
+
+" 显示括号配对情况
+set showmatch
+
+" :next, :make 命令之前自动保存
+set autowrite
+
+" 允许使用鼠标
+set mouse=a
+
+" 设置行号
+set nu
+
+" 退格键可用
+set backspace=2
+
+" 退格键一次删掉 4 个空格
+set smarttab
+
+" 缩进
+set autoindent
+set smartindent
+
+" 保存文件时自动删除行尾空格或 Tab
+autocmd BufWritePre * :%s/\s\+$//e
+
+" 保存文件时自动删除末尾空行
+autocmd BufWritePre * :%s/^$\n\+\%$//ge
+
+" 保存文件时自动对中文中的英文单词和数字添加空格
+" autocmd BufWritePre * silent! :%s/[^\x00-\xff]\zs\ze\w\|\w\zs\ze[^\x00-\xff]/ /g
+
+" 填充 Tab
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set shiftround
+" 配置 go 文件 tab 显示方式：不填充 tab 但 tab 显示为 4 个空格的长度
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
+
+" 代码折叠 用 za 命令折叠或展开
+set foldmethod=indent
+" 默认展开
+set nofoldenable
+" 有 6 种方法来选定折叠：
+" 1    manual          手工定义折叠
+" 2    indent           更多的缩进表示更高级别的折叠
+" 3    expr              用表达式来定义折叠
+" 4    syntax           用语法高亮来定义折叠
+" 5    diff                对没有更改的文本进行折叠
+" 6    marker           对文中的标志折叠
+
+
+" 突出显示当前行，列
+set cursorline
+set cursorcolumn
+
+" 设置 退出 vim 后，内容显示在终端屏幕, 可以用于查看和复制
+set t_ti= t_te=
+
+" 打开文件时始终跳转到上次光标所在位置
+autocmd BufReadPost *
+      \ if ! exists("g:leave_my_cursor_position_alone") |
+      \     if line("'\"") > 0 && line ("'\"") <= line("$") |
+      \         exe "normal g'\"" |
+      \     endif |
+      \ endif
+
+" 退出 vim 后，仍然可以 undo 上次编辑
+if has('persistent_undo')      "check if your vim version supports it
+  set undofile                 "turn on the feature
+  set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
+endif
+
+"""""""""""""""""""""""""KEY MAPPING""""""""""""""""""""
+" j k 移动行的时候光标始终在屏幕中间
+nnoremap j jzz
+nnoremap k kzz
+
+" 映射切换 buffer 的键位
+nnoremap [b :bp<CR>
+nnoremap ]b :bn<CR>
+
+" 映射切换 tab 的键位
+nnoremap [t :tabp<CR>
+nnoremap ]t :tabn<CR>
+
+" normal 模式下 Ctrl+c 全选并复制到系统剪贴板(linux 必须装有 vim-gnome)
+nmap <C-c> gg"+yG
+
+" visual 模式下 Ctrl+c 复制选中内容到剪贴板
+vmap <C-c> "+y
+
+" Ctrl+v 原样粘贴剪切板内容
+inoremap <C-v> <ESC>"+pa
+
+" w!!写入只读文件
+cmap w!! w !sudo tee >/dev/null %
+
+" F2 切换行号显示
+nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
+
+" <F6> 新建标签页
+map <F6> <Esc>:tabnew<CR>
+
+
+" <F9> format json
+nnoremap <F9> :%!python -m json.tool<CR>
+
+" <F10> 中文中夹杂的英文和数字添加空格(注意\\| " 在 map 里面需要转义，直接执行使用\|)
+nnoremap <F10> :%s/[^\x00-\xff]\zs\ze\w\\|\w\zs\ze[^\x00-\xff]/ /g<CR>
+
+" 给当前单词添加引号
+nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
+nnoremap w' viw<esc>a'<esc>hbi'<esc>lel
+
+" 大小写转换并自动在前面加 _ （用于 abc`D`ef -> abc_def ）
+nnoremap <leader>_ i_<esc>l~
+" 删除当前字符并对后面的字符进行大小写转换 （用于 abc`_`def -> abcDef ）
+nnoremap <leader>x x~
+
+" 在 Normal Mode 和 Visual/Select Mode 下，利用 > 键和 < 键来缩进文本
+nnoremap > >>
+nnoremap < <<
+vnoremap > >gv
+vnoremap < <gv
+
+" quicker window switching
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" quicker window resize
+nnoremap <C-S-Left> <C-w><
+nnoremap <C-S-Right> <C-w>>
+nnoremap <C-S-Up> <C-w>+
+nnoremap <C-S-Down> <C-w>-
+
+" VIM 窗口操作命令：
+"
+" 左右分割窗口 Ctrl+w +v
+" 上下分割窗口 Ctrl+w +s
+"
+" 关闭窗口 Ctrl+w  +q
+"
+" 光标在所有窗口间按顺序移动 Ctrl+w +w
+" 光标移动到左边窗口 Ctrl+w +h
+" 光标移动到下面窗口 Ctrl+w +j
+" 光标移动到上面窗口 Ctrl+w +k
+" 光标移动到右面窗口 Ctrl+w +l
+" 光标移动到最左上角的窗口 Ctrl+w +t
+" 光标移动到最右下角的窗口 Ctrl+w +b
+" 光标移动到上一次访问的窗口 Ctrl+w +p
+"
+" 交换窗口位置 Ctrl+w +r     Ctrl+w +R     Ctrl+w +x
+"
+" 交换窗口位置并还原大小 Ctrl+w +H    Ctrl+w +J    Ctrl+w +K    Ctrl+w +L
+"
+" 将所有窗口调整到相同大小 Ctrl+w +=
+" 将当前窗口最大化 Ctrl+w +|
+" 将当前窗口覆盖全部只剩一个窗口 Ctrl+w +T
+
+" close quickfix windows
+nnoremap <leader>q :ccl<cr>
